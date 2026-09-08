@@ -1,0 +1,50 @@
+{
+  "title": "المصروفات",
+  "searchPlaceholder": "البحث عن وصف...",
+  "categoryPlaceholder": "الفئة",
+  "allCategories": "جميع الفئات",
+  "total": "الإجمالي",
+  "addExpense": "إضافة مصروف",
+  "categories": {
+    "RENT": "الإيجار",
+    "SALARIES": "الرواتب",
+    "ELECTRICITY": "الكهرباء",
+    "INTERNET": "الإنترنت",
+    "TRANSPORTATION": "النقل",
+    "MARKETING": "التسويق",
+    "REPAIRS": "الإصلاحات",
+    "MISCELLANEOUS": "متنوعة"
+  },
+  "table": {
+    "date": "التاريخ",
+    "category": "الفئة",
+    "description": "الوصف",
+    "addedBy": "أضيف بواسطة",
+    "amount": "المبلغ"
+  },
+  "loading": "جارٍ التحميل...",
+  "noExpenses": "لم يتم العثور على مصروفات",
+  "dialog": {
+    "editTitle": "تعديل المصروف",
+    "addTitle": "إضافة مصروف",
+    "category": "الفئة",
+    "selectCategory": "اختر الفئة",
+    "amount": "المبلغ",
+    "date": "التاريخ",
+    "addedBy": "أضيف بواسطة",
+    "selectUser": "اختر المستخدم",
+    "description": "الوصف",
+    "descriptionPlaceholder": "ملاحظة اختيارية...",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "saving": "جارٍ الحفظ..."
+  },
+  "toast": {
+    "added": "تمت إضافة المصروف",
+    "updated": "تم تحديث المصروف",
+    "deleted": "تم حذف المصروف",
+    "failed": "فشلت العملية",
+    "deleteFailed": "فشل الحذف",
+    "validationError": "الفئة والمبلغ والمستخدم مطلوبة"
+  }
+}

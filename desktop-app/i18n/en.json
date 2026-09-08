@@ -1,0 +1,108 @@
+{
+  "wizard": {
+    "title": "Retail CRM Setup Wizard",
+    "step": "Step",
+    "of": "of",
+    "steps": {
+      "license": "License Activation",
+      "admin": "Admin Account",
+      "database": "Database Setup",
+      "shop": "Shop Information",
+      "complete": "Complete"
+    },
+    "license": {
+      "title": "Activate Your License",
+      "description": "Enter your license key to activate this installation. Internet connection required for activation.",
+      "keyLabel": "License Key",
+      "keyPlaceholder": "Enter your license key",
+      "activateButton": "Activate & Continue",
+      "activating": "Activating",
+      "internetRequired": "Internet connection required for initial activation",
+      "errors": {
+        "emptyKey": "Please enter a license key",
+        "invalidKey": "Invalid license key",
+        "revoked": "This license has been revoked",
+        "expired": "This license has expired",
+        "maxDevices": "Maximum device limit reached for this license",
+        "connectionFailed": "Could not connect to license server. Please check your internet connection.",
+        "activationFailed": "Activation failed"
+      },
+      "success": "License activated successfully!"
+    },
+    "admin": {
+      "title": "Create Admin Account",
+      "description": "This will be the main administrator account for your CRM.",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter admin name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "admin@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "At least 8 characters",
+      "confirmLabel": "Confirm Password",
+      "confirmPlaceholder": "Re-enter password",
+      "errors": {
+        "requiredFields": "All fields are required",
+        "passwordLength": "Password must be at least 8 characters",
+        "passwordMismatch": "Passwords do not match"
+      }
+    },
+    "database": {
+      "title": "MySQL Database Configuration",
+      "description": "Connect to your local MySQL database where your CRM data will be stored.",
+      "hostLabel": "MySQL Host",
+      "hostPlaceholder": "localhost",
+      "portLabel": "Port",
+      "portPlaceholder": "3306",
+      "databaseLabel": "Database Name",
+      "databasePlaceholder": "retail_crm",
+      "usernameLabel": "Username",
+      "usernamePlaceholder": "root",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Your MySQL password",
+      "testButton": "Test Connection",
+      "testing": "Testing",
+      "testSuccess": "Connection successful!",
+      "errors": {
+        "requiredFields": "All fields are required",
+        "connectionFailed": "Connection failed",
+        "serverNotRunning": "Cannot connect to MySQL server. Please check if MySQL is running.",
+        "accessDenied": "Access denied. Please check your username and password.",
+        "databaseNotFound": "Database does not exist. Please create it first."
+      }
+    },
+    "shop": {
+      "title": "Shop Information",
+      "description": "Enter your shop details for receipts and reports.",
+      "nameLabel": "Shop Name",
+      "namePlaceholder": "My Shop",
+      "ownerLabel": "Owner Name (optional)",
+      "ownerPlaceholder": "Owner name",
+      "addressLabel": "Address (optional)",
+      "addressPlaceholder": "Shop address",
+      "phoneLabel": "Phone Number (optional)",
+      "phonePlaceholder": "Shop phone",
+      "emailLabel": "Email (optional)",
+      "emailPlaceholder": "shop@example.com",
+      "currencyLabel": "Currency",
+      "errors": {
+        "nameRequired": "Shop name is required"
+      }
+    },
+    "complete": {
+      "title": "Setup Complete!",
+      "description": "Your Retail CRM is configured and ready to use.",
+      "launching": "Starting",
+      "launchButton": "Launch CRM",
+      "summary": "Configuration Summary:",
+      "licenseActive": "License Active",
+      "adminCreated": "Admin Account Created",
+      "databaseConnected": "Database Connected",
+      "shopConfigured": "Shop Configured"
+    },
+    "buttons": {
+      "back": "Back",
+      "next": "Continue",
+      "finish": "Finish Setup"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "title": "Point of Sale",
+  "filters": {
+    "selectCashier": "Select cashier",
+    "walkInCustomer": "Walk-in customer",
+    "walkIn": "Walk-in"
+  },
+  "search": {
+    "placeholder": "Search product or scan barcode...",
+    "scanWithCamera": "Scan with camera",
+    "loading": "Loading products...",
+    "noResults": "No products found",
+    "noProducts": "No products available"
+  },
+  "product": {
+    "out": "Out",
+    "left": "{count} left"
+  },
+  "cart": {
+    "title": "Cart",
+    "items": "{count} items",
+    "empty": "Cart is empty"
+  },
+  "totals": {
+    "subtotal": "Subtotal",
+    "discountType": "Discount Type",
+    "percentage": "Percentage",
+    "fixedAmount": "Fixed Amount",
+    "discountPercent": "Discount (%)",
+    "discountFixed": "Discount ($)",
+    "discountAmount": "Discount Amount",
+    "total": "Total"
+  },
+  "checkout": {
+    "charge": "Charge {amount}"
+  },
+  "payment": {
+    "completePayment": "Complete Payment",
+    "partialPayment": "Partial Payment",
+    "optional": "Optional",
+    "fullAmount": "Full amount: {amount}",
+    "amountPaid": "Amount Paid",
+    "amountDue": "Amount Due",
+    "cashReceived": "Cash Received",
+    "change": "Change",
+    "processing": "Processing...",
+    "confirmPartialPayment": "Confirm Partial Payment",
+    "confirmSale": "Confirm Sale",
+    "methods": {
+      "cash": "Cash",
+      "card": "Card",
+      "bankTransfer": "Bank Transfer",
+      "qr": "QR"
+    }
+  },
+  "customerModal": {
+    "selectCustomer": "Select Customer",
+    "addCustomer": "Add Customer",
+    "searchPlaceholder": "Search customer by name or phone...",
+    "noCustomers": "No customers found",
+    "outstanding": "Outstanding",
+    "clearSelection": "Clear Selection",
+    "customerName": "Customer Name",
+    "customerNamePlaceholder": "Enter customer name",
+    "phone": "Phone Number",
+    "phonePlaceholder": "Enter phone number",
+    "email": "Email",
+    "emailPlaceholder": "Enter email address",
+    "address": "Address",
+    "addressPlaceholder": "Enter address",
+    "customerCreated": "Customer created successfully",
+    "customerCreateFailed": "Failed to create customer",
+    "nameRequired": "Customer name is required"
+  },
+  "productFilters": {
+    "allCategories": "All Categories",
+    "allBrands": "All Brands",
+    "category": "Category",
+    "brand": "Brand",
+    "resetFilters": "Reset"
+  },
+  "editItem": {
+    "title": "Edit Item",
+    "product": "Product",
+    "quantity": "Quantity",
+    "unitPrice": "Unit Price",
+    "originalPrice": "Original Price",
+    "itemDiscount": "Item Discount",
+    "reset": "Reset",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "lineTotal": "Line Total"
+  },
+  "holdSales": {
+    "title": "Held Sales",
+    "holdCurrentSale": "Hold Current Sale",
+    "noHeldSales": "No held sales",
+    "customer": "Customer",
+    "items": "items",
+    "more": "more",
+    "resume": "Resume",
+    "saleName": "Sale Name",
+    "saleNamePlaceholder": "e.g., Table 5, Customer Ahmed...",
+    "holdingSale": "Holding sale",
+    "hold": "Hold"
+  },
+  "imeiDialog": {
+    "title": "Select IMEI Device",
+    "selectDevice": "Select IMEI",
+    "noDevices": "No available IMEI devices",
+    "noAvailable": "No available IMEI devices",
+    "addDevices": "Add to Cart",
+    "confirm": "Add to Cart ({count})",
+    "cancel": "Cancel",
+    "scanImei": "Scan or Enter IMEI",
+    "deviceNotFound": "Device not found",
+    "alreadySold": "This device has already been sold",
+    "invalidImei": "IMEI must be 15 digits",
+    "productNotFound": "Product not found"
+  },
+  "toast": {
+    "saleCompleted": "Sale {invoiceNumber} completed!",
+    "saleFailed": "Sale failed",
+    "barcodeNotFound": "No product found for barcode {code}",
+    "noMoreStock": "No more stock available",
+    "cartEmpty": "Cart is empty",
+    "selectCashierFirst": "Select a cashier first",
+    "saleHeld": "Sale held successfully",
+    "saleResumed": "Sale resumed",
+    "imeiAlreadySold": "This device has already been sold",
+    "imeiFetchFailed": "Failed to look up IMEI"
+  }
+}

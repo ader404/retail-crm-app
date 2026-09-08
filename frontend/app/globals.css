@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-var.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96.1%;
+    --foreground: 0 0% 9.4%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9.4%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9.4%;
+    --primary: 16.2 82.3% 48.6%;
+    --primary-foreground: 0 0% 98.8%;
+    --secondary: 0 0% 92.2%;
+    --secondary-foreground: 12 10.2% 9.6%;
+    --muted: 0 0% 93.7%;
+    --muted-foreground: 0 0% 44.7%;
+    --accent: 0 0% 91.8%;
+    --accent-foreground: 0 0% 9.4%;
+    --destructive: 333.4 91.4% 58.8%;
+    --destructive-foreground: 0 0% 98.8%;
+    --success: 75 100% 36.9%;
+    --success-foreground: 80 6.4% 9.2%;
+    --warning: 21.3 100% 67.5%;
+    --warning-foreground: 24 10.2% 9.6%;
+    --border: 0 0% 87.1%;
+    --input: 0 0% 87.1%;
+    --ring: 16.2 82.3% 48.6%;
+    --radius: 0.5rem;
+    --field-radius: 0.75rem;
+    --sidebar: 0 0% 100%;
+    --sidebar-foreground: 0 0% 9.4%;
+    --sidebar-border: 0 0% 87.1%;
+    --sidebar-accent: 0 0% 91.8%;
+    --sidebar-accent-foreground: 0 0% 9.4%;
+  }
+
+  .dark {
+    --background: 0 0% 2.4%;
+    --foreground: 0 0% 98.8%;
+    --card: 0 0% 9.4%;
+    --card-foreground: 0 0% 98.8%;
+    --popover: 0 0% 9.4%;
+    --popover-foreground: 0 0% 98.8%;
+    --primary: 16.2 82.3% 48.6%;
+    --primary-foreground: 0 0% 98.8%;
+    --secondary: 0 0% 15.3%;
+    --secondary-foreground: 0 0% 98.8%;
+    --muted: 0 0% 13.7%;
+    --muted-foreground: 0 0% 62.7%;
+    --accent: 0 0% 15.3%;
+    --accent-foreground: 0 0% 98.8%;
+    --destructive: 334.1 63.5% 52.7%;
+    --destructive-foreground: 0 0% 98.8%;
+    --success: 75 100% 36.9%;
+    --success-foreground: 80 6.4% 9.2%;
+    --warning: 24 100% 71.6%;
+    --warning-foreground: 24 10.2% 9.6%;
+    --border: 0 0% 16.1%;
+    --input: 0 0% 16.1%;
+    --ring: 16.2 82.3% 48.6%;
+    --sidebar: 0 0% 9.4%;
+    --sidebar-foreground: 0 0% 98.8%;
+    --sidebar-border: 0 0% 16.1%;
+    --sidebar-accent: 0 0% 15.3%;
+    --sidebar-accent-foreground: 0 0% 98.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Analyse du bénéfice net",
+  "summary": {
+    "totalProfit": "Bénéfice total",
+    "margin": "Marge : {margin}%",
+    "totalRevenue": "Revenu total",
+    "salesCount": "{count} ventes",
+    "totalCost": "Coût total",
+    "costOfGoodsSold": "Coût des marchandises vendues",
+    "avgProfitPerSale": "Bénéfice moyen/vente",
+    "perTransaction": "Par transaction"
+  },
+  "filters": {
+    "title": "Filtres",
+    "period": "Période",
+    "fromDate": "Date de début",
+    "toDate": "Date de fin",
+    "search": "Rechercher",
+    "searchPlaceholder": "Facture ou client..."
+  },
+  "periods": {
+    "today": "Aujourd'hui",
+    "week": "Cette semaine",
+    "month": "Ce mois-ci",
+    "custom": "Plage personnalisée"
+  },
+  "table": {
+    "title": "Répartition des bénéfices",
+    "export": "Exporter",
+    "invoice": "Facture",
+    "date": "Date",
+    "customer": "Client",
+    "revenue": "Revenu",
+    "cost": "Coût",
+    "profit": "Bénéfice",
+    "marginPercent": "Marge %",
+    "loading": "Chargement...",
+    "noSalesFound": "Aucune vente trouvée",
+    "productBreakdown": "Répartition par produit :",
+    "product": "Produit",
+    "qty": "Qté",
+    "costPrice": "Prix coûtant",
+    "sellingPrice": "Prix de vente"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Options d'exportation",
+  "language": "Langue",
+  "format": "Format",
+  "columns": "Colonnes",
+  "arabic": "Arabe",
+  "french": "Français",
+  "english": "Anglais",
+  "print": "Imprimer",
+  "selectAll": "Tout sélectionner",
+  "clearAll": "Tout effacer",
+  "restoreDefault": "Restaurer par défaut",
+  "activeFilters": "Filtres actifs",
+  "cancel": "Annuler",
+  "exportPDF": "Exporter PDF"
+}

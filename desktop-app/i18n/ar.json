@@ -1,0 +1,108 @@
+{
+  "wizard": {
+    "title": "معالج إعداد نظام إدارة المبيعات",
+    "step": "الخطوة",
+    "of": "من",
+    "steps": {
+      "license": "تفعيل الترخيص",
+      "admin": "حساب المدير",
+      "database": "إعداد قاعدة البيانات",
+      "shop": "معلومات المتجر",
+      "complete": "اكتمل"
+    },
+    "license": {
+      "title": "تفعيل الترخيص",
+      "description": "أدخل مفتاح الترخيص لتفعيل هذا التثبيت. يتطلب اتصال بالإنترنت للتفعيل.",
+      "keyLabel": "مفتاح الترخيص",
+      "keyPlaceholder": "أدخل مفتاح الترخيص",
+      "activateButton": "تفعيل والمتابعة",
+      "activating": "جاري التفعيل",
+      "internetRequired": "الاتصال بالإنترنت مطلوب للتفعيل الأولي",
+      "errors": {
+        "emptyKey": "الرجاء إدخال مفتاح الترخيص",
+        "invalidKey": "مفتاح ترخيص غير صالح",
+        "revoked": "تم إلغاء هذا الترخيص",
+        "expired": "انتهت صلاحية هذا الترخيص",
+        "maxDevices": "تم الوصول إلى الحد الأقصى لعدد الأجهزة لهذا الترخيص",
+        "connectionFailed": "تعذر الاتصال بخادم الترخيص. الرجاء التحقق من اتصالك بالإنترنت.",
+        "activationFailed": "فشل التفعيل"
+      },
+      "success": "تم تفعيل الترخيص بنجاح!"
+    },
+    "admin": {
+      "title": "إنشاء حساب المدير",
+      "description": "سيكون هذا هو حساب المدير الرئيسي لنظام إدارة المبيعات الخاص بك.",
+      "nameLabel": "الاسم الكامل",
+      "namePlaceholder": "أدخل اسم المدير",
+      "emailLabel": "عنوان البريد الإلكتروني",
+      "emailPlaceholder": "admin@example.com",
+      "passwordLabel": "كلمة المرور",
+      "passwordPlaceholder": "8 أحرف على الأقل",
+      "confirmLabel": "تأكيد كلمة المرور",
+      "confirmPlaceholder": "أعد إدخال كلمة المرور",
+      "errors": {
+        "requiredFields": "جميع الحقول مطلوبة",
+        "passwordLength": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
+        "passwordMismatch": "كلمات المرور غير متطابقة"
+      }
+    },
+    "database": {
+      "title": "إعداد قاعدة بيانات MySQL",
+      "description": "اتصل بقاعدة بيانات MySQL المحلية حيث سيتم تخزين بيانات نظام إدارة المبيعات.",
+      "hostLabel": "مضيف MySQL",
+      "hostPlaceholder": "localhost",
+      "portLabel": "المنفذ",
+      "portPlaceholder": "3306",
+      "databaseLabel": "اسم قاعدة البيانات",
+      "databasePlaceholder": "retail_crm",
+      "usernameLabel": "اسم المستخدم",
+      "usernamePlaceholder": "root",
+      "passwordLabel": "كلمة المرور",
+      "passwordPlaceholder": "كلمة مرور MySQL الخاصة بك",
+      "testButton": "اختبار الاتصال",
+      "testing": "جاري الاختبار",
+      "testSuccess": "نجح الاتصال!",
+      "errors": {
+        "requiredFields": "جميع الحقول مطلوبة",
+        "connectionFailed": "فشل الاتصال",
+        "serverNotRunning": "لا يمكن الاتصال بخادم MySQL. الرجاء التحقق من تشغيل MySQL.",
+        "accessDenied": "تم رفض الوصول. الرجاء التحقق من اسم المستخدم وكلمة المرور.",
+        "databaseNotFound": "قاعدة البيانات غير موجودة. الرجاء إنشاؤها أولاً."
+      }
+    },
+    "shop": {
+      "title": "معلومات المتجر",
+      "description": "أدخل تفاصيل متجرك للإيصالات والتقارير.",
+      "nameLabel": "اسم المتجر",
+      "namePlaceholder": "متجري",
+      "ownerLabel": "اسم المالك (اختياري)",
+      "ownerPlaceholder": "اسم المالك",
+      "addressLabel": "العنوان (اختياري)",
+      "addressPlaceholder": "عنوان المتجر",
+      "phoneLabel": "رقم الهاتف (اختياري)",
+      "phonePlaceholder": "هاتف المتجر",
+      "emailLabel": "البريد الإلكتروني (اختياري)",
+      "emailPlaceholder": "shop@example.com",
+      "currencyLabel": "العملة",
+      "errors": {
+        "nameRequired": "اسم المتجر مطلوب"
+      }
+    },
+    "complete": {
+      "title": "اكتمل الإعداد!",
+      "description": "نظام إدارة المبيعات الخاص بك جاهز للاستخدام.",
+      "launching": "جاري البدء",
+      "launchButton": "تشغيل النظام",
+      "summary": "ملخص الإعداد:",
+      "licenseActive": "الترخيص نشط",
+      "adminCreated": "تم إنشاء حساب المدير",
+      "databaseConnected": "تم الاتصال بقاعدة البيانات",
+      "shopConfigured": "تم إعداد المتجر"
+    },
+    "buttons": {
+      "back": "رجوع",
+      "next": "متابعة",
+      "finish": "إنهاء الإعداد"
+    }
+  }
+}

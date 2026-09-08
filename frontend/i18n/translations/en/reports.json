@@ -1,0 +1,223 @@
+{
+  "pageTitle": "Reports",
+  "tabs": {
+    "overview": "Overview",
+    "profit": "Profit Analysis",
+    "receivables": "Receivables",
+    "payables": "Payables",
+    "loans": "Loans",
+    "purchases": "Purchases",
+    "cashflow": "Cash Flow"
+  },
+  "filters": {
+    "from": "From",
+    "to": "To"
+  },
+  "overview": {
+    "kpis": {
+      "totalRevenue": "Total Revenue",
+      "salesCount": "{count} sales",
+      "totalExpenses": "Total Expenses",
+      "entriesCount": "{count} entries",
+      "netProfit": "Net Profit",
+      "profitable": "Profitable",
+      "loss": "Loss",
+      "avgSaleValue": "Avg Sale Value",
+      "perTransaction": "per transaction"
+    },
+    "dailyRevenue": "Daily Revenue",
+    "expensesByCategory": "Expenses by Category",
+    "noExpenseData": "No expense data",
+    "revenueVsExpenses": "Revenue vs Expenses — Monthly",
+    "chartLegend": {
+      "revenue": "Revenue",
+      "expenses": "Expenses"
+    },
+    "topProductsByRevenue": "Top Products by Revenue",
+    "noSalesData": "No sales data",
+    "paymentMethods": "Payment Methods",
+    "noPaymentData": "No payment data",
+    "salesSuffix": "sales"
+  },
+  "profit": {
+    "title": "Profit Analysis",
+    "totalRevenue": "Total Revenue",
+    "totalCost": "Total Cost",
+    "totalProfit": "Total Profit",
+    "table": {
+      "product": "Product",
+      "quantitySold": "Quantity Sold",
+      "revenue": "Revenue",
+      "cost": "Cost",
+      "profit": "Profit",
+      "margin": "Margin",
+      "empty": "No profit data available"
+    }
+  },
+  "receivables": {
+    "title": "Outstanding Receivables",
+    "totalOutstanding": "Total Outstanding",
+    "numberOfCustomers": "Number of Customers",
+    "avgBalance": "Avg Balance",
+    "table": {
+      "customer": "Customer",
+      "phone": "Phone",
+      "totalPurchases": "Total Purchases",
+      "totalPaid": "Total Paid",
+      "outstandingBalance": "Outstanding Balance",
+      "empty": "No outstanding receivables"
+    }
+  },
+  "payables": {
+    "title": "Outstanding Payables",
+    "totalOutstanding": "Total Outstanding",
+    "numberOfSuppliers": "Number of Suppliers",
+    "avgBalance": "Avg Balance",
+    "table": {
+      "supplier": "Supplier",
+      "contact": "Contact",
+      "totalPurchases": "Total Purchases",
+      "totalPaid": "Total Paid",
+      "outstandingBalance": "Outstanding Balance",
+      "empty": "No outstanding payables"
+    }
+  },
+  "loans": {
+    "title": "Loans Report",
+    "totalLoaned": "Total Loaned",
+    "totalPaid": "Total Paid",
+    "outstanding": "Outstanding",
+    "activeLoans": "Active Loans",
+    "table": {
+      "loanType": "Loan Type",
+      "entity": "Entity",
+      "amount": "Amount",
+      "paid": "Paid",
+      "outstanding": "Outstanding",
+      "status": "Status",
+      "dueDate": "Due Date",
+      "empty": "No loan data available"
+    }
+  },
+  "purchases": {
+    "title": "Purchase Orders Report",
+    "totalOrders": "Total Orders",
+    "totalValue": "Total Value",
+    "totalPaid": "Total Paid",
+    "amountDue": "Amount Due",
+    "table": {
+      "orderNumber": "Order #",
+      "supplier": "Supplier",
+      "totalAmount": "Total Amount",
+      "paidAmount": "Paid Amount",
+      "due": "Due",
+      "status": "Status",
+      "date": "Date",
+      "empty": "No purchase data available"
+    }
+  },
+  "cashflow": {
+    "cashInflow": "Cash Inflow",
+    "cashInflowSub": "Revenue + Payments",
+    "cashOutflow": "Cash Outflow",
+    "cashOutflowSub": "Expenses + Purchases",
+    "netCashFlow": "Net Cash Flow",
+    "positive": "Positive",
+    "negative": "Negative",
+    "inflowBreakdown": "Cash Inflow Breakdown",
+    "outflowBreakdown": "Cash Outflow Breakdown",
+    "salesRevenue": "Sales Revenue",
+    "customerPayments": "Customer Payments",
+    "loanRepayments": "Loan Repayments",
+    "purchaseOrders": "Purchase Orders",
+    "expenses": "Expenses",
+    "supplierPayments": "Supplier Payments"
+  },
+  "export": {
+    "button": "Export",
+    "asCsv": "Export as CSV"
+  },
+  "cheques": {
+    "title": "Cheque Reports",
+    "tabs": {
+      "overview": "Overview",
+      "statusDist": "Status Distribution",
+      "monthly": "Monthly Activity",
+      "upcoming": "Upcoming",
+      "overdue": "Overdue",
+      "byBank": "By Bank",
+      "details": "Details"
+    },
+    "summary": {
+      "incoming": "Incoming Cheques",
+      "outgoing": "Outgoing Cheques",
+      "cleared": "Cleared",
+      "pending": "Pending",
+      "overdue": "Overdue",
+      "bouncedReturned": "Bounced / Returned",
+      "total": "Total",
+      "count": "cheques"
+    },
+    "monthly": {
+      "title": "Monthly Cheque Activity",
+      "incoming": "Incoming",
+      "outgoing": "Outgoing"
+    },
+    "upcoming": {
+      "title": "Upcoming Cheques",
+      "thisWeek": "This Week",
+      "next7Days": "Next 7 Days",
+      "next30Days": "Next 30 Days",
+      "expectedIncoming": "Expected Incoming",
+      "expectedOutgoing": "Expected Outgoing"
+    },
+    "overdueReport": {
+      "title": "Overdue Cheques",
+      "daysOverdue": "days overdue",
+      "totalOverdue": "Total Overdue",
+      "incomingOverdue": "Incoming Overdue",
+      "outgoingOverdue": "Outgoing Overdue"
+    },
+    "bankAnalysis": {
+      "title": "Bank Analysis",
+      "bank": "Bank",
+      "incoming": "Incoming",
+      "outgoing": "Outgoing",
+      "cleared": "Cleared",
+      "pending": "Pending",
+      "bounced": "Bounced"
+    },
+    "detailsTable": {
+      "title": "Detailed Report",
+      "number": "Cheque #",
+      "type": "Type",
+      "party": "Party",
+      "bank": "Bank",
+      "amount": "Amount",
+      "issueDate": "Issue Date",
+      "dueDate": "Due Date",
+      "status": "Status",
+      "clearedDate": "Cleared Date",
+      "createdDate": "Created Date"
+    },
+    "types": {
+      "INCOMING": "Incoming",
+      "OUTGOING": "Outgoing"
+    },
+    "statuses": {
+      "PENDING": "Pending",
+      "DEPOSITED": "Deposited",
+      "PRESENTED": "Presented",
+      "CLEARED": "Cleared",
+      "BOUNCED": "Bounced",
+      "RETURNED": "Returned",
+      "CANCELLED": "Cancelled"
+    },
+    "filters": {
+      "type": "Type",
+      "status": "Status",
+      "bank": "Bank",
+      "all": "All"
+    }
+  }
+}

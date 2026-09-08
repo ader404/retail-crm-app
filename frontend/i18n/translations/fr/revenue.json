@@ -1,0 +1,61 @@
+{
+  "title": "Revenus",
+  "summary": {
+    "totalRevenue": "Revenu total",
+    "salesCount": "{count} ventes",
+    "amountPaid": "Montant payé",
+    "collected": "Encaissé",
+    "amountDue": "Montant dû",
+    "outstanding": "En attente"
+  },
+  "filters": {
+    "title": "Filtres",
+    "period": "Période",
+    "fromDate": "Date de début",
+    "toDate": "Date de fin",
+    "search": "Rechercher",
+    "searchPlaceholder": "Facture ou client..."
+  },
+  "periods": {
+    "today": "Aujourd'hui",
+    "week": "Cette semaine",
+    "month": "Ce mois",
+    "custom": "Plage personnalisée"
+  },
+  "table": {
+    "salesList": "Liste des ventes",
+    "export": "Exporter",
+    "exportCsv": "Exporter en CSV",
+    "exportPdf": "Exporter en PDF",
+    "invoice": "Facture",
+    "date": "Date",
+    "customer": "Client",
+    "payment": "Paiement",
+    "total": "Total",
+    "paid": "Payé",
+    "due": "Dû",
+    "status": "Statut",
+    "loading": "Chargement...",
+    "noSalesFound": "Aucune vente trouvée"
+  },
+  "walkIn": "Client de passage",
+  "paymentStatus": {
+    "PAID": "PAYÉ",
+    "PARTIAL": "PARTIEL",
+    "UNPAID": "IMPAYÉ"
+  },
+  "export": {
+    "columns": {
+      "invoice": "Facture",
+      "date": "Date",
+      "customer": "Client",
+      "paymentMethod": "Méthode de paiement",
+      "payment": "Paiement",
+      "total": "Total",
+      "paid": "Payé",
+      "due": "Dû",
+      "status": "Statut"
+    },
+    "reportTitle": "Rapport de revenus"
+  }
+}

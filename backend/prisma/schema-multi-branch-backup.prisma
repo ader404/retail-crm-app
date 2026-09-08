@@ -1,0 +1,528 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Enums ────────────────────────────────────────────────────────────────────
+
+enum Role {
+  SUPER_ADMIN
+  ADMIN
+  MANAGER
+  CASHIER
+  SALES
+  WAREHOUSE
+  ACCOUNTANT
+}
+
+enum SaleStatus {
+  COMPLETED
+  REFUNDED
+  PARTIALLY_REFUNDED
+  ON_HOLD
+}
+
+enum PaymentMethod {
+  CASH
+  CARD
+  BANK_TRANSFER
+  QR
+}
+
+enum ExpenseCategory {
+  RENT
+  SALARIES
+  ELECTRICITY
+  INTERNET
+  TRANSPORTATION
+  MARKETING
+  REPAIRS
+  MISCELLANEOUS
+}
+
+enum TransferStatus {
+  PENDING
+  IN_TRANSIT
+  COMPLETED
+  CANCELLED
+}
+
+enum PurchaseOrderStatus {
+  PENDING
+  PARTIAL
+  RECEIVED
+  CANCELLED
+}
+
+enum PaymentStatus {
+  PAID
+  PARTIALLY_PAID
+  UNPAID
+  OVERDUE
+}
+
+enum LoanType {
+  CUSTOMER_LOAN
+  SUPPLIER_LOAN
+}
+
+enum LoanStatus {
+  ACTIVE
+  COMPLETED
+  OVERDUE
+  CANCELLED
+}
+
+enum DiscountType {
+  PERCENTAGE
+  FIXED_AMOUNT
+}
+
+// ─── Users & Branches ─────────────────────────────────────────────────────────
+
+model User {
+  id                  String    @id @default(cuid())
+  name                String
+  email               String    @unique
+  password            String
+  role                Role      @default(CASHIER)
+  phone               String?
+  isActive            Boolean   @default(true)
+  isLocked            Boolean   @default(false)
+  failedLoginAttempts Int       @default(0)
+  lastLoginAt         DateTime?
+  passwordChangedAt   DateTime?
+  mustChangePassword  Boolean   @default(false)
+  locale              String    @default("en")
+  branchId            String?
+  branch              Branch?   @relation(fields: [branchId], references: [id])
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  sales           Sale[]
+  expenses        Expense[]
+  auditLogs       AuditLog[]
+  transfers       InventoryTransfer[]
+  sessions        Session[]
+  passwordHistory PasswordHistory[]
+
+  @@map("users")
+}
+
+model Branch {
+  id        String   @id @default(cuid())
+  name      String
+  address   String?  @db.Text
+  phone     String?
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  users        User[]
+  inventory    Inventory[]
+  sales        Sale[]
+  expenses     Expense[]
+  transfersOut InventoryTransfer[] @relation("FromBranch")
+  transfersIn  InventoryTransfer[] @relation("ToBranch")
+
+  @@map("branches")
+}
+
+// ─── Products ─────────────────────────────────────────────────────────────────
+
+model ProductImage {
+  id        String   @id @default(cuid())
+  productId String   @unique
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  data      Bytes    @db.LongBlob
+  mimeType  String
+  filename  String
+  size      Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("product_images")
+}
+
+model Category {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  createdAt DateTime @default(now())
+
+  products Product[]
+
+  @@map("categories")
+}
+
+model Brand {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  createdAt DateTime @default(now())
+
+  products Product[]
+
+  @@map("brands")
+}
+
+model Product {
+  id           String    @id @default(cuid())
+  name         String
+  sku          String    @unique
+  barcode      String?   @unique
+  serialNumber String?
+  imei         String?
+  categoryId   String
+  category     Category  @relation(fields: [categoryId], references: [id])
+  brandId      String?
+  brand        Brand?    @relation(fields: [brandId], references: [id])
+  supplierId   String?
+  supplier     Supplier? @relation(fields: [supplierId], references: [id])
+  costPrice    Decimal   @db.Decimal(10, 2)
+  sellingPrice Decimal   @db.Decimal(10, 2)
+  description  String?   @db.Text
+  isActive     Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  image         ProductImage?
+  inventory     Inventory[]
+  saleItems     SaleItem[]
+  transferItems InventoryTransferItem[]
+  purchaseItems PurchaseOrderItem[]
+
+  @@index([barcode])
+  @@index([name])
+  @@index([categoryId])
+  @@map("products")
+}
+
+// ─── Inventory ────────────────────────────────────────────────────────────────
+
+model Inventory {
+  id        String   @id @default(cuid())
+  productId String
+  product   Product  @relation(fields: [productId], references: [id])
+  branchId  String
+  branch    Branch   @relation(fields: [branchId], references: [id])
+  quantity  Int      @default(0)
+  minStock  Int      @default(5)
+  updatedAt DateTime @updatedAt
+
+  @@unique([productId, branchId])
+  @@map("inventory")
+}
+
+model InventoryTransfer {
+  id           String         @id @default(cuid())
+  fromBranchId String
+  fromBranch   Branch         @relation("FromBranch", fields: [fromBranchId], references: [id])
+  toBranchId   String
+  toBranch     Branch         @relation("ToBranch", fields: [toBranchId], references: [id])
+  userId       String
+  user         User           @relation(fields: [userId], references: [id])
+  status       TransferStatus @default(PENDING)
+  notes        String?        @db.Text
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+
+  items InventoryTransferItem[]
+
+  @@map("inventory_transfers")
+}
+
+model InventoryTransferItem {
+  id         String            @id @default(cuid())
+  transferId String
+  transfer   InventoryTransfer @relation(fields: [transferId], references: [id])
+  productId  String
+  product    Product           @relation(fields: [productId], references: [id])
+  quantity   Int
+
+  @@map("inventory_transfer_items")
+}
+
+// ─── Customers ────────────────────────────────────────────────────────────────
+
+model Customer {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String?
+  email     String?
+  address   String?  @db.Text
+  notes     String?  @db.Text
+  credit    Decimal  @default(0) @db.Decimal(10, 2)
+  debt      Decimal  @default(0) @db.Decimal(10, 2)
+  totalPaid Decimal  @default(0) @db.Decimal(10, 2)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  sales Sale[]
+  loans Loan[]
+
+  @@index([phone])
+  @@index([name])
+  @@map("customers")
+}
+
+// ─── Sales ────────────────────────────────────────────────────────────────────
+
+model Sale {
+  id            String        @id @default(cuid())
+  invoiceNumber String        @unique
+  customerId    String?
+  customer      Customer?     @relation(fields: [customerId], references: [id])
+  userId        String
+  user          User          @relation(fields: [userId], references: [id])
+  branchId      String
+  branch        Branch        @relation(fields: [branchId], references: [id])
+  status        SaleStatus    @default(COMPLETED)
+  subtotal      Decimal       @db.Decimal(10, 2)
+  discount      Decimal       @default(0) @db.Decimal(10, 2)
+  discountType  DiscountType  @default(PERCENTAGE)
+  tax           Decimal       @default(0) @db.Decimal(10, 2)
+  total         Decimal       @db.Decimal(10, 2)
+  amountPaid    Decimal       @default(0) @db.Decimal(10, 2)
+  amountDue     Decimal       @default(0) @db.Decimal(10, 2)
+  paymentStatus PaymentStatus @default(PAID)
+  paymentMethod PaymentMethod @default(CASH)
+  notes         String?       @db.Text
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  items    SaleItem[]
+  payments Payment[]
+
+  @@index([invoiceNumber])
+  @@index([createdAt])
+  @@index([branchId])
+  @@index([customerId])
+  @@map("sales")
+}
+
+model SaleItem {
+  id           String  @id @default(cuid())
+  saleId       String
+  sale         Sale    @relation(fields: [saleId], references: [id])
+  productId    String
+  product      Product @relation(fields: [productId], references: [id])
+  quantity     Int
+  costPrice    Decimal @db.Decimal(10, 2)
+  sellingPrice Decimal @db.Decimal(10, 2)
+  discount     Decimal @default(0) @db.Decimal(10, 2)
+  total        Decimal @db.Decimal(10, 2)
+
+  @@map("sale_items")
+}
+
+model Payment {
+  id        String        @id @default(cuid())
+  saleId    String
+  sale      Sale          @relation(fields: [saleId], references: [id])
+  method    PaymentMethod
+  amount    Decimal       @db.Decimal(10, 2)
+  createdAt DateTime      @default(now())
+
+  @@map("payments")
+}
+
+// ─── Expenses ─────────────────────────────────────────────────────────────────
+
+model Expense {
+  id          String          @id @default(cuid())
+  branchId    String
+  branch      Branch          @relation(fields: [branchId], references: [id])
+  userId      String
+  user        User            @relation(fields: [userId], references: [id])
+  category    ExpenseCategory
+  amount      Decimal         @db.Decimal(10, 2)
+  description String?         @db.Text
+  date        DateTime        @default(now())
+  createdAt   DateTime        @default(now())
+
+  @@map("expenses")
+}
+
+// ─── Suppliers ────────────────────────────────────────────────────────────────
+
+model Supplier {
+  id            String   @id @default(cuid())
+  companyName   String
+  contactPerson String?
+  phone         String?
+  email         String?
+  address       String?  @db.Text
+  totalDebt     Decimal  @default(0) @db.Decimal(10, 2)
+  totalPaid     Decimal  @default(0) @db.Decimal(10, 2)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  products         Product[]
+  purchaseOrders   PurchaseOrder[]
+  supplierPayments SupplierPayment[]
+  loans            Loan[]
+
+  @@map("suppliers")
+}
+
+model PurchaseOrder {
+  id               String              @id @default(cuid())
+  orderNumber      String              @unique
+  supplierId       String
+  supplier         Supplier            @relation(fields: [supplierId], references: [id])
+  branchId         String?
+  status           PurchaseOrderStatus @default(PENDING)
+  subtotal         Decimal             @db.Decimal(10, 2)
+  tax              Decimal             @default(0) @db.Decimal(10, 2)
+  total            Decimal             @db.Decimal(10, 2)
+  amountPaid       Decimal             @default(0) @db.Decimal(10, 2)
+  amountDue        Decimal             @default(0) @db.Decimal(10, 2)
+  paymentStatus    PaymentStatus       @default(UNPAID)
+  expectedDelivery DateTime?
+  notes            String?             @db.Text
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
+
+  items    PurchaseOrderItem[]
+  payments SupplierPayment[]
+
+  @@map("purchase_orders")
+}
+
+model PurchaseOrderItem {
+  id              String        @id @default(cuid())
+  purchaseOrderId String
+  purchaseOrder   PurchaseOrder @relation(fields: [purchaseOrderId], references: [id])
+  productId       String
+  product         Product       @relation(fields: [productId], references: [id])
+  quantity        Int
+  costPrice       Decimal       @db.Decimal(10, 2)
+  receivedQty     Int           @default(0)
+
+  @@map("purchase_order_items")
+}
+
+// ─── Supplier Payments ────────────────────────────────────────────────────────
+
+model SupplierPayment {
+  id              String         @id @default(cuid())
+  purchaseOrderId String?
+  purchaseOrder   PurchaseOrder? @relation(fields: [purchaseOrderId], references: [id])
+  supplierId      String
+  supplier        Supplier       @relation(fields: [supplierId], references: [id])
+  amount          Decimal        @db.Decimal(10, 2)
+  paymentMethod   PaymentMethod  @default(CASH)
+  reference       String?
+  notes           String?        @db.Text
+  createdAt       DateTime       @default(now())
+
+  @@map("supplier_payments")
+}
+
+// ─── Loans ────────────────────────────────────────────────────────────────────
+
+model Loan {
+  id              String     @id @default(cuid())
+  loanNumber      String     @unique
+  type            LoanType
+  customerId      String?
+  customer        Customer?  @relation(fields: [customerId], references: [id])
+  supplierId      String?
+  supplier        Supplier?  @relation(fields: [supplierId], references: [id])
+  principalAmount Decimal    @db.Decimal(10, 2)
+  amountPaid      Decimal    @default(0) @db.Decimal(10, 2)
+  amountDue       Decimal    @db.Decimal(10, 2)
+  status          LoanStatus @default(ACTIVE)
+  reason          String?    @db.Text
+  dueDate         DateTime?
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+
+  payments LoanPayment[]
+
+  @@map("loans")
+}
+
+model LoanPayment {
+  id            String        @id @default(cuid())
+  loanId        String
+  loan          Loan          @relation(fields: [loanId], references: [id])
+  amount        Decimal       @db.Decimal(10, 2)
+  paymentMethod PaymentMethod @default(CASH)
+  reference     String?
+  notes         String?       @db.Text
+  createdAt     DateTime      @default(now())
+
+  @@map("loan_payments")
+}
+
+// ─── Settings ─────────────────────────────────────────────────────────────────
+
+model Settings {
+  id                String   @id @default(cuid())
+  companyName       String   @default("My Store")
+  logoUrl           String?  @db.Text
+  address           String?  @db.Text
+  phone             String?
+  email             String?
+  taxId             String?
+  currency          String   @default("USD")
+  receiptFooter     String   @default("Thank you for your business!")
+  showLogoOnReceipt Boolean  @default(true)
+  updatedAt         DateTime @updatedAt
+
+  @@map("settings")
+}
+
+// ─── Audit ────────────────────────────────────────────────────────────────────
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  action    String
+  entity    String?
+  entityId  String?
+  details   Json?
+  ipAddress String?
+  userAgent String?  @db.Text
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([action])
+  @@index([createdAt])
+  @@map("audit_logs")
+}
+
+// ─── Authentication ───────────────────────────────────────────────────────────
+
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  expiresAt DateTime
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([token])
+  @@index([expiresAt])
+  @@map("sessions")
+}
+
+model PasswordHistory {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  password  String
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@map("password_history")
+}

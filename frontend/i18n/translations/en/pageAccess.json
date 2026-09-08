@@ -1,0 +1,40 @@
+{
+  "title": "Page Access",
+  "description": "Select the pages this employee can see and use",
+  "selectAll": "Select All",
+  "clearAll": "Clear All",
+  "selectGroup": "Select All",
+  "deselectGroup": "Deselect All",
+  "selectedCount": "{count} page(s) selected",
+  "ownerOnly": "Only the owner can manage page access",
+  "groups": {
+    "main": "Main",
+    "sales": "Sales",
+    "inventory": "Inventory",
+    "finance": "Finance",
+    "admin": "Administration"
+  },
+  "modules": {
+    "dashboard": "Dashboard",
+    "pos": "POS",
+    "products": "Products",
+    "categories": "Categories",
+    "customers": "Customers",
+    "suppliers": "Suppliers",
+    "sales": "Sales History",
+    "cheques": "Cheques",
+    "expenses": "Expenses",
+    "loans": "Loans",
+    "purchase-orders": "Purchase Orders",
+    "employees": "Employees",
+    "reports": "Reports",
+    "settings": "Settings",
+    "notifications": "Notifications"
+  },
+  "presets": {
+    "cashier": "Cashier",
+    "sales": "Sales Employee",
+    "inventory": "Inventory Manager",
+    "accountant": "Accountant"
+  }
+}

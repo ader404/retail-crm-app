@@ -1,0 +1,56 @@
+{
+  "title": "Settings",
+  "loading": "Loading...",
+  "saving": "Saving...",
+  "save": "Save",
+  "cancel": "Cancel",
+
+  "company": {
+    "title": "Company & Receipt",
+    "description": "Shown on printed and shared receipts",
+    "logo": "Company Logo",
+    "uploading": "Uploading...",
+    "companyName": "Company Name",
+    "currency": "Currency",
+    "currencyPlaceholder": "USD",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "taxId": "Tax ID",
+    "receiptFooter": "Receipt Footer / Thank You Message",
+    "receiptFooterPlaceholder": "Thank you for your business!",
+    "showLogoOnReceipt": "Show Logo on Receipt",
+    "showLogoOnReceiptDescription": "Toggle off to print text-only receipts",
+    "receiptLanguage": "Receipt Language",
+    "receiptElements": "Receipt Elements",
+    "showPhoneOnReceipt": "Show Phone on Receipt",
+    "showEmailOnReceipt": "Show Email on Receipt",
+    "showAddressOnReceipt": "Show Address on Receipt",
+    "showTaxIdOnReceipt": "Show Tax ID on Receipt",
+    "saveButton": "Save Receipt Settings"
+  },
+
+  "language": {
+    "title": "Language Preference",
+    "description": "Choose your preferred language for the interface",
+    "currentLanguage": "Current Language",
+    "selectLanguage": "Select Language"
+  },
+
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+
+  "toasts": {
+    "settingsSaved": "Receipt settings saved",
+    "settingsFailed": "Failed to save settings",
+    "logoUploadFailed": "Logo upload failed",
+    "statusUpdateFailed": "Failed to update status",
+    "languageUpdated": "Language preference updated",
+    "languageUpdateFailed": "Failed to update language preference",
+    "languageChanged": "Language changed to {language}",
+    "languageChangeFailed": "Failed to change language"
+  }
+}

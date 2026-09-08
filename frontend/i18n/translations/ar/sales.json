@@ -1,0 +1,95 @@
+{
+  "title": "المبيعات",
+  "deletedSales": "المبيعات المحذوفة",
+  "backToSales": "العودة إلى المبيعات",
+  "viewDeleted": "عرض المحذوفة",
+  "exportPDF": "تصدير PDF",
+  "searchPlaceholder": "البحث عن فاتورة أو عميل...",
+  "records": "{count} سجل",
+  "noSalesYet": "لا توجد مبيعات حتى الآن",
+  "noDeletedSales": "لا توجد مبيعات محذوفة",
+  "restore": "استعادة",
+  "restoring": "جارٍ الاستعادة...",
+  "deleting": "جارٍ الحذف...",
+  "walkIn": "عميل عابر",
+  "filters": {
+    "paymentStatus": "حالة الدفع",
+    "status": "الحالة"
+  },
+  "paymentStatuses": {
+    "PAID": "مدفوع",
+    "PARTIALLY_PAID": "مدفوع جزئيًا",
+    "UNPAID": "غير مدفوع"
+  },
+  "paymentMethods": {
+    "CASH": "نقدًا",
+    "CARD": "بطاقة",
+    "BANK_TRANSFER": "تحويل بنكي",
+    "QR": "رمز QR"
+  },
+  "statuses": {
+    "COMPLETED": "مكتملة",
+    "REFUNDED": "مستردة",
+    "PARTIALLY_REFUNDED": "مستردة جزئيًا",
+    "ON_HOLD": "معلقة",
+    "PENDING": "قيد الانتظار"
+  },
+  "table": {
+    "invoice": "الفاتورة",
+    "customer": "العميل",
+    "cashier": "أمين الصندوق",
+    "method": "طريقة الدفع",
+    "total": "الإجمالي",
+    "payment": "الدفع",
+    "status": "الحالة",
+    "date": "التاريخ",
+    "loading": "جار التحميل..."
+  },
+  "deletedTable": {
+    "invoice": "الفاتورة",
+    "customer": "العميل",
+    "total": "الإجمالي",
+    "deletedAt": "تاريخ الحذف"
+  },
+  "pagination": {
+    "pageOf": "صفحة {page} من {totalPages} ({total} إجمالي)"
+  },
+  "detail": {
+    "customer": "العميل",
+    "cashier": "أمين الصندوق",
+    "payment": "الدفع",
+    "date": "التاريخ",
+    "status": "الحالة",
+    "paymentStatus": "حالة الدفع",
+    "product": "المنتج",
+    "qty": "الكمية",
+    "price": "السعر",
+    "total": "الإجمالي",
+    "subtotal": "المجموع الفرعي",
+    "discount": "الخصم",
+    "tax": "الضريبة",
+    "amountPaid": "المبلغ المدفوع",
+    "amountDue": "المبلغ المستحق",
+    "receipt": "الإيصال",
+    "refund": "استرداد",
+    "imei": "IMEI",
+    "imeis": "IMEIs",
+    "processing": "قيد المعالجة..."
+  },
+  "restoreConfirm": {
+    "title": "استعادة البيع؟",
+    "description": "هل أنت متأكد من أنك تريد استعادة هذا البيع؟ سيتم نقله إلى قائمة المبيعات النشطة."
+  },
+  "deleteConfirm": {
+    "title": "حذف البيع؟",
+    "description": "هل أنت متأكد من أنك تريد حذف هذا البيع؟ يمكن التراجع عن هذا الإجراء من عرض المبيعات المحذوفة."
+  },
+  "toast": {
+    "refundSuccess": "تم استرداد البيع",
+    "refundFailed": "فشل الاسترداد",
+    "deleteSuccess": "تم حذف البيع بنجاح",
+    "deleteFailed": "فشل حذف البيع",
+    "restoreSuccess": "تم استعادة البيع بنجاح",
+    "restoreFailed": "فشل استعادة البيع"
+  }
+}

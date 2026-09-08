@@ -1,0 +1,95 @@
+{
+  "title": "Ventes",
+  "deletedSales": "Ventes supprimées",
+  "backToSales": "Retour aux ventes",
+  "viewDeleted": "Voir les supprimées",
+  "exportPDF": "Exporter PDF",
+  "searchPlaceholder": "Rechercher une facture ou un client...",
+  "records": "{count} enregistrements",
+  "noSalesYet": "Aucune vente pour le moment",
+  "noDeletedSales": "Aucune vente supprimée",
+  "restore": "Restaurer",
+  "restoring": "Restauration...",
+  "deleting": "Suppression...",
+  "walkIn": "Client de passage",
+  "filters": {
+    "paymentStatus": "Statut de paiement",
+    "status": "Statut"
+  },
+  "paymentStatuses": {
+    "PAID": "Payé",
+    "PARTIALLY_PAID": "Partiellement payé",
+    "UNPAID": "Impayé"
+  },
+  "paymentMethods": {
+    "CASH": "Espèces",
+    "CARD": "Carte",
+    "BANK_TRANSFER": "Virement bancaire",
+    "QR": "QR"
+  },
+  "statuses": {
+    "COMPLETED": "Terminée",
+    "REFUNDED": "Remboursée",
+    "PARTIALLY_REFUNDED": "Partiellement remboursée",
+    "ON_HOLD": "En attente",
+    "PENDING": "En attente"
+  },
+  "table": {
+    "invoice": "Facture",
+    "customer": "Client",
+    "cashier": "Caissier",
+    "method": "Méthode",
+    "total": "Total",
+    "payment": "Paiement",
+    "status": "Statut",
+    "date": "Date",
+    "loading": "Chargement..."
+  },
+  "deletedTable": {
+    "invoice": "Facture",
+    "customer": "Client",
+    "total": "Total",
+    "deletedAt": "Supprimée le"
+  },
+  "pagination": {
+    "pageOf": "Page {page} sur {totalPages} ({total} au total)"
+  },
+  "detail": {
+    "customer": "Client",
+    "cashier": "Caissier",
+    "payment": "Paiement",
+    "date": "Date",
+    "status": "Statut",
+    "paymentStatus": "Statut de paiement",
+    "product": "Produit",
+    "qty": "Qté",
+    "price": "Prix",
+    "total": "Total",
+    "subtotal": "Sous-total",
+    "discount": "Remise",
+    "tax": "Taxe",
+    "amountPaid": "Montant payé",
+    "amountDue": "Montant dû",
+    "receipt": "Reçu",
+    "refund": "Rembourser",
+    "imei": "IMEI",
+    "imeis": "IMEIs",
+    "processing": "Traitement..."
+  },
+  "restoreConfirm": {
+    "title": "Restaurer la vente ?",
+    "description": "Êtes-vous sûr de vouloir restaurer cette vente ? Elle sera déplacée vers la liste des ventes actives."
+  },
+  "deleteConfirm": {
+    "title": "Supprimer la vente ?",
+    "description": "Êtes-vous sûr de vouloir supprimer cette vente ? Cette action peut être annulée depuis la vue des ventes supprimées."
+  },
+  "toast": {
+    "refundSuccess": "Vente remboursée",
+    "refundFailed": "Échec du remboursement",
+    "deleteSuccess": "Vente supprimée avec succès",
+    "deleteFailed": "Échec de la suppression de la vente",
+    "restoreSuccess": "Vente restaurée avec succès",
+    "restoreFailed": "Échec de la restauration de la vente"
+  }
+}

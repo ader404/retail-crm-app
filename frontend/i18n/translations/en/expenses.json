@@ -1,0 +1,50 @@
+{
+  "title": "Expenses",
+  "searchPlaceholder": "Search description...",
+  "categoryPlaceholder": "Category",
+  "allCategories": "All categories",
+  "total": "Total",
+  "addExpense": "Add Expense",
+  "categories": {
+    "RENT": "Rent",
+    "SALARIES": "Salaries",
+    "ELECTRICITY": "Electricity",
+    "INTERNET": "Internet",
+    "TRANSPORTATION": "Transportation",
+    "MARKETING": "Marketing",
+    "REPAIRS": "Repairs",
+    "MISCELLANEOUS": "Miscellaneous"
+  },
+  "table": {
+    "date": "Date",
+    "category": "Category",
+    "description": "Description",
+    "addedBy": "Added by",
+    "amount": "Amount"
+  },
+  "loading": "Loading...",
+  "noExpenses": "No expenses found",
+  "dialog": {
+    "editTitle": "Edit Expense",
+    "addTitle": "Add Expense",
+    "category": "Category",
+    "selectCategory": "Select category",
+    "amount": "Amount",
+    "date": "Date",
+    "addedBy": "Added by",
+    "selectUser": "Select user",
+    "description": "Description",
+    "descriptionPlaceholder": "Optional note...",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving..."
+  },
+  "toast": {
+    "added": "Expense added",
+    "updated": "Expense updated",
+    "deleted": "Expense deleted",
+    "failed": "Failed",
+    "deleteFailed": "Failed to delete",
+    "validationError": "Category, amount and user are required"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "list": {
+    "title": "Employés",
+    "searchPlaceholder": "Rechercher des employés...",
+    "addButton": "Ajouter un employé",
+    "table": {
+      "name": "Nom",
+      "email": "Email",
+      "role": "Rôle",
+      "phone": "Téléphone",
+      "status": "Statut"
+    },
+    "loading": "Chargement...",
+    "empty": "Aucun employé trouvé",
+    "roles": {
+      "ADMIN": "Administrateur",
+      "OWNER": "Propriétaire",
+      "MANAGER": "Gérant",
+      "CASHIER": "Caissier",
+      "SUPER_ADMIN": "Super Admin",
+      "SALES": "Vendeur",
+      "WAREHOUSE": "Magasinier",
+      "ACCOUNTANT": "Comptable"
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "dialog": {
+      "addTitle": "Ajouter un employé",
+      "editTitle": "Modifier l'employé",
+      "tabs": {
+        "basic": "Informations de base",
+        "pageAccess": "Accès aux pages"
+      },
+      "fields": {
+        "fullName": "Nom complet",
+        "password": "Mot de passe",
+        "newPassword": "Nouveau mot de passe (laisser vide pour conserver)",
+        "role": "Rôle"
+      },
+      "saving": "Enregistrement..."
+    },
+    "toasts": {
+      "created": "Employé créé",
+      "updated": "Employé mis à jour",
+      "createFailed": "Échec de la création de l'employé",
+      "updateFailed": "Échec de la mise à jour de l'employé",
+      "statusFailed": "Échec de la mise à jour du statut"
+    }
+  }
+}

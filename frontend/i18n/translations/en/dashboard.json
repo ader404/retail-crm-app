@@ -1,0 +1,46 @@
+{
+  "title": "Dashboard",
+  "periods": {
+    "day": "Today",
+    "week": "Last 7 Days",
+    "month": "Last 30 Days",
+    "year": "Last 12 Months"
+  },
+  "kpis": {
+    "todayRevenue": "Today's Revenue",
+    "todayRevenueSub": "{count} sales today",
+    "monthlyRevenue": "Monthly Revenue",
+    "monthlyRevenueSub": "{count} this month",
+    "todayExpenses": "Today's Expenses",
+    "todayExpensesSub": "{amount} this month",
+    "customers": "Customers",
+    "customersSub": "{count} total customers",
+    "activeProducts": "Active Products",
+    "activeProductsSub": "In catalog",
+    "totalSales": "Total Sales",
+    "totalSalesSub": "All time"
+  },
+  "charts": {
+    "revenueVsExpenses": "Revenue vs Expenses",
+    "noSalesData": "No sales data this month"
+  },
+  "recentSales": {
+    "title": "Recent Sales",
+    "invoice": "Invoice",
+    "customer": "Customer",
+    "method": "Method",
+    "total": "Total",
+    "walkIn": "Walk-in",
+    "noRecentSales": "No recent sales"
+  },
+  "lowStock": {
+    "title": "Low Stock Alerts",
+    "allOk": "All stock levels OK",
+    "min": "min"
+  },
+  "topProducts": {
+    "title": "Top Products by Revenue (Last 30 Days)",
+    "noData": "No sales data available",
+    "show": "Show {count}"
+  }
+}

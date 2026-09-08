@@ -1,0 +1,224 @@
+{
+  "list": {
+    "title": "Fournisseurs",
+    "searchPlaceholder": "Rechercher entreprise, contact ou téléphone...",
+    "addButton": "Ajouter un fournisseur",
+    "table": {
+      "company": "Entreprise",
+      "contactPerson": "Personne à contacter",
+      "products": "Produits",
+      "orders": "Commandes"
+    },
+    "empty": "Aucun fournisseur trouvé",
+    "dialog": {
+      "addTitle": "Ajouter un fournisseur",
+      "editTitle": "Modifier le fournisseur",
+      "fields": {
+        "companyName": "Nom de l'entreprise",
+        "contactPerson": "Personne à contacter"
+      },
+      "saving": "Enregistrement..."
+    },
+    "toasts": {
+      "created": "Fournisseur créé",
+      "updated": "Fournisseur mis à jour",
+      "deleted": "Fournisseur supprimé",
+      "deleteError": "Impossible de supprimer — le fournisseur a des produits ou commandes liés",
+      "failed": "Échec de l'opération"
+    }
+  },
+  "detail": {
+    "title": "Détails du fournisseur",
+    "notFound": "Fournisseur introuvable",
+    "supplierSince": "Fournisseur depuis le {date}",
+    "actions": {
+      "viewHistory": "Voir l'historique",
+      "viewLedger": "Voir le grand livre",
+      "newPO": "Nouveau bon de commande",
+      "recordPayment": "Enregistrer un paiement",
+      "createLoan": "Créer un prêt"
+    },
+    "contact": {
+      "title": "Informations de contact"
+    },
+    "summary": {
+      "outstandingBalance": "Solde impayé",
+      "amountPayable": "Montant à payer",
+      "totalPaid": "Total payé",
+      "allTime": "Depuis toujours",
+      "productsSupplied": "Produits fournis",
+      "activeProducts": "Produits actifs"
+    },
+    "productsTable": {
+      "title": "Produits fournis",
+      "productName": "Nom du produit",
+      "stock": "Stock",
+      "cost": "Coût",
+      "retailPrice": "Prix de vente"
+    },
+    "purchaseOrders": {
+      "title": "Bons de commande",
+      "empty": "Aucun bon de commande pour le moment",
+      "orderNumber": "N° de commande",
+      "paid": "Payé",
+      "due": "Dû",
+      "paymentStatus": "Statut du paiement",
+      "orderStatus": "Statut de la commande",
+      "statuses": {
+        "paid": "Payé",
+        "partial": "Partiel",
+        "unpaid": "Impayé"
+      },
+      "menu": {
+        "recordPayment": "Enregistrer un paiement",
+        "markPaid": "Marquer comme payé",
+        "markPartial": "Marquer comme partiel",
+        "markUnpaid": "Marquer comme impayé",
+        "markReceived": "Marquer comme reçu",
+        "markCancelled": "Marquer comme annulé"
+      }
+    },
+    "paymentHistory": {
+      "title": "Historique des paiements"
+    },
+    "loanHistory": {
+      "title": "Historique des prêts",
+      "dueDate": "Date d'échéance",
+      "menu": {
+        "markActive": "Marquer comme actif",
+        "markCompleted": "Marquer comme terminé",
+        "markOverdue": "Marquer comme en retard",
+        "markCancelled": "Marquer comme annulé"
+      }
+    },
+    "paymentDialog": {
+      "title": "Enregistrer un paiement au fournisseur",
+      "outstandingBalance": "Solde impayé :",
+      "amountLabel": "Montant du paiement",
+      "notesLabel": "Notes (optionnel)",
+      "notesPlaceholder": "Ajouter des notes sur ce paiement...",
+      "recording": "Enregistrement...",
+      "recordButton": "Enregistrer le paiement"
+    },
+    "loanDialog": {
+      "title": "Créer un prêt fournisseur",
+      "amountLabel": "Montant du prêt",
+      "dueDateLabel": "Date d'échéance (optionnel)",
+      "notesLabel": "Notes (optionnel)",
+      "notesPlaceholder": "Ajouter des notes sur ce prêt...",
+      "creating": "Création...",
+      "createButton": "Créer le prêt"
+    },
+    "productDialog": {
+      "addButton": "Ajouter un produit",
+      "noProducts": "Aucun produit fourni pour le moment",
+      "title": "Ajouter un produit au fournisseur",
+      "name": "Nom du produit",
+      "skuPlaceholder": "Généré automatiquement si vide",
+      "barcode": "Code-barres",
+      "barcodePlaceholder": "Entrer le code-barres",
+      "selectCategory": "Sélectionner une catégorie",
+      "costPrice": "Prix de revient",
+      "sellingPrice": "Prix de vente",
+      "initialStock": "Stock initial",
+      "descriptionPlaceholder": "Ajouter une description du produit...",
+      "creating": "Création...",
+      "createButton": "Créer le produit",
+      "toastCreated": "Produit créé",
+      "toastFailed": "Échec de la création du produit"
+    },
+    "poPaymentDialog": {
+      "titleWithOrder": "Enregistrer un paiement pour {orderNumber}",
+      "amountDue": "Montant dû :",
+      "amountLabel": "Montant du paiement",
+      "recording": "Enregistrement...",
+      "recordButton": "Enregistrer le paiement"
+    },
+    "toasts": {
+      "paymentRecorded": "Paiement enregistré",
+      "paymentFailed": "Échec de l'enregistrement du paiement",
+      "loanCreated": "Prêt créé",
+      "loanFailed": "Échec de la création du prêt",
+      "statusUpdated": "Statut mis à jour",
+      "statusFailed": "Échec de la mise à jour du statut",
+      "paymentStatusUpdated": "Statut de paiement mis à jour",
+      "paymentStatusFailed": "Échec de la mise à jour du statut de paiement",
+      "loanStatusUpdated": "Statut du prêt mis à jour",
+      "loanStatusFailed": "Échec de la mise à jour du statut du prêt",
+      "invalidAmount": "Montant invalide",
+      "exceedsBalance": "Le montant du paiement dépasse le solde impayé",
+      "invalidLoanAmount": "Montant de prêt invalide",
+      "exceedsDue": "Le montant du paiement dépasse le solde restant"
+    }
+  },
+  "history": {
+    "title": "Historique du fournisseur",
+    "notFound": "Historique introuvable",
+    "loading": "Chargement de l'historique...",
+    "activityHistory": "Historique des activités",
+    "dateFilter": {
+      "startDate": "Date de début",
+      "endDate": "Date de fin"
+    },
+    "summary": {
+      "totalPurchases": "Total des achats",
+      "totalPayments": "Total des paiements",
+      "totalLoans": "Total des prêts",
+      "currentDebt": "Dette actuelle"
+    },
+    "timeline": {
+      "title": "Chronologie des activités",
+      "empty": "Aucune activité durant cette période"
+    }
+  },
+  "ledger": {
+    "title": "Grand livre du fournisseur",
+    "notFound": "Grand livre introuvable",
+    "loading": "Chargement du grand livre...",
+    "statement": "Relevé du fournisseur",
+    "export": {
+      "button": "Exporter",
+      "csv": "Exporter en CSV",
+      "print": "Imprimer / PDF"
+    },
+    "dateFilter": {
+      "startDate": "Date de début",
+      "endDate": "Date de fin"
+    },
+    "printHeader": {
+      "title": "Relevé de compte fournisseur",
+      "period": "Période : {startDate} au {endDate}",
+      "generated": "Généré le : {date}"
+    },
+    "info": {
+      "title": "Informations du fournisseur",
+      "phone": "Téléphone : {phone}",
+      "email": "E-mail : {email}",
+      "period": "Période"
+    },
+    "balance": {
+      "opening": "Solde d'ouverture",
+      "closing": "Solde de clôture",
+      "netChange": "Variation nette",
+      "payable": "À payer",
+      "receivable": "À recevoir",
+      "increase": "Augmentation",
+      "decrease": "Diminution"
+    },
+    "table": {
+      "title": "Historique des transactions",
+      "date": "Date",
+      "type": "Type",
+      "description": "Description",
+      "reference": "Référence",
+      "debit": "Débit",
+      "credit": "Crédit",
+      "balance": "Solde",
+      "empty": "Aucune transaction durant cette période"
+    },
+    "footer": {
+      "totalTransactions": "Total des transactions",
+      "outstandingBalance": "Solde impayé"
+    }
+  }
+}

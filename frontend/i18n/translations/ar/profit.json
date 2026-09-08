@@ -1,0 +1,45 @@
+{
+  "title": "تحليل صافي الربح",
+  "summary": {
+    "totalProfit": "إجمالي الربح",
+    "margin": "الهامش: {margin}%",
+    "totalRevenue": "إجمالي الإيرادات",
+    "salesCount": "{count} مبيعات",
+    "totalCost": "إجمالي التكلفة",
+    "costOfGoodsSold": "تكلفة البضاعة المباعة",
+    "avgProfitPerSale": "متوسط الربح لكل عملية بيع",
+    "perTransaction": "لكل معاملة"
+  },
+  "filters": {
+    "title": "الفلاتر",
+    "period": "الفترة",
+    "fromDate": "من تاريخ",
+    "toDate": "إلى تاريخ",
+    "search": "بحث",
+    "searchPlaceholder": "رقم الفاتورة أو العميل..."
+  },
+  "periods": {
+    "today": "اليوم",
+    "week": "هذا الأسبوع",
+    "month": "هذا الشهر",
+    "custom": "نطاق مخصص"
+  },
+  "table": {
+    "title": "تفاصيل الأرباح",
+    "export": "تصدير",
+    "invoice": "الفاتورة",
+    "date": "التاريخ",
+    "customer": "العميل",
+    "revenue": "الإيرادات",
+    "cost": "التكلفة",
+    "profit": "الربح",
+    "marginPercent": "نسبة الهامش %",
+    "loading": "جارٍ التحميل...",
+    "noSalesFound": "لم يتم العثور على مبيعات",
+    "productBreakdown": "تفاصيل المنتج:",
+    "product": "المنتج",
+    "qty": "الكمية",
+    "costPrice": "سعر التكلفة",
+    "sellingPrice": "سعر البيع"
+  }
+}

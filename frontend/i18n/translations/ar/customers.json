@@ -1,0 +1,227 @@
+{
+  "list": {
+    "title": "العملاء",
+    "searchPlaceholder": "البحث بالاسم أو الهاتف أو البريد الإلكتروني...",
+    "addCustomer": "إضافة عميل",
+    "table": {
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "sales": "المبيعات",
+      "credit": "الرصيد الدائن",
+      "debt": "الدين",
+      "since": "منذ"
+    },
+    "empty": "لا يوجد عملاء",
+    "dialog": {
+      "editTitle": "تعديل العميل",
+      "addTitle": "إضافة عميل",
+      "fields": {
+        "name": "الاسم",
+        "phone": "الهاتف",
+        "email": "البريد الإلكتروني",
+        "address": "العنوان",
+        "notes": "ملاحظات"
+      },
+      "saving": "جارٍ الحفظ..."
+    },
+    "toasts": {
+      "created": "تم إنشاء العميل",
+      "updated": "تم تحديث العميل",
+      "deleted": "تم حذف العميل",
+      "saveFailed": "فشلت العملية",
+      "deleteFailed": "لا يمكن الحذف — يحتوي العميل على سجلات مبيعات"
+    }
+  },
+  "detail": {
+    "header": {
+      "title": "تفاصيل العميل",
+      "loading": "جارٍ التحميل...",
+      "notFound": "العميل غير موجود",
+      "customerSince": "عميل منذ {date}"
+    },
+    "actions": {
+      "viewHistory": "عرض السجل",
+      "viewLedger": "عرض دفتر الحساب",
+      "recordPayment": "تسجيل دفعة",
+      "createLoan": "إنشاء قرض"
+    },
+    "contact": {
+      "title": "معلومات الاتصال",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "address": "العنوان"
+    },
+    "summary": {
+      "outstandingBalance": "الرصيد المستحق",
+      "amountDue": "المبلغ المستحق",
+      "totalPurchases": "إجمالي المشتريات",
+      "transactions": "{count} معاملات",
+      "totalProfit": "إجمالي الربح",
+      "margin": "هامش {value}%",
+      "totalPaid": "إجمالي المدفوعات",
+      "allTime": "منذ البداية"
+    },
+    "purchases": {
+      "title": "سجل المشتريات",
+      "empty": "لا توجد مشتريات حتى الآن",
+      "table": {
+        "invoice": "الفاتورة",
+        "date": "التاريخ",
+        "total": "الإجمالي",
+        "paid": "المدفوع",
+        "due": "المستحق",
+        "status": "الحالة",
+        "profit": "الربح",
+        "actions": "الإجراءات"
+      },
+      "status": {
+        "paid": "مدفوع",
+        "partial": "جزئي",
+        "unpaid": "غير مدفوع"
+      },
+      "menu": {
+        "recordPayment": "تسجيل دفعة",
+        "markPaid": "وضع علامة كمدفوع",
+        "markPartial": "وضع علامة كجزئي",
+        "markUnpaid": "وضع علامة كغير مدفوع"
+      }
+    },
+    "loans": {
+      "title": "سجل القروض",
+      "table": {
+        "date": "التاريخ",
+        "amount": "المبلغ",
+        "paid": "المدفوع",
+        "balance": "الرصيد",
+        "dueDate": "تاريخ الاستحقاق",
+        "status": "الحالة",
+        "actions": "الإجراءات"
+      },
+      "menu": {
+        "markActive": "وضع علامة كنشط",
+        "markCompleted": "وضع علامة كمكتمل",
+        "markOverdue": "وضع علامة كمتأخر",
+        "markCancelled": "وضع علامة كملغى"
+      }
+    },
+    "dialogs": {
+      "payment": {
+        "title": "تسجيل دفعة",
+        "outstandingBalance": "الرصيد المستحق:",
+        "amountLabel": "مبلغ الدفعة",
+        "methodLabel": "طريقة الدفع",
+        "notesLabel": "ملاحظات (اختياري)",
+        "notesPlaceholder": "أضف ملاحظات حول هذه الدفعة...",
+        "submit": "تسجيل الدفعة",
+        "submitting": "جارٍ التسجيل..."
+      },
+      "loan": {
+        "title": "إنشاء قرض",
+        "amountLabel": "مبلغ القرض",
+        "dueDateLabel": "تاريخ الاستحقاق (اختياري)",
+        "notesLabel": "ملاحظات (اختياري)",
+        "notesPlaceholder": "أضف ملاحظات حول هذا القرض...",
+        "submit": "إنشاء القرض",
+        "submitting": "جارٍ الإنشاء..."
+      },
+      "salePayment": {
+        "titlePrefix": "تسجيل دفعة للفاتورة",
+        "amountDue": "المبلغ المستحق:",
+        "amountLabel": "مبلغ الدفعة",
+        "methodLabel": "طريقة الدفع",
+        "submit": "تسجيل الدفعة",
+        "submitting": "جارٍ التسجيل..."
+      }
+    },
+    "toasts": {
+      "invalidAmount": "مبلغ غير صالح",
+      "amountExceedsBalance": "مبلغ الدفعة يتجاوز الرصيد المستحق",
+      "amountExceedsDue": "مبلغ الدفعة يتجاوز الرصيد المتبقي",
+      "invalidLoanAmount": "مبلغ القرض غير صالح",
+      "paymentRecorded": "تم تسجيل الدفعة",
+      "paymentFailed": "فشل تسجيل الدفعة",
+      "loanCreated": "تم إنشاء القرض",
+      "loanFailed": "فشل إنشاء القرض",
+      "statusUpdated": "تم تحديث الحالة",
+      "statusFailed": "فشل تحديث الحالة",
+      "loanStatusUpdated": "تم تحديث حالة القرض",
+      "loanStatusFailed": "فشل تحديث حالة القرض"
+    }
+  },
+  "history": {
+    "header": {
+      "title": "سجل العميل",
+      "loading": "جارٍ تحميل السجل...",
+      "notFound": "السجل غير موجود",
+      "subtitle": "سجل الأنشطة"
+    },
+    "dateFilter": {
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء"
+    },
+    "summary": {
+      "totalSales": "إجمالي المبيعات",
+      "totalPayments": "إجمالي المدفوعات",
+      "totalRefunds": "إجمالي المرتجعات",
+      "totalLoans": "إجمالي القروض",
+      "currentDebt": "الدين الحالي"
+    },
+    "timeline": {
+      "title": "سجل زمني للأنشطة",
+      "empty": "لا يوجد نشاط خلال هذه الفترة"
+    }
+  },
+  "ledger": {
+    "header": {
+      "title": "دفتر حساب العميل",
+      "loading": "جارٍ تحميل دفتر الحساب...",
+      "notFound": "دفتر الحساب غير موجود",
+      "subtitle": "بيان الحساب",
+      "export": "تصدير",
+      "exportCsv": "تصدير كملف CSV",
+      "printPdf": "طباعة / PDF"
+    },
+    "dateFilter": {
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء"
+    },
+    "print": {
+      "title": "بيان حساب العميل",
+      "phone": "الهاتف: {phone}",
+      "email": "البريد الإلكتروني: {email}",
+      "period": "الفترة: من {start} إلى {end}",
+      "generated": "تاريخ الإنشاء: {date}"
+    },
+    "info": {
+      "title": "معلومات العميل",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "period": "الفترة"
+    },
+    "balances": {
+      "opening": "الرصيد الافتتاحي",
+      "closing": "الرصيد الختامي",
+      "netChange": "التغير الصافي",
+      "credit": "دائن",
+      "debit": "مدين",
+      "increase": "زيادة",
+      "decrease": "نقصان"
+    },
+    "table": {
+      "title": "سجل المعاملات",
+      "empty": "لا توجد معاملات خلال هذه الفترة",
+      "date": "التاريخ",
+      "type": "النوع",
+      "description": "الوصف",
+      "reference": "المرجع",
+      "debit": "مدين",
+      "credit": "دائن",
+      "balance": "الرصيد"
+    },
+    "footer": {
+      "totalTransactions": "إجمالي المعاملات",
+      "outstandingBalance": "الرصيد المستحق"
+    }
+  }
+}

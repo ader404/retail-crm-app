@@ -1,0 +1,46 @@
+{
+  "title": "لوحة القيادة",
+  "periods": {
+    "day": "اليوم",
+    "week": "آخر 7 أيام",
+    "month": "آخر 30 يومًا",
+    "year": "آخر 12 شهرًا"
+  },
+  "kpis": {
+    "todayRevenue": "إيرادات اليوم",
+    "todayRevenueSub": "{count} مبيعات اليوم",
+    "monthlyRevenue": "الإيرادات الشهرية",
+    "monthlyRevenueSub": "{count} هذا الشهر",
+    "todayExpenses": "مصروفات اليوم",
+    "todayExpensesSub": "{amount} هذا الشهر",
+    "customers": "العملاء",
+    "customersSub": "{count} إجمالي العملاء",
+    "activeProducts": "المنتجات النشطة",
+    "activeProductsSub": "في الكتالوج",
+    "totalSales": "إجمالي المبيعات",
+    "totalSalesSub": "منذ البداية"
+  },
+  "charts": {
+    "revenueVsExpenses": "الإيرادات مقابل المصروفات",
+    "noSalesData": "لا توجد بيانات مبيعات هذا الشهر"
+  },
+  "recentSales": {
+    "title": "المبيعات الأخيرة",
+    "invoice": "الفاتورة",
+    "customer": "العميل",
+    "method": "الطريقة",
+    "total": "الإجمالي",
+    "walkIn": "عميل عابر",
+    "noRecentSales": "لا توجد مبيعات أخيرة"
+  },
+  "lowStock": {
+    "title": "تنبيهات المخزون المنخفض",
+    "allOk": "جميع مستويات المخزون جيدة",
+    "min": "الحد الأدنى"
+  },
+  "topProducts": {
+    "title": "أفضل المنتجات من حيث الإيرادات (آخر 30 يومًا)",
+    "noData": "لا توجد بيانات مبيعات متاحة",
+    "show": "عرض {count}"
+  }
+}

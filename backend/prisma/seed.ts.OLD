@@ -1,0 +1,202 @@
+import { PrismaClient } from '@prisma/client';
+import * as bcrypt from 'bcryptjs';
+
+const prisma = new PrismaClient();
+
+async function main() {
+  console.log('🌱 Starting seed...');
+
+  // Check if any SUPER_ADMIN exists
+  const adminExists = await prisma.user.findFirst({
+    where: { role: 'SUPER_ADMIN' },
+  });
+
+  if (!adminExists) {
+    console.log('Creating default Super Admin...');
+
+    const hashedPassword = await bcrypt.hash('Admin@123456', 12);
+
+    const admin = await prisma.user.create({
+      data: {
+        name: 'Super Administrator',
+        email: 'admin@company.local',
+        password: hashedPassword,
+        role: 'SUPER_ADMIN',
+        isActive: true,
+        mustChangePassword: true,
+      },
+    });
+
+    console.log('✅ Default Super Admin created:');
+    console.log('   Email: admin@company.local');
+    console.log('   Password: Admin@123456');
+    console.log('   ⚠️  IMPORTANT: Change password on first login!');
+  } else {
+    console.log('ℹ️  Super Admin already exists, skipping...');
+  }
+
+  await seedDemoData();
+
+  console.log('🎉 Seed completed successfully!');
+}
+
+async function seedDemoData() {
+  const existingProducts = await prisma.product.count();
+  if (existingProducts > 0) {
+    console.log('ℹ️  Demo data already exists, skipping...');
+    return;
+  }
+
+  console.log('🌱 Seeding demo data...');
+
+  const admin = await prisma.user.findFirst({ where: { role: 'SUPER_ADMIN' } });
+  if (!admin) return;
+
+  const branch = await prisma.branch.create({
+    data: { name: 'Main Branch', address: '123 Market St', phone: '555-0100' },
+  });
+
+  await prisma.user.update({ where: { id: admin.id }, data: { branchId: branch.id } });
+
+  const category = await prisma.category.create({ data: { name: 'Electronics' } });
+  const brand = await prisma.brand.create({ data: { name: 'Generic' } });
+
+  const supplier = await prisma.supplier.create({
+    data: {
+      companyName: 'Acme Distributors',
+      contactPerson: 'Jane Doe',
+      phone: '555-0200',
+      email: 'jane@acme.example',
+    },
+  });
+
+  const products = await Promise.all(
+    [
+      { name: 'Wireless Mouse', sku: 'SKU-001', costPrice: 8, sellingPrice: 15 },
+      { name: 'Mechanical Keyboard', sku: 'SKU-002', costPrice: 25, sellingPrice: 45 },
+      { name: 'USB-C Cable', sku: 'SKU-003', costPrice: 2, sellingPrice: 6 },
+    ].map((p) =>
+      prisma.product.create({
+        data: {
+          ...p,
+          categoryId: category.id,
+          brandId: brand.id,
+          supplierId: supplier.id,
+        },
+      }),
+    ),
+  );
+
+  await Promise.all(
+    products.map((p) =>
+      prisma.inventory.create({
+        data: { productId: p.id, branchId: branch.id, quantity: 50, minStock: 5 },
+      }),
+    ),
+  );
+
+  const customer = await prisma.customer.create({
+    data: { name: 'John Smith', phone: '555-0300', email: 'john@example.com' },
+  });
+
+  const sale = await prisma.sale.create({
+    data: {
+      invoiceNumber: 'INV-0001',
+      customerId: customer.id,
+      userId: admin.id,
+      branchId: branch.id,
+      subtotal: 60,
+      total: 60,
+      amountPaid: 60,
+      amountDue: 0,
+      paymentStatus: 'PAID',
+      items: {
+        create: [
+          {
+            productId: products[0].id,
+            quantity: 2,
+            costPrice: products[0].costPrice,
+            sellingPrice: products[0].sellingPrice,
+            total: 30,
+          },
+          {
+            productId: products[2].id,
+            quantity: 5,
+            costPrice: products[2].costPrice,
+            sellingPrice: products[2].sellingPrice,
+            total: 30,
+          },
+        ],
+      },
+    },
+  });
+
+  await prisma.payment.create({
+    data: { saleId: sale.id, method: 'CASH', amount: 60 },
+  });
+
+  await prisma.expense.create({
+    data: {
+      branchId: branch.id,
+      userId: admin.id,
+      category: 'RENT',
+      amount: 1200,
+      description: 'Monthly rent',
+    },
+  });
+
+  const purchaseOrder = await prisma.purchaseOrder.create({
+    data: {
+      orderNumber: 'PO-0001',
+      supplierId: supplier.id,
+      branchId: branch.id,
+      subtotal: 250,
+      total: 250,
+      amountPaid: 100,
+      amountDue: 150,
+      paymentStatus: 'PARTIALLY_PAID',
+      items: {
+        create: [
+          { productId: products[1].id, quantity: 10, costPrice: 25 },
+        ],
+      },
+    },
+  });
+
+  await prisma.supplierPayment.create({
+    data: {
+      purchaseOrderId: purchaseOrder.id,
+      supplierId: supplier.id,
+      amount: 100,
+      paymentMethod: 'BANK_TRANSFER',
+    },
+  });
+
+  const loan = await prisma.loan.create({
+    data: {
+      loanNumber: 'LN-0001',
+      type: 'CUSTOMER_LOAN',
+      customerId: customer.id,
+      principalAmount: 200,
+      amountPaid: 50,
+      amountDue: 150,
+      status: 'ACTIVE',
+      reason: 'Deferred payment for bulk purchase',
+    },
+  });
+
+  await prisma.loanPayment.create({
+    data: { loanId: loan.id, amount: 50, paymentMethod: 'CASH' },
+  });
+
+  console.log('✅ Demo data seeded: branch, products, customer, supplier, sale, expense, purchase order, loan');
+}
+
+main()
+  .catch((e) => {
+    console.error('❌ Seed failed:', e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

@@ -1,0 +1,41 @@
+{
+  "changePassword": {
+    "title": "Change Password",
+    "subtitle": "You must change your password before continuing",
+    "successTitle": "Password Changed Successfully",
+    "redirecting": "Redirecting to login...",
+    "currentPasswordLabel": "Current Password",
+    "newPasswordLabel": "New Password",
+    "confirmPasswordLabel": "Confirm New Password",
+    "requirementsTitle": "Password Requirements:",
+    "requirements": {
+      "minLength": "At least 12 characters",
+      "uppercase": "One uppercase letter",
+      "lowercase": "One lowercase letter",
+      "number": "One number",
+      "specialChar": "One special character"
+    },
+    "submitting": "Changing Password...",
+    "submit": "Change Password",
+    "errors": {
+      "passwordsDoNotMatch": "New passwords do not match",
+      "requirementsNotMet": "Password does not meet all requirements",
+      "changeFailed": "Password change failed",
+      "generic": "An error occurred while changing password"
+    }
+  },
+  "forbidden": {
+    "code": "403",
+    "title": "Access Forbidden",
+    "description": "You don't have permission to access this resource. If you believe this is an error, please contact your administrator.",
+    "goBack": "Go Back",
+    "goToDashboard": "Go to Dashboard",
+    "needAccessTitle": "Need access?",
+    "needAccessDescription": "Contact your system administrator to request the necessary permissions for this resource."
+  },
+  "noAccess": {
+    "title": "No Access",
+    "description": "No pages have been assigned to your account. Please contact your administrator to request access.",
+    "logout": "Logout"
+  }
+}

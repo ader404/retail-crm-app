@@ -1,0 +1,10 @@
+{
+  "title": "الإشعارات",
+  "markAllRead": "تحديد الكل كمقروء",
+  "noNotifications": "لا توجد إشعارات",
+  "unread": "{count} غير مقروء",
+  "messages": {
+    "newSale": "بيع جديد {invoice} بقيمة {amount} درهم",
+    "lowStock": "تنبيه مخزون منخفض: {product} (متبقي {quantity})"
+  }
+}

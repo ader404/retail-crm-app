@@ -1,0 +1,52 @@
+{
+  "list": {
+    "title": "Employees",
+    "searchPlaceholder": "Search employees...",
+    "addButton": "Add Employee",
+    "table": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "phone": "Phone",
+      "status": "Status"
+    },
+    "loading": "Loading...",
+    "empty": "No employees found",
+    "roles": {
+      "OWNER": "Owner",
+      "MANAGER": "Manager",
+      "CASHIER": "Cashier",
+      "ADMIN": "Admin",
+      "SUPER_ADMIN": "Super Admin",
+      "SALES": "Sales",
+      "WAREHOUSE": "Warehouse",
+      "ACCOUNTANT": "Accountant"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "dialog": {
+      "addTitle": "Add Employee",
+      "editTitle": "Edit Employee",
+      "tabs": {
+        "basic": "Basic Information",
+        "pageAccess": "Page Access"
+      },
+      "fields": {
+        "fullName": "Full Name",
+        "password": "Password",
+        "newPassword": "New Password (leave blank to keep)",
+        "role": "Role"
+      },
+      "saving": "Saving..."
+    },
+    "toasts": {
+      "created": "Employee created",
+      "updated": "Employee updated",
+      "createFailed": "Failed to create employee",
+      "updateFailed": "Failed to update employee",
+      "statusFailed": "Failed to update status"
+    }
+  }
+}

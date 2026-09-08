@@ -1,0 +1,227 @@
+{
+  "list": {
+    "title": "Clients",
+    "searchPlaceholder": "Rechercher par nom, téléphone ou email...",
+    "addCustomer": "Ajouter un client",
+    "table": {
+      "name": "Nom",
+      "phone": "Téléphone",
+      "email": "Email",
+      "sales": "Ventes",
+      "credit": "Crédit",
+      "debt": "Dette",
+      "since": "Depuis"
+    },
+    "empty": "Aucun client trouvé",
+    "dialog": {
+      "editTitle": "Modifier le client",
+      "addTitle": "Ajouter un client",
+      "fields": {
+        "name": "Nom",
+        "phone": "Téléphone",
+        "email": "Email",
+        "address": "Adresse",
+        "notes": "Notes"
+      },
+      "saving": "Enregistrement..."
+    },
+    "toasts": {
+      "created": "Client créé",
+      "updated": "Client mis à jour",
+      "deleted": "Client supprimé",
+      "saveFailed": "Échec de l'opération",
+      "deleteFailed": "Impossible de supprimer — le client a des ventes enregistrées"
+    }
+  },
+  "detail": {
+    "header": {
+      "title": "Détails du client",
+      "loading": "Chargement...",
+      "notFound": "Client introuvable",
+      "customerSince": "Client depuis le {date}"
+    },
+    "actions": {
+      "viewHistory": "Voir l'historique",
+      "viewLedger": "Voir le relevé",
+      "recordPayment": "Enregistrer un paiement",
+      "createLoan": "Créer un prêt"
+    },
+    "contact": {
+      "title": "Coordonnées",
+      "phone": "Téléphone",
+      "email": "Email",
+      "address": "Adresse"
+    },
+    "summary": {
+      "outstandingBalance": "Solde impayé",
+      "amountDue": "Montant dû",
+      "totalPurchases": "Total des achats",
+      "transactions": "{count} transactions",
+      "totalProfit": "Profit total",
+      "margin": "Marge de {value} %",
+      "totalPaid": "Total payé",
+      "allTime": "Depuis toujours"
+    },
+    "purchases": {
+      "title": "Historique des achats",
+      "empty": "Aucun achat pour le moment",
+      "table": {
+        "invoice": "Facture",
+        "date": "Date",
+        "total": "Total",
+        "paid": "Payé",
+        "due": "Dû",
+        "status": "Statut",
+        "profit": "Profit",
+        "actions": "Actions"
+      },
+      "status": {
+        "paid": "Payé",
+        "partial": "Partiel",
+        "unpaid": "Impayé"
+      },
+      "menu": {
+        "recordPayment": "Enregistrer un paiement",
+        "markPaid": "Marquer comme payé",
+        "markPartial": "Marquer comme partiel",
+        "markUnpaid": "Marquer comme impayé"
+      }
+    },
+    "loans": {
+      "title": "Historique des prêts",
+      "table": {
+        "date": "Date",
+        "amount": "Montant",
+        "paid": "Payé",
+        "balance": "Solde",
+        "dueDate": "Date d'échéance",
+        "status": "Statut",
+        "actions": "Actions"
+      },
+      "menu": {
+        "markActive": "Marquer comme actif",
+        "markCompleted": "Marquer comme terminé",
+        "markOverdue": "Marquer comme en retard",
+        "markCancelled": "Marquer comme annulé"
+      }
+    },
+    "dialogs": {
+      "payment": {
+        "title": "Enregistrer un paiement",
+        "outstandingBalance": "Solde impayé :",
+        "amountLabel": "Montant du paiement",
+        "methodLabel": "Mode de paiement",
+        "notesLabel": "Notes (facultatif)",
+        "notesPlaceholder": "Ajouter des notes sur ce paiement...",
+        "submit": "Enregistrer le paiement",
+        "submitting": "Enregistrement..."
+      },
+      "loan": {
+        "title": "Créer un prêt",
+        "amountLabel": "Montant du prêt",
+        "dueDateLabel": "Date d'échéance (facultatif)",
+        "notesLabel": "Notes (facultatif)",
+        "notesPlaceholder": "Ajouter des notes sur ce prêt...",
+        "submit": "Créer le prêt",
+        "submitting": "Création..."
+      },
+      "salePayment": {
+        "titlePrefix": "Enregistrer un paiement pour",
+        "amountDue": "Montant dû :",
+        "amountLabel": "Montant du paiement",
+        "methodLabel": "Mode de paiement",
+        "submit": "Enregistrer le paiement",
+        "submitting": "Enregistrement..."
+      }
+    },
+    "toasts": {
+      "invalidAmount": "Montant invalide",
+      "amountExceedsBalance": "Le montant du paiement dépasse le solde impayé",
+      "amountExceedsDue": "Le montant du paiement dépasse le solde restant",
+      "invalidLoanAmount": "Montant du prêt invalide",
+      "paymentRecorded": "Paiement enregistré",
+      "paymentFailed": "Échec de l'enregistrement du paiement",
+      "loanCreated": "Prêt créé",
+      "loanFailed": "Échec de la création du prêt",
+      "statusUpdated": "Statut mis à jour",
+      "statusFailed": "Échec de la mise à jour du statut",
+      "loanStatusUpdated": "Statut du prêt mis à jour",
+      "loanStatusFailed": "Échec de la mise à jour du statut du prêt"
+    }
+  },
+  "history": {
+    "header": {
+      "title": "Historique du client",
+      "loading": "Chargement de l'historique...",
+      "notFound": "Historique introuvable",
+      "subtitle": "Historique des activités"
+    },
+    "dateFilter": {
+      "startDate": "Date de début",
+      "endDate": "Date de fin"
+    },
+    "summary": {
+      "totalSales": "Total des ventes",
+      "totalPayments": "Total des paiements",
+      "totalRefunds": "Total des remboursements",
+      "totalLoans": "Total des prêts",
+      "currentDebt": "Dette actuelle"
+    },
+    "timeline": {
+      "title": "Chronologie des activités",
+      "empty": "Aucune activité durant cette période"
+    }
+  },
+  "ledger": {
+    "header": {
+      "title": "Relevé du client",
+      "loading": "Chargement du relevé...",
+      "notFound": "Relevé introuvable",
+      "subtitle": "Relevé de compte",
+      "export": "Exporter",
+      "exportCsv": "Exporter en CSV",
+      "printPdf": "Imprimer / PDF"
+    },
+    "dateFilter": {
+      "startDate": "Date de début",
+      "endDate": "Date de fin"
+    },
+    "print": {
+      "title": "Relevé de compte client",
+      "phone": "Téléphone : {phone}",
+      "email": "Email : {email}",
+      "period": "Période : du {start} au {end}",
+      "generated": "Généré le : {date}"
+    },
+    "info": {
+      "title": "Informations du client",
+      "phone": "Téléphone",
+      "email": "Email",
+      "period": "Période"
+    },
+    "balances": {
+      "opening": "Solde d'ouverture",
+      "closing": "Solde de clôture",
+      "netChange": "Variation nette",
+      "credit": "Crédit",
+      "debit": "Débit",
+      "increase": "Augmentation",
+      "decrease": "Diminution"
+    },
+    "table": {
+      "title": "Historique des transactions",
+      "empty": "Aucune transaction durant cette période",
+      "date": "Date",
+      "type": "Type",
+      "description": "Description",
+      "reference": "Référence",
+      "debit": "Débit",
+      "credit": "Crédit",
+      "balance": "Solde"
+    },
+    "footer": {
+      "totalTransactions": "Total des transactions",
+      "outstandingBalance": "Solde impayé"
+    }
+  }
+}

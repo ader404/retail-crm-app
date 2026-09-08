@@ -1,0 +1,16 @@
+{
+  "title": "خيارات التصدير",
+  "language": "اللغة",
+  "format": "التنسيق",
+  "columns": "الأعمدة",
+  "arabic": "العربية",
+  "french": "الفرنسية",
+  "english": "الإنجليزية",
+  "print": "طباعة",
+  "selectAll": "تحديد الكل",
+  "clearAll": "مسح الكل",
+  "restoreDefault": "استعادة الافتراضي",
+  "activeFilters": "المرشحات النشطة",
+  "cancel": "إلغاء",
+  "exportPDF": "تصدير PDF"
+}

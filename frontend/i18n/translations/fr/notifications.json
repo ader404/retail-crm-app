@@ -1,0 +1,10 @@
+{
+  "title": "Notifications",
+  "markAllRead": "Tout marquer comme lu",
+  "noNotifications": "Aucune notification",
+  "unread": "{count} non lues",
+  "messages": {
+    "newSale": "Nouvelle vente {invoice} pour {amount} DH",
+    "lowStock": "Alerte stock faible: {product} ({quantity} restant)"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "wizard": {
+    "title": "Assistant de configuration CRM de vente au détail",
+    "step": "Étape",
+    "of": "de",
+    "steps": {
+      "license": "Activation de la licence",
+      "admin": "Compte administrateur",
+      "database": "Configuration de la base de données",
+      "shop": "Informations sur la boutique",
+      "complete": "Terminé"
+    },
+    "license": {
+      "title": "Activez votre licence",
+      "description": "Entrez votre clé de licence pour activer cette installation. Connexion Internet requise pour l'activation.",
+      "keyLabel": "Clé de licence",
+      "keyPlaceholder": "Entrez votre clé de licence",
+      "activateButton": "Activer et continuer",
+      "activating": "Activation en cours",
+      "internetRequired": "Connexion Internet requise pour l'activation initiale",
+      "errors": {
+        "emptyKey": "Veuillez entrer une clé de licence",
+        "invalidKey": "Clé de licence invalide",
+        "revoked": "Cette licence a été révoquée",
+        "expired": "Cette licence a expiré",
+        "maxDevices": "Limite maximale d'appareils atteinte pour cette licence",
+        "connectionFailed": "Impossible de se connecter au serveur de licence. Veuillez vérifier votre connexion Internet.",
+        "activationFailed": "Échec de l'activation"
+      },
+      "success": "Licence activée avec succès!"
+    },
+    "admin": {
+      "title": "Créer un compte administrateur",
+      "description": "Ce sera le compte administrateur principal de votre CRM.",
+      "nameLabel": "Nom complet",
+      "namePlaceholder": "Entrez le nom de l'administrateur",
+      "emailLabel": "Adresse e-mail",
+      "emailPlaceholder": "admin@example.com",
+      "passwordLabel": "Mot de passe",
+      "passwordPlaceholder": "Au moins 8 caractères",
+      "confirmLabel": "Confirmer le mot de passe",
+      "confirmPlaceholder": "Ressaisissez le mot de passe",
+      "errors": {
+        "requiredFields": "Tous les champs sont requis",
+        "passwordLength": "Le mot de passe doit contenir au moins 8 caractères",
+        "passwordMismatch": "Les mots de passe ne correspondent pas"
+      }
+    },
+    "database": {
+      "title": "Configuration de la base de données MySQL",
+      "description": "Connectez-vous à votre base de données MySQL locale où vos données CRM seront stockées.",
+      "hostLabel": "Hôte MySQL",
+      "hostPlaceholder": "localhost",
+      "portLabel": "Port",
+      "portPlaceholder": "3306",
+      "databaseLabel": "Nom de la base de données",
+      "databasePlaceholder": "retail_crm",
+      "usernameLabel": "Nom d'utilisateur",
+      "usernamePlaceholder": "root",
+      "passwordLabel": "Mot de passe",
+      "passwordPlaceholder": "Votre mot de passe MySQL",
+      "testButton": "Tester la connexion",
+      "testing": "Test en cours",
+      "testSuccess": "Connexion réussie!",
+      "errors": {
+        "requiredFields": "Tous les champs sont requis",
+        "connectionFailed": "Échec de la connexion",
+        "serverNotRunning": "Impossible de se connecter au serveur MySQL. Veuillez vérifier si MySQL est en cours d'exécution.",
+        "accessDenied": "Accès refusé. Veuillez vérifier votre nom d'utilisateur et votre mot de passe.",
+        "databaseNotFound": "La base de données n'existe pas. Veuillez la créer d'abord."
+      }
+    },
+    "shop": {
+      "title": "Informations sur la boutique",
+      "description": "Entrez les détails de votre boutique pour les reçus et les rapports.",
+      "nameLabel": "Nom de la boutique",
+      "namePlaceholder": "Ma boutique",
+      "ownerLabel": "Nom du propriétaire (optionnel)",
+      "ownerPlaceholder": "Nom du propriétaire",
+      "addressLabel": "Adresse (optionnel)",
+      "addressPlaceholder": "Adresse de la boutique",
+      "phoneLabel": "Numéro de téléphone (optionnel)",
+      "phonePlaceholder": "Téléphone de la boutique",
+      "emailLabel": "E-mail (optionnel)",
+      "emailPlaceholder": "shop@example.com",
+      "currencyLabel": "Devise",
+      "errors": {
+        "nameRequired": "Le nom de la boutique est requis"
+      }
+    },
+    "complete": {
+      "title": "Configuration terminée!",
+      "description": "Votre CRM de vente au détail est configuré et prêt à l'emploi.",
+      "launching": "Démarrage",
+      "launchButton": "Lancer le CRM",
+      "summary": "Résumé de la configuration:",
+      "licenseActive": "Licence active",
+      "adminCreated": "Compte administrateur créé",
+      "databaseConnected": "Base de données connectée",
+      "shopConfigured": "Boutique configurée"
+    },
+    "buttons": {
+      "back": "Retour",
+      "next": "Continuer",
+      "finish": "Terminer la configuration"
+    }
+  }
+}

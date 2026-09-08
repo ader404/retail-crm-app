@@ -1,0 +1,224 @@
+{
+  "list": {
+    "title": "الموردون",
+    "searchPlaceholder": "البحث عن شركة، جهة اتصال أو هاتف...",
+    "addButton": "إضافة مورد",
+    "table": {
+      "company": "الشركة",
+      "contactPerson": "جهة الاتصال",
+      "products": "المنتجات",
+      "orders": "الطلبات"
+    },
+    "empty": "لم يتم العثور على موردين",
+    "dialog": {
+      "addTitle": "إضافة مورد",
+      "editTitle": "تعديل المورد",
+      "fields": {
+        "companyName": "اسم الشركة",
+        "contactPerson": "جهة الاتصال"
+      },
+      "saving": "جارٍ الحفظ..."
+    },
+    "toasts": {
+      "created": "تم إنشاء المورد",
+      "updated": "تم تحديث المورد",
+      "deleted": "تم حذف المورد",
+      "deleteError": "لا يمكن الحذف — يوجد منتجات أو طلبات مرتبطة بالمورد",
+      "failed": "فشلت العملية"
+    }
+  },
+  "detail": {
+    "title": "تفاصيل المورد",
+    "notFound": "المورد غير موجود",
+    "supplierSince": "مورد منذ {date}",
+    "actions": {
+      "viewHistory": "عرض السجل",
+      "viewLedger": "عرض دفتر الحسابات",
+      "newPO": "طلب شراء جديد",
+      "recordPayment": "تسجيل دفعة",
+      "createLoan": "إنشاء قرض"
+    },
+    "contact": {
+      "title": "معلومات الاتصال"
+    },
+    "summary": {
+      "outstandingBalance": "الرصيد المستحق",
+      "amountPayable": "المبلغ المستحق للدفع",
+      "totalPaid": "الإجمالي المدفوع",
+      "allTime": "منذ البداية",
+      "productsSupplied": "المنتجات المورّدة",
+      "activeProducts": "المنتجات النشطة"
+    },
+    "productsTable": {
+      "title": "المنتجات المورّدة",
+      "productName": "اسم المنتج",
+      "stock": "المخزون",
+      "cost": "التكلفة",
+      "retailPrice": "سعر البيع"
+    },
+    "purchaseOrders": {
+      "title": "طلبات الشراء",
+      "empty": "لا توجد طلبات شراء حتى الآن",
+      "orderNumber": "رقم الطلب",
+      "paid": "مدفوع",
+      "due": "مستحق",
+      "paymentStatus": "حالة الدفع",
+      "orderStatus": "حالة الطلب",
+      "statuses": {
+        "paid": "مدفوع",
+        "partial": "جزئي",
+        "unpaid": "غير مدفوع"
+      },
+      "menu": {
+        "recordPayment": "تسجيل دفعة",
+        "markPaid": "تعليم كمدفوع",
+        "markPartial": "تعليم كجزئي",
+        "markUnpaid": "تعليم كغير مدفوع",
+        "markReceived": "تعليم كمستلم",
+        "markCancelled": "تعليم كملغى"
+      }
+    },
+    "paymentHistory": {
+      "title": "سجل الدفعات"
+    },
+    "loanHistory": {
+      "title": "سجل القروض",
+      "dueDate": "تاريخ الاستحقاق",
+      "menu": {
+        "markActive": "تعليم كنشط",
+        "markCompleted": "تعليم كمكتمل",
+        "markOverdue": "تعليم كمتأخر",
+        "markCancelled": "تعليم كملغى"
+      }
+    },
+    "paymentDialog": {
+      "title": "تسجيل دفعة للمورد",
+      "outstandingBalance": "الرصيد المستحق:",
+      "amountLabel": "مبلغ الدفعة",
+      "notesLabel": "ملاحظات (اختياري)",
+      "notesPlaceholder": "أضف ملاحظات حول هذه الدفعة...",
+      "recording": "جارٍ التسجيل...",
+      "recordButton": "تسجيل الدفعة"
+    },
+    "loanDialog": {
+      "title": "إنشاء قرض للمورد",
+      "amountLabel": "مبلغ القرض",
+      "dueDateLabel": "تاريخ الاستحقاق (اختياري)",
+      "notesLabel": "ملاحظات (اختياري)",
+      "notesPlaceholder": "أضف ملاحظات حول هذا القرض...",
+      "creating": "جارٍ الإنشاء...",
+      "createButton": "إنشاء القرض"
+    },
+    "productDialog": {
+      "addButton": "إضافة منتج",
+      "noProducts": "لم تتم إضافة منتجات بعد",
+      "title": "إضافة منتج للمورد",
+      "name": "اسم المنتج",
+      "skuPlaceholder": "يتم إنشاؤه تلقائيًا إذا كان فارغًا",
+      "barcode": "الباركود",
+      "barcodePlaceholder": "أدخل الباركود",
+      "selectCategory": "اختر الفئة",
+      "costPrice": "سعر التكلفة",
+      "sellingPrice": "سعر البيع",
+      "initialStock": "المخزون الأولي",
+      "descriptionPlaceholder": "أضف وصف المنتج...",
+      "creating": "جارٍ الإنشاء...",
+      "createButton": "إنشاء المنتج",
+      "toastCreated": "تم إنشاء المنتج",
+      "toastFailed": "فشل إنشاء المنتج"
+    },
+    "poPaymentDialog": {
+      "titleWithOrder": "تسجيل دفعة لطلب {orderNumber}",
+      "amountDue": "المبلغ المستحق:",
+      "amountLabel": "مبلغ الدفعة",
+      "recording": "جارٍ التسجيل...",
+      "recordButton": "تسجيل الدفعة"
+    },
+    "toasts": {
+      "paymentRecorded": "تم تسجيل الدفعة",
+      "paymentFailed": "فشل تسجيل الدفعة",
+      "loanCreated": "تم إنشاء القرض",
+      "loanFailed": "فشل إنشاء القرض",
+      "statusUpdated": "تم تحديث الحالة",
+      "statusFailed": "فشل تحديث الحالة",
+      "paymentStatusUpdated": "تم تحديث حالة الدفع",
+      "paymentStatusFailed": "فشل تحديث حالة الدفع",
+      "loanStatusUpdated": "تم تحديث حالة القرض",
+      "loanStatusFailed": "فشل تحديث حالة القرض",
+      "invalidAmount": "مبلغ غير صالح",
+      "exceedsBalance": "مبلغ الدفعة يتجاوز الرصيد المستحق",
+      "invalidLoanAmount": "مبلغ القرض غير صالح",
+      "exceedsDue": "مبلغ الدفعة يتجاوز الرصيد المتبقي"
+    }
+  },
+  "history": {
+    "title": "سجل المورد",
+    "notFound": "السجل غير موجود",
+    "loading": "جارٍ تحميل السجل...",
+    "activityHistory": "سجل النشاطات",
+    "dateFilter": {
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء"
+    },
+    "summary": {
+      "totalPurchases": "إجمالي المشتريات",
+      "totalPayments": "إجمالي الدفعات",
+      "totalLoans": "إجمالي القروض",
+      "currentDebt": "الدين الحالي"
+    },
+    "timeline": {
+      "title": "الجدول الزمني للنشاطات",
+      "empty": "لا توجد نشاطات خلال هذه الفترة"
+    }
+  },
+  "ledger": {
+    "title": "دفتر حسابات المورد",
+    "notFound": "دفتر الحسابات غير موجود",
+    "loading": "جارٍ تحميل دفتر الحسابات...",
+    "statement": "كشف حساب المورد",
+    "export": {
+      "button": "تصدير",
+      "csv": "تصدير كملف CSV",
+      "print": "طباعة / PDF"
+    },
+    "dateFilter": {
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء"
+    },
+    "printHeader": {
+      "title": "كشف حساب المورد",
+      "period": "الفترة: من {startDate} إلى {endDate}",
+      "generated": "تم الإنشاء في: {date}"
+    },
+    "info": {
+      "title": "معلومات المورد",
+      "phone": "الهاتف: {phone}",
+      "email": "البريد الإلكتروني: {email}",
+      "period": "الفترة"
+    },
+    "balance": {
+      "opening": "الرصيد الافتتاحي",
+      "closing": "الرصيد الختامي",
+      "netChange": "التغيير الصافي",
+      "payable": "مستحق الدفع",
+      "receivable": "مستحق القبض",
+      "increase": "زيادة",
+      "decrease": "نقصان"
+    },
+    "table": {
+      "title": "سجل المعاملات",
+      "date": "التاريخ",
+      "type": "النوع",
+      "description": "الوصف",
+      "reference": "المرجع",
+      "debit": "مدين",
+      "credit": "دائن",
+      "balance": "الرصيد",
+      "empty": "لا توجد معاملات خلال هذه الفترة"
+    },
+    "footer": {
+      "totalTransactions": "إجمالي المعاملات",
+      "outstandingBalance": "الرصيد المستحق"
+    }
+  }
+}

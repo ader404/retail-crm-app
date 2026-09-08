@@ -1,0 +1,95 @@
+{
+  "title": "Sales",
+  "deletedSales": "Deleted Sales",
+  "backToSales": "Back to Sales",
+  "viewDeleted": "View Deleted",
+  "exportPDF": "Export PDF",
+  "searchPlaceholder": "Search invoice or customer...",
+  "records": "{count} records",
+  "noSalesYet": "No sales yet",
+  "noDeletedSales": "No deleted sales",
+  "restore": "Restore",
+  "restoring": "Restoring...",
+  "deleting": "Deleting...",
+  "walkIn": "Walk-in",
+  "filters": {
+    "paymentStatus": "Payment Status",
+    "status": "Status"
+  },
+  "paymentStatuses": {
+    "PAID": "Paid",
+    "PARTIALLY_PAID": "Partially Paid",
+    "UNPAID": "Unpaid"
+  },
+  "paymentMethods": {
+    "CASH": "Cash",
+    "CARD": "Card",
+    "BANK_TRANSFER": "Bank Transfer",
+    "QR": "QR"
+  },
+  "statuses": {
+    "COMPLETED": "Completed",
+    "REFUNDED": "Refunded",
+    "PARTIALLY_REFUNDED": "Partially Refunded",
+    "ON_HOLD": "On Hold",
+    "PENDING": "Pending"
+  },
+  "table": {
+    "invoice": "Invoice",
+    "customer": "Customer",
+    "cashier": "Cashier",
+    "method": "Method",
+    "total": "Total",
+    "payment": "Payment",
+    "status": "Status",
+    "date": "Date",
+    "loading": "Loading..."
+  },
+  "deletedTable": {
+    "invoice": "Invoice",
+    "customer": "Customer",
+    "total": "Total",
+    "deletedAt": "Deleted At"
+  },
+  "pagination": {
+    "pageOf": "Page {page} of {totalPages} ({total} total)"
+  },
+  "detail": {
+    "customer": "Customer",
+    "cashier": "Cashier",
+    "payment": "Payment",
+    "date": "Date",
+    "status": "Status",
+    "paymentStatus": "Payment Status",
+    "product": "Product",
+    "qty": "Qty",
+    "price": "Price",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "tax": "Tax",
+    "amountPaid": "Amount Paid",
+    "amountDue": "Amount Due",
+    "receipt": "Receipt",
+    "refund": "Refund",
+    "imei": "IMEI",
+    "imeis": "IMEIs",
+    "processing": "Processing..."
+  },
+  "restoreConfirm": {
+    "title": "Restore Sale?",
+    "description": "Are you sure you want to restore this sale? It will be moved back to the active sales list."
+  },
+  "deleteConfirm": {
+    "title": "Delete Sale?",
+    "description": "Are you sure you want to delete this sale? This action can be undone from the deleted sales view."
+  },
+  "toast": {
+    "refundSuccess": "Sale refunded",
+    "refundFailed": "Refund failed",
+    "deleteSuccess": "Sale deleted successfully",
+    "deleteFailed": "Failed to delete sale",
+    "restoreSuccess": "Sale restored successfully",
+    "restoreFailed": "Failed to restore sale"
+  }
+}

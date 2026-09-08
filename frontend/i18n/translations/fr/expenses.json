@@ -1,0 +1,50 @@
+{
+  "title": "Dépenses",
+  "searchPlaceholder": "Rechercher une description...",
+  "categoryPlaceholder": "Catégorie",
+  "allCategories": "Toutes les catégories",
+  "total": "Total",
+  "addExpense": "Ajouter une dépense",
+  "categories": {
+    "RENT": "Loyer",
+    "SALARIES": "Salaires",
+    "ELECTRICITY": "Électricité",
+    "INTERNET": "Internet",
+    "TRANSPORTATION": "Transport",
+    "MARKETING": "Marketing",
+    "REPAIRS": "Réparations",
+    "MISCELLANEOUS": "Divers"
+  },
+  "table": {
+    "date": "Date",
+    "category": "Catégorie",
+    "description": "Description",
+    "addedBy": "Ajouté par",
+    "amount": "Montant"
+  },
+  "loading": "Chargement...",
+  "noExpenses": "Aucune dépense trouvée",
+  "dialog": {
+    "editTitle": "Modifier la dépense",
+    "addTitle": "Ajouter une dépense",
+    "category": "Catégorie",
+    "selectCategory": "Sélectionner une catégorie",
+    "amount": "Montant",
+    "date": "Date",
+    "addedBy": "Ajouté par",
+    "selectUser": "Sélectionner un utilisateur",
+    "description": "Description",
+    "descriptionPlaceholder": "Note facultative...",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "saving": "Enregistrement..."
+  },
+  "toast": {
+    "added": "Dépense ajoutée",
+    "updated": "Dépense mise à jour",
+    "deleted": "Dépense supprimée",
+    "failed": "Échec",
+    "deleteFailed": "Échec de la suppression",
+    "validationError": "La catégorie, le montant et l'utilisateur sont requis"
+  }
+}

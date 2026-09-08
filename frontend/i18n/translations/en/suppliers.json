@@ -1,0 +1,224 @@
+{
+  "list": {
+    "title": "Suppliers",
+    "searchPlaceholder": "Search company, contact or phone...",
+    "addButton": "Add Supplier",
+    "table": {
+      "company": "Company",
+      "contactPerson": "Contact Person",
+      "products": "Products",
+      "orders": "Orders"
+    },
+    "empty": "No suppliers found",
+    "dialog": {
+      "addTitle": "Add Supplier",
+      "editTitle": "Edit Supplier",
+      "fields": {
+        "companyName": "Company Name",
+        "contactPerson": "Contact Person"
+      },
+      "saving": "Saving..."
+    },
+    "toasts": {
+      "created": "Supplier created",
+      "updated": "Supplier updated",
+      "deleted": "Supplier deleted",
+      "deleteError": "Cannot delete — supplier has linked products or orders",
+      "failed": "Failed"
+    }
+  },
+  "detail": {
+    "title": "Supplier Details",
+    "notFound": "Supplier not found",
+    "supplierSince": "Supplier since {date}",
+    "actions": {
+      "viewHistory": "View History",
+      "viewLedger": "View Ledger",
+      "newPO": "New PO",
+      "recordPayment": "Record Payment",
+      "createLoan": "Create Loan"
+    },
+    "contact": {
+      "title": "Contact Information"
+    },
+    "summary": {
+      "outstandingBalance": "Outstanding Balance",
+      "amountPayable": "Amount payable",
+      "totalPaid": "Total Paid",
+      "allTime": "All time",
+      "productsSupplied": "Products Supplied",
+      "activeProducts": "Active products"
+    },
+    "productsTable": {
+      "title": "Products Supplied",
+      "productName": "Product Name",
+      "stock": "Stock",
+      "cost": "Cost",
+      "retailPrice": "Retail Price"
+    },
+    "purchaseOrders": {
+      "title": "Purchase Orders",
+      "empty": "No purchase orders yet",
+      "orderNumber": "Order #",
+      "paid": "Paid",
+      "due": "Due",
+      "paymentStatus": "Payment Status",
+      "orderStatus": "Order Status",
+      "statuses": {
+        "paid": "Paid",
+        "partial": "Partial",
+        "unpaid": "Unpaid"
+      },
+      "menu": {
+        "recordPayment": "Record Payment",
+        "markPaid": "Mark as Paid",
+        "markPartial": "Mark as Partial",
+        "markUnpaid": "Mark as Unpaid",
+        "markReceived": "Mark as Received",
+        "markCancelled": "Mark as Cancelled"
+      }
+    },
+    "paymentHistory": {
+      "title": "Payment History"
+    },
+    "loanHistory": {
+      "title": "Loan History",
+      "dueDate": "Due Date",
+      "menu": {
+        "markActive": "Mark as Active",
+        "markCompleted": "Mark as Completed",
+        "markOverdue": "Mark as Overdue",
+        "markCancelled": "Mark as Cancelled"
+      }
+    },
+    "paymentDialog": {
+      "title": "Record Payment to Supplier",
+      "outstandingBalance": "Outstanding Balance:",
+      "amountLabel": "Payment Amount",
+      "notesLabel": "Notes (Optional)",
+      "notesPlaceholder": "Add notes about this payment...",
+      "recording": "Recording...",
+      "recordButton": "Record Payment"
+    },
+    "loanDialog": {
+      "title": "Create Supplier Loan",
+      "amountLabel": "Loan Amount",
+      "dueDateLabel": "Due Date (Optional)",
+      "notesLabel": "Notes (Optional)",
+      "notesPlaceholder": "Add notes about this loan...",
+      "creating": "Creating...",
+      "createButton": "Create Loan"
+    },
+    "productDialog": {
+      "addButton": "Add Product",
+      "noProducts": "No products supplied yet",
+      "title": "Add Product to Supplier",
+      "name": "Product Name",
+      "skuPlaceholder": "Auto-generated if empty",
+      "barcode": "Barcode",
+      "barcodePlaceholder": "Enter barcode",
+      "selectCategory": "Select category",
+      "costPrice": "Cost Price",
+      "sellingPrice": "Selling Price",
+      "initialStock": "Initial Stock",
+      "descriptionPlaceholder": "Add product description...",
+      "creating": "Creating...",
+      "createButton": "Create Product",
+      "toastCreated": "Product created",
+      "toastFailed": "Failed to create product"
+    },
+    "poPaymentDialog": {
+      "titleWithOrder": "Record Payment for {orderNumber}",
+      "amountDue": "Amount Due:",
+      "amountLabel": "Payment Amount",
+      "recording": "Recording...",
+      "recordButton": "Record Payment"
+    },
+    "toasts": {
+      "paymentRecorded": "Payment recorded",
+      "paymentFailed": "Failed to record payment",
+      "loanCreated": "Loan created",
+      "loanFailed": "Failed to create loan",
+      "statusUpdated": "Status updated",
+      "statusFailed": "Failed to update status",
+      "paymentStatusUpdated": "Payment status updated",
+      "paymentStatusFailed": "Failed to update payment status",
+      "loanStatusUpdated": "Loan status updated",
+      "loanStatusFailed": "Failed to update loan status",
+      "invalidAmount": "Invalid amount",
+      "exceedsBalance": "Payment amount exceeds outstanding balance",
+      "invalidLoanAmount": "Invalid loan amount",
+      "exceedsDue": "Payment amount exceeds remaining balance"
+    }
+  },
+  "history": {
+    "title": "Supplier History",
+    "notFound": "History not found",
+    "loading": "Loading history...",
+    "activityHistory": "Activity History",
+    "dateFilter": {
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "summary": {
+      "totalPurchases": "Total Purchases",
+      "totalPayments": "Total Payments",
+      "totalLoans": "Total Loans",
+      "currentDebt": "Current Debt"
+    },
+    "timeline": {
+      "title": "Activity Timeline",
+      "empty": "No activity in this period"
+    }
+  },
+  "ledger": {
+    "title": "Supplier Ledger",
+    "notFound": "Ledger not found",
+    "loading": "Loading ledger...",
+    "statement": "Supplier Statement",
+    "export": {
+      "button": "Export",
+      "csv": "Export as CSV",
+      "print": "Print / PDF"
+    },
+    "dateFilter": {
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "printHeader": {
+      "title": "Supplier Account Statement",
+      "period": "Period: {startDate} to {endDate}",
+      "generated": "Generated: {date}"
+    },
+    "info": {
+      "title": "Supplier Information",
+      "phone": "Phone: {phone}",
+      "email": "Email: {email}",
+      "period": "Period"
+    },
+    "balance": {
+      "opening": "Opening Balance",
+      "closing": "Closing Balance",
+      "netChange": "Net Change",
+      "payable": "Payable",
+      "receivable": "Receivable",
+      "increase": "Increase",
+      "decrease": "Decrease"
+    },
+    "table": {
+      "title": "Transaction History",
+      "date": "Date",
+      "type": "Type",
+      "description": "Description",
+      "reference": "Reference",
+      "debit": "Debit",
+      "credit": "Credit",
+      "balance": "Balance",
+      "empty": "No transactions in this period"
+    },
+    "footer": {
+      "totalTransactions": "Total Transactions",
+      "outstandingBalance": "Outstanding Balance"
+    }
+  }
+}

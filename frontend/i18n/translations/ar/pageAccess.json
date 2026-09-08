@@ -1,0 +1,40 @@
+{
+  "title": "صلاحيات الوصول للصفحات",
+  "description": "اختر الصفحات التي يمكن لهذا الموظف رؤيتها واستخدامها",
+  "selectAll": "تحديد الكل",
+  "clearAll": "إلغاء تحديد الكل",
+  "selectGroup": "تحديد الكل",
+  "deselectGroup": "إلغاء تحديد الكل",
+  "selectedCount": "تم تحديد {count} صفحة(صفحات)",
+  "ownerOnly": "المالك فقط يمكنه إدارة صلاحيات الوصول للصفحات",
+  "groups": {
+    "main": "الرئيسية",
+    "sales": "المبيعات",
+    "inventory": "المخزون",
+    "finance": "المالية",
+    "admin": "الإدارة"
+  },
+  "modules": {
+    "dashboard": "لوحة التحكم",
+    "pos": "نقطة البيع",
+    "products": "المنتجات",
+    "categories": "الفئات",
+    "customers": "العملاء",
+    "suppliers": "الموردون",
+    "sales": "سجل المبيعات",
+    "cheques": "الشيكات",
+    "expenses": "المصروفات",
+    "loans": "القروض",
+    "purchase-orders": "طلبات الشراء",
+    "employees": "الموظفون",
+    "reports": "التقارير",
+    "settings": "الإعدادات",
+    "notifications": "الإشعارات"
+  },
+  "presets": {
+    "cashier": "أمين صندوق",
+    "sales": "موظف مبيعات",
+    "inventory": "مدير المخزون",
+    "accountant": "محاسب"
+  }
+}

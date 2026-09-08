@@ -1,0 +1,45 @@
+{
+  "title": "Net Profit Analysis",
+  "summary": {
+    "totalProfit": "Total Profit",
+    "margin": "Margin: {margin}%",
+    "totalRevenue": "Total Revenue",
+    "salesCount": "{count} sales",
+    "totalCost": "Total Cost",
+    "costOfGoodsSold": "Cost of goods sold",
+    "avgProfitPerSale": "Avg Profit/Sale",
+    "perTransaction": "Per transaction"
+  },
+  "filters": {
+    "title": "Filters",
+    "period": "Period",
+    "fromDate": "From Date",
+    "toDate": "To Date",
+    "search": "Search",
+    "searchPlaceholder": "Invoice or customer..."
+  },
+  "periods": {
+    "today": "Today",
+    "week": "This Week",
+    "month": "This Month",
+    "custom": "Custom Range"
+  },
+  "table": {
+    "title": "Profit Breakdown",
+    "export": "Export",
+    "invoice": "Invoice",
+    "date": "Date",
+    "customer": "Customer",
+    "revenue": "Revenue",
+    "cost": "Cost",
+    "profit": "Profit",
+    "marginPercent": "Margin %",
+    "loading": "Loading...",
+    "noSalesFound": "No sales found",
+    "productBreakdown": "Product Breakdown:",
+    "product": "Product",
+    "qty": "Qty",
+    "costPrice": "Cost Price",
+    "sellingPrice": "Selling Price"
+  }
+}

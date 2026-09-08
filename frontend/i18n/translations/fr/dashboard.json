@@ -1,0 +1,46 @@
+{
+  "title": "Tableau de bord",
+  "periods": {
+    "day": "Aujourd'hui",
+    "week": "7 derniers jours",
+    "month": "30 derniers jours",
+    "year": "12 derniers mois"
+  },
+  "kpis": {
+    "todayRevenue": "Revenu d'aujourd'hui",
+    "todayRevenueSub": "{count} ventes aujourd'hui",
+    "monthlyRevenue": "Revenu mensuel",
+    "monthlyRevenueSub": "{count} ce mois-ci",
+    "todayExpenses": "Dépenses d'aujourd'hui",
+    "todayExpensesSub": "{amount} ce mois-ci",
+    "customers": "Clients",
+    "customersSub": "{count} clients au total",
+    "activeProducts": "Produits actifs",
+    "activeProductsSub": "Dans le catalogue",
+    "totalSales": "Ventes totales",
+    "totalSalesSub": "Depuis toujours"
+  },
+  "charts": {
+    "revenueVsExpenses": "Revenus vs Dépenses",
+    "noSalesData": "Aucune donnée de vente ce mois-ci"
+  },
+  "recentSales": {
+    "title": "Ventes récentes",
+    "invoice": "Facture",
+    "customer": "Client",
+    "method": "Méthode",
+    "total": "Total",
+    "walkIn": "Client de passage",
+    "noRecentSales": "Aucune vente récente"
+  },
+  "lowStock": {
+    "title": "Alertes de stock faible",
+    "allOk": "Tous les niveaux de stock sont OK",
+    "min": "min"
+  },
+  "topProducts": {
+    "title": "Meilleurs produits par revenu (30 derniers jours)",
+    "noData": "Aucune donnée de vente disponible",
+    "show": "Afficher {count}"
+  }
+}

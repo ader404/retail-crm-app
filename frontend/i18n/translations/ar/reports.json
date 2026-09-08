@@ -1,0 +1,223 @@
+{
+  "pageTitle": "التقارير",
+  "tabs": {
+    "overview": "نظرة عامة",
+    "profit": "تحليل الربح",
+    "receivables": "المستحقات",
+    "payables": "المطلوبات",
+    "loans": "القروض",
+    "purchases": "المشتريات",
+    "cashflow": "التدفق النقدي"
+  },
+  "filters": {
+    "from": "من",
+    "to": "إلى"
+  },
+  "overview": {
+    "kpis": {
+      "totalRevenue": "إجمالي الإيرادات",
+      "salesCount": "{count} مبيعات",
+      "totalExpenses": "إجمالي المصروفات",
+      "entriesCount": "{count} إدخالات",
+      "netProfit": "صافي الربح",
+      "profitable": "مربح",
+      "loss": "خسارة",
+      "avgSaleValue": "متوسط قيمة البيع",
+      "perTransaction": "لكل معاملة"
+    },
+    "dailyRevenue": "الإيرادات اليومية",
+    "expensesByCategory": "المصروفات حسب الفئة",
+    "noExpenseData": "لا توجد بيانات مصروفات",
+    "revenueVsExpenses": "الإيرادات مقابل المصروفات — شهريًا",
+    "chartLegend": {
+      "revenue": "الإيرادات",
+      "expenses": "المصروفات"
+    },
+    "topProductsByRevenue": "أفضل المنتجات من حيث الإيرادات",
+    "noSalesData": "لا توجد بيانات مبيعات",
+    "paymentMethods": "طرق الدفع",
+    "noPaymentData": "لا توجد بيانات دفع",
+    "salesSuffix": "مبيعات"
+  },
+  "profit": {
+    "title": "تحليل الربح",
+    "totalRevenue": "إجمالي الإيرادات",
+    "totalCost": "إجمالي التكلفة",
+    "totalProfit": "إجمالي الربح",
+    "table": {
+      "product": "المنتج",
+      "quantitySold": "الكمية المباعة",
+      "revenue": "الإيرادات",
+      "cost": "التكلفة",
+      "profit": "الربح",
+      "margin": "الهامش",
+      "empty": "لا توجد بيانات ربح متاحة"
+    }
+  },
+  "receivables": {
+    "title": "المستحقات القائمة",
+    "totalOutstanding": "إجمالي المستحق",
+    "numberOfCustomers": "عدد العملاء",
+    "avgBalance": "متوسط الرصيد",
+    "table": {
+      "customer": "العميل",
+      "phone": "الهاتف",
+      "totalPurchases": "إجمالي المشتريات",
+      "totalPaid": "إجمالي المدفوع",
+      "outstandingBalance": "الرصيد المستحق",
+      "empty": "لا توجد مستحقات قائمة"
+    }
+  },
+  "payables": {
+    "title": "المطلوبات القائمة",
+    "totalOutstanding": "إجمالي المستحق",
+    "numberOfSuppliers": "عدد الموردين",
+    "avgBalance": "متوسط الرصيد",
+    "table": {
+      "supplier": "المورد",
+      "contact": "جهة الاتصال",
+      "totalPurchases": "إجمالي المشتريات",
+      "totalPaid": "إجمالي المدفوع",
+      "outstandingBalance": "الرصيد المستحق",
+      "empty": "لا توجد مطلوبات قائمة"
+    }
+  },
+  "loans": {
+    "title": "تقرير القروض",
+    "totalLoaned": "إجمالي القروض الممنوحة",
+    "totalPaid": "إجمالي المدفوع",
+    "outstanding": "المستحق",
+    "activeLoans": "القروض النشطة",
+    "table": {
+      "loanType": "نوع القرض",
+      "entity": "الجهة",
+      "amount": "المبلغ",
+      "paid": "المدفوع",
+      "outstanding": "المستحق",
+      "status": "الحالة",
+      "dueDate": "تاريخ الاستحقاق",
+      "empty": "لا توجد بيانات قروض متاحة"
+    }
+  },
+  "purchases": {
+    "title": "تقرير أوامر الشراء",
+    "totalOrders": "إجمالي الطلبات",
+    "totalValue": "القيمة الإجمالية",
+    "totalPaid": "إجمالي المدفوع",
+    "amountDue": "المبلغ المستحق",
+    "table": {
+      "orderNumber": "رقم الطلب",
+      "supplier": "المورد",
+      "totalAmount": "المبلغ الإجمالي",
+      "paidAmount": "المبلغ المدفوع",
+      "due": "المستحق",
+      "status": "الحالة",
+      "date": "التاريخ",
+      "empty": "لا توجد بيانات مشتريات متاحة"
+    }
+  },
+  "cashflow": {
+    "cashInflow": "التدفق النقدي الداخل",
+    "cashInflowSub": "الإيرادات + الدفعات",
+    "cashOutflow": "التدفق النقدي الخارج",
+    "cashOutflowSub": "المصروفات + المشتريات",
+    "netCashFlow": "صافي التدفق النقدي",
+    "positive": "إيجابي",
+    "negative": "سلبي",
+    "inflowBreakdown": "تفاصيل التدفق الداخل",
+    "outflowBreakdown": "تفاصيل التدفق الخارج",
+    "salesRevenue": "إيرادات المبيعات",
+    "customerPayments": "دفعات العملاء",
+    "loanRepayments": "تسديدات القروض",
+    "purchaseOrders": "أوامر الشراء",
+    "expenses": "المصروفات",
+    "supplierPayments": "دفعات الموردين"
+  },
+  "export": {
+    "button": "تصدير",
+    "asCsv": "تصدير كملف CSV"
+  },
+  "cheques": {
+    "title": "تقارير الشيكات",
+    "tabs": {
+      "overview": "نظرة عامة",
+      "statusDist": "التوزيع حسب الحالة",
+      "monthly": "النشاط الشهري",
+      "upcoming": "القادمة",
+      "overdue": "المتأخرة",
+      "byBank": "حسب البنك",
+      "details": "التفاصيل"
+    },
+    "summary": {
+      "incoming": "الشيكات الواردة",
+      "outgoing": "الشيكات الصادرة",
+      "cleared": "المصروفة",
+      "pending": "قيد الانتظار",
+      "overdue": "المتأخرة",
+      "bouncedReturned": "المرتجعة",
+      "total": "المجموع",
+      "count": "شيك"
+    },
+    "monthly": {
+      "title": "النشاط الشهري للشيكات",
+      "incoming": "واردة",
+      "outgoing": "صادرة"
+    },
+    "upcoming": {
+      "title": "الشيكات القادمة",
+      "thisWeek": "هذا الأسبوع",
+      "next7Days": "الـ 7 أيام القادمة",
+      "next30Days": "الـ 30 يوم القادمة",
+      "expectedIncoming": "المبالغ المتوقع تحصيلها",
+      "expectedOutgoing": "الالتزامات القادمة"
+    },
+    "overdueReport": {
+      "title": "الشيكات المتأخرة",
+      "daysOverdue": "يوم تأخير",
+      "totalOverdue": "إجمالي المتأخر",
+      "incomingOverdue": "الواردة المتأخرة",
+      "outgoingOverdue": "الصادرة المتأخرة"
+    },
+    "bankAnalysis": {
+      "title": "التحليل حسب البنك",
+      "bank": "البنك",
+      "incoming": "واردة",
+      "outgoing": "صادرة",
+      "cleared": "مصروفة",
+      "pending": "قيد الانتظار",
+      "bounced": "مرتجعة"
+    },
+    "detailsTable": {
+      "title": "تقرير تفصيلي",
+      "number": "رقم الشيك",
+      "type": "النوع",
+      "party": "الجهة",
+      "bank": "البنك",
+      "amount": "المبلغ",
+      "issueDate": "تاريخ الإصدار",
+      "dueDate": "تاريخ الاستحقاق",
+      "status": "الحالة",
+      "clearedDate": "تاريخ الصرف",
+      "createdDate": "تاريخ الإنشاء"
+    },
+    "types": {
+      "INCOMING": "وارد",
+      "OUTGOING": "صادر"
+    },
+    "statuses": {
+      "PENDING": "قيد الانتظار",
+      "DEPOSITED": "تم الإيداع",
+      "PRESENTED": "تم التقديم",
+      "CLEARED": "تم الصرف",
+      "BOUNCED": "مرتجع",
+      "RETURNED": "مردود",
+      "CANCELLED": "ملغي"
+    },
+    "filters": {
+      "type": "النوع",
+      "status": "الحالة",
+      "bank": "البنك",
+      "all": "الكل"
+    }
+  }
+}

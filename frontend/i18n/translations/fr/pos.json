@@ -1,0 +1,133 @@
+{
+  "title": "Point de vente",
+  "filters": {
+    "selectCashier": "Sélectionner un caissier",
+    "walkInCustomer": "Client de passage",
+    "walkIn": "Client de passage"
+  },
+  "search": {
+    "placeholder": "Rechercher un produit ou scanner un code-barres...",
+    "scanWithCamera": "Scanner avec la caméra",
+    "loading": "Chargement des produits...",
+    "noResults": "Aucun produit trouvé",
+    "noProducts": "Aucun produit disponible"
+  },
+  "product": {
+    "out": "Épuisé",
+    "left": "{count} restants"
+  },
+  "cart": {
+    "title": "Panier",
+    "items": "{count} articles",
+    "empty": "Le panier est vide"
+  },
+  "totals": {
+    "subtotal": "Sous-total",
+    "discountType": "Type de remise",
+    "percentage": "Pourcentage",
+    "fixedAmount": "Montant fixe",
+    "discountPercent": "Remise (%)",
+    "discountFixed": "Remise ($)",
+    "discountAmount": "Montant de la remise",
+    "total": "Total"
+  },
+  "checkout": {
+    "charge": "Encaisser {amount}"
+  },
+  "payment": {
+    "completePayment": "Finaliser le paiement",
+    "partialPayment": "Paiement partiel",
+    "optional": "Facultatif",
+    "fullAmount": "Montant total : {amount}",
+    "amountPaid": "Montant payé",
+    "amountDue": "Montant dû",
+    "cashReceived": "Montant reçu",
+    "change": "Monnaie à rendre",
+    "processing": "Traitement en cours...",
+    "confirmPartialPayment": "Confirmer le paiement partiel",
+    "confirmSale": "Confirmer la vente",
+    "methods": {
+      "cash": "Espèces",
+      "card": "Carte",
+      "bankTransfer": "Virement bancaire",
+      "qr": "QR"
+    }
+  },
+  "customerModal": {
+    "selectCustomer": "Sélectionner un client",
+    "addCustomer": "Ajouter un client",
+    "searchPlaceholder": "Rechercher un client par nom ou téléphone...",
+    "noCustomers": "Aucun client trouvé",
+    "outstanding": "Dû",
+    "clearSelection": "Effacer la sélection",
+    "customerName": "Nom du client",
+    "customerNamePlaceholder": "Entrez le nom du client",
+    "phone": "Numéro de téléphone",
+    "phonePlaceholder": "Entrez le numéro de téléphone",
+    "email": "Email",
+    "emailPlaceholder": "Entrez l'adresse email",
+    "address": "Adresse",
+    "addressPlaceholder": "Entrez l'adresse",
+    "customerCreated": "Client créé avec succès",
+    "customerCreateFailed": "Échec de la création du client",
+    "nameRequired": "Le nom du client est requis"
+  },
+  "productFilters": {
+    "allCategories": "Toutes les catégories",
+    "allBrands": "Toutes les marques",
+    "category": "Catégorie",
+    "brand": "Marque",
+    "resetFilters": "Réinitialiser"
+  },
+  "editItem": {
+    "title": "Modifier l'article",
+    "product": "Produit",
+    "quantity": "Quantité",
+    "unitPrice": "Prix unitaire",
+    "originalPrice": "Prix d'origine",
+    "itemDiscount": "Remise sur l'article",
+    "reset": "Réinitialiser",
+    "subtotal": "Sous-total",
+    "discount": "Remise",
+    "lineTotal": "Total de ligne"
+  },
+  "holdSales": {
+    "title": "Ventes en attente",
+    "holdCurrentSale": "Mettre en attente la vente actuelle",
+    "noHeldSales": "Aucune vente en attente",
+    "customer": "Client",
+    "items": "articles",
+    "more": "plus",
+    "resume": "Reprendre",
+    "saleName": "Nom de la vente",
+    "saleNamePlaceholder": "ex: Table 5, Client Ahmed...",
+    "holdingSale": "Mise en attente de la vente",
+    "hold": "Mettre en attente"
+  },
+  "imeiDialog": {
+    "title": "Sélectionner un appareil IMEI",
+    "selectDevice": "Sélectionner l'IMEI",
+    "noDevices": "Aucun appareil IMEI disponible",
+    "noAvailable": "Aucun appareil IMEI disponible",
+    "addDevices": "Ajouter au panier",
+    "confirm": "Ajouter au panier ({count})",
+    "cancel": "Annuler",
+    "scanImei": "Scanner ou entrer l'IMEI",
+    "deviceNotFound": "Appareil non trouvé",
+    "alreadySold": "Cet appareil a déjà été vendu",
+    "invalidImei": "L'IMEI doit comporter 15 chiffres",
+    "productNotFound": "Produit non trouvé"
+  },
+  "toast": {
+    "saleCompleted": "Vente {invoiceNumber} finalisée !",
+    "saleFailed": "La vente a échoué",
+    "barcodeNotFound": "Aucun produit trouvé pour le code-barres {code}",
+    "noMoreStock": "Plus de stock disponible",
+    "cartEmpty": "Le panier est vide",
+    "selectCashierFirst": "Sélectionnez d'abord un caissier",
+    "saleHeld": "Vente mise en attente avec succès",
+    "saleResumed": "Vente reprise",
+    "imeiAlreadySold": "Cet appareil a déjà été vendu",
+    "imeiFetchFailed": "Échec de la recherche de l'IMEI"
+  }
+}

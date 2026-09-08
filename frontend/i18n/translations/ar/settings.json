@@ -1,0 +1,56 @@
+{
+  "title": "الإعدادات",
+  "loading": "جاري التحميل...",
+  "saving": "جاري الحفظ...",
+  "save": "حفظ",
+  "cancel": "إلغاء",
+
+  "company": {
+    "title": "الشركة والإيصال",
+    "description": "يظهر على الإيصالات المطبوعة والمشتركة",
+    "logo": "شعار الشركة",
+    "uploading": "جاري الرفع...",
+    "companyName": "اسم الشركة",
+    "currency": "العملة",
+    "currencyPlaceholder": "USD",
+    "address": "العنوان",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "taxId": "الرقم الضريبي",
+    "receiptFooter": "تذييل الإيصال / رسالة الشكر",
+    "receiptFooterPlaceholder": "شكراً لتعاملكم معنا!",
+    "showLogoOnReceipt": "إظهار الشعار على الإيصال",
+    "showLogoOnReceiptDescription": "أوقف التشغيل لطباعة إيصالات نصية فقط",
+    "receiptLanguage": "لغة الإيصال",
+    "receiptElements": "عناصر الإيصال",
+    "showPhoneOnReceipt": "إظهار الهاتف على الإيصال",
+    "showEmailOnReceipt": "إظهار البريد الإلكتروني على الإيصال",
+    "showAddressOnReceipt": "إظهار العنوان على الإيصال",
+    "showTaxIdOnReceipt": "إظهار الرقم الضريبي على الإيصال",
+    "saveButton": "حفظ إعدادات الإيصال"
+  },
+
+  "language": {
+    "title": "تفضيل اللغة",
+    "description": "اختر لغتك المفضلة للواجهة",
+    "currentLanguage": "اللغة الحالية",
+    "selectLanguage": "اختر اللغة"
+  },
+
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+
+  "toasts": {
+    "settingsSaved": "تم حفظ إعدادات الإيصال",
+    "settingsFailed": "فشل حفظ الإعدادات",
+    "logoUploadFailed": "فشل رفع الشعار",
+    "statusUpdateFailed": "فشل تحديث الحالة",
+    "languageUpdated": "تم تحديث تفضيل اللغة",
+    "languageUpdateFailed": "فشل تحديث تفضيل اللغة",
+    "languageChanged": "تم تغيير اللغة إلى {language}",
+    "languageChangeFailed": "فشل تغيير اللغة"
+  }
+}

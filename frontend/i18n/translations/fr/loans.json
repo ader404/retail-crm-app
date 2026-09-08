@@ -1,0 +1,180 @@
+{
+  "status": {
+    "ACTIVE": "Actif",
+    "COMPLETED": "Terminé",
+    "OVERDUE": "En retard",
+    "CANCELLED": "Annulé"
+  },
+  "paymentMethods": {
+    "CASH": "Espèces",
+    "CARD": "Carte",
+    "BANK_TRANSFER": "Virement bancaire",
+    "QR": "Code QR"
+  },
+  "list": {
+    "title": "Gestion des prêts",
+    "allLoans": "Tous les prêts",
+    "createLoan": "Créer un prêt",
+    "summary": {
+      "totalLoaned": "Total prêté",
+      "totalLoanedSub": "Depuis toujours",
+      "totalPaid": "Total remboursé",
+      "totalPaidSub": "Reçu en retour",
+      "outstanding": "En cours",
+      "outstandingSub": "Solde dû",
+      "activeLoans": "Prêts actifs",
+      "activeLoansSub": "Actuellement actifs",
+      "overdue": "En retard",
+      "overdueSub": "Échéance dépassée"
+    },
+    "tabs": {
+      "customerLoans": "Prêts clients",
+      "supplierLoans": "Prêts fournisseurs"
+    },
+    "searchPlaceholder": "Rechercher {type}...",
+    "searchCustomer": "un client",
+    "searchSupplier": "un fournisseur",
+    "statusFilter": {
+      "all": "Tous les statuts"
+    },
+    "table": {
+      "customer": "Client",
+      "supplier": "Fournisseur",
+      "loanAmount": "Montant du prêt",
+      "paid": "Payé",
+      "balance": "Solde",
+      "dueDate": "Date d'échéance",
+      "status": "Statut",
+      "created": "Créé le",
+      "overdueTag": "(En retard)"
+    },
+    "loading": "Chargement des prêts...",
+    "emptyCustomer": "Aucun prêt client trouvé",
+    "emptySupplier": "Aucun prêt fournisseur trouvé"
+  },
+  "detail": {
+    "pageTitle": "Détails du prêt",
+    "loading": "Chargement des détails du prêt...",
+    "notFound": "Prêt introuvable",
+    "entity": {
+      "customer": "Client",
+      "supplier": "Fournisseur"
+    },
+    "heading": "Prêt {entity}",
+    "createdOn": "Créé le {date}",
+    "updateStatus": "Modifier le statut",
+    "recordPayment": "Enregistrer un paiement",
+    "overdueAlert": {
+      "title": "Prêt en retard",
+      "message": "Ce prêt était dû le {date}. Veuillez faire un suivi avec le {entity}."
+    },
+    "entityInfo": {
+      "titleSuffix": "Informations"
+    },
+    "cards": {
+      "loanAmount": "Montant du prêt",
+      "originalAmount": "Montant initial",
+      "amountPaid": "Montant payé",
+      "paidPercent": "{percent}% payé",
+      "outstandingBalance": "Solde restant",
+      "remainingPercent": "{percent}% restant",
+      "dueDate": "Date d'échéance",
+      "noDueDate": "Aucune date d'échéance",
+      "overdue": "En retard",
+      "scheduled": "Planifié",
+      "openEnded": "Sans échéance"
+    },
+    "progress": {
+      "title": "Progression du paiement",
+      "paid": "Payé : {amount}",
+      "remaining": "Restant : {amount}",
+      "complete": "{percent}% complété"
+    },
+    "reason": "Motif",
+    "paymentHistory": {
+      "title": "Historique des paiements",
+      "empty": "Aucun paiement enregistré pour le moment"
+    },
+    "paymentDialog": {
+      "title": "Enregistrer un paiement de prêt",
+      "outstandingBalance": "Solde restant :",
+      "amountLabel": "Montant du paiement",
+      "methodLabel": "Méthode de paiement",
+      "notesLabel": "Notes (facultatif)",
+      "notesPlaceholder": "Ajouter des notes sur ce paiement...",
+      "recording": "Enregistrement...",
+      "submit": "Enregistrer le paiement"
+    },
+    "statusDialog": {
+      "title": "Modifier le statut du prêt",
+      "currentStatus": "Statut actuel :",
+      "newStatusLabel": "Nouveau statut",
+      "newStatusPlaceholder": "Sélectionner un nouveau statut",
+      "updating": "Mise à jour...",
+      "submit": "Modifier le statut"
+    },
+    "toasts": {
+      "paymentRecorded": "Paiement enregistré avec succès",
+      "paymentFailed": "Échec de l'enregistrement du paiement",
+      "invalidAmount": "Montant de paiement invalide",
+      "amountExceeds": "Le montant du paiement dépasse le solde restant",
+      "statusUpdated": "Statut du prêt mis à jour",
+      "statusFailed": "Échec de la mise à jour du statut",
+      "selectStatus": "Veuillez sélectionner un statut"
+    }
+  },
+  "form": {
+    "pageTitle": "Créer un prêt",
+    "heading": "Créer un nouveau prêt",
+    "subheading": "Enregistrer un prêt à un client ou d'un fournisseur",
+    "loanTypeCard": {
+      "title": "Type de prêt",
+      "customer": {
+        "title": "Prêt client",
+        "description": "Argent prêté à un client"
+      },
+      "supplier": {
+        "title": "Prêt fournisseur",
+        "description": "Argent dû à un fournisseur"
+      }
+    },
+    "detailsCard": {
+      "title": "Détails du prêt",
+      "selectCustomer": "Sélectionner un client",
+      "selectSupplier": "Sélectionner un fournisseur",
+      "loadingCustomers": "Chargement des clients...",
+      "loadingSuppliers": "Chargement des fournisseurs...",
+      "chooseCustomer": "Choisir un client...",
+      "chooseSupplier": "Choisir un fournisseur...",
+      "noCustomersFound": "Aucun client trouvé",
+      "noSuppliersFound": "Aucun fournisseur trouvé",
+      "failedLoadCustomers": "Échec du chargement des clients",
+      "failedLoadSuppliers": "Échec du chargement des fournisseurs",
+      "loanAmount": "Montant du prêt",
+      "amountHelperCustomer": "Montant que vous prêtez au client",
+      "amountHelperSupplier": "Montant que vous devez au fournisseur",
+      "dueDate": "Date d'échéance (facultatif)",
+      "dueDateHelper": "Laisser vide pour un prêt sans échéance",
+      "notes": "Notes (facultatif)",
+      "notesPlaceholder": "Ajouter des notes sur ce prêt..."
+    },
+    "summaryCard": {
+      "title": "Résumé du prêt",
+      "type": "Type :",
+      "customerLabel": "Client :",
+      "supplierLabel": "Fournisseur :",
+      "notSelected": "Non sélectionné",
+      "amount": "Montant :",
+      "dueDate": "Date d'échéance :"
+    },
+    "creating": "Création...",
+    "submit": "Créer le prêt",
+    "toasts": {
+      "created": "Prêt créé avec succès",
+      "createFailed": "Échec de la création du prêt",
+      "invalidAmount": "Veuillez saisir un montant de prêt valide",
+      "selectCustomer": "Veuillez sélectionner un client",
+      "selectSupplier": "Veuillez sélectionner un fournisseur"
+    }
+  }
+}

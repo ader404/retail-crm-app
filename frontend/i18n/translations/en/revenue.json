@@ -1,0 +1,61 @@
+{
+  "title": "Revenue",
+  "summary": {
+    "totalRevenue": "Total Revenue",
+    "salesCount": "{count} sales",
+    "amountPaid": "Amount Paid",
+    "collected": "Collected",
+    "amountDue": "Amount Due",
+    "outstanding": "Outstanding"
+  },
+  "filters": {
+    "title": "Filters",
+    "period": "Period",
+    "fromDate": "From Date",
+    "toDate": "To Date",
+    "search": "Search",
+    "searchPlaceholder": "Invoice or customer..."
+  },
+  "periods": {
+    "today": "Today",
+    "week": "This Week",
+    "month": "This Month",
+    "custom": "Custom Range"
+  },
+  "table": {
+    "salesList": "Sales List",
+    "export": "Export",
+    "exportCsv": "Export as CSV",
+    "exportPdf": "Export as PDF",
+    "invoice": "Invoice",
+    "date": "Date",
+    "customer": "Customer",
+    "payment": "Payment",
+    "total": "Total",
+    "paid": "Paid",
+    "due": "Due",
+    "status": "Status",
+    "loading": "Loading...",
+    "noSalesFound": "No sales found"
+  },
+  "walkIn": "Walk-in",
+  "paymentStatus": {
+    "PAID": "PAID",
+    "PARTIAL": "PARTIAL",
+    "UNPAID": "UNPAID"
+  },
+  "export": {
+    "columns": {
+      "invoice": "Invoice",
+      "date": "Date",
+      "customer": "Customer",
+      "paymentMethod": "Payment Method",
+      "payment": "Payment",
+      "total": "Total",
+      "paid": "Paid",
+      "due": "Due",
+      "status": "Status"
+    },
+    "reportTitle": "Revenue Report"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "pageTitle": "Rapports",
+  "tabs": {
+    "overview": "Aperçu",
+    "profit": "Analyse du bénéfice",
+    "receivables": "Créances",
+    "payables": "Dettes",
+    "loans": "Prêts",
+    "purchases": "Achats",
+    "cashflow": "Flux de trésorerie"
+  },
+  "filters": {
+    "from": "Du",
+    "to": "Au"
+  },
+  "overview": {
+    "kpis": {
+      "totalRevenue": "Revenu total",
+      "salesCount": "{count} ventes",
+      "totalExpenses": "Dépenses totales",
+      "entriesCount": "{count} entrées",
+      "netProfit": "Bénéfice net",
+      "profitable": "Rentable",
+      "loss": "Perte",
+      "avgSaleValue": "Valeur moyenne de vente",
+      "perTransaction": "par transaction"
+    },
+    "dailyRevenue": "Revenu quotidien",
+    "expensesByCategory": "Dépenses par catégorie",
+    "noExpenseData": "Aucune donnée de dépense",
+    "revenueVsExpenses": "Revenu vs dépenses — Mensuel",
+    "chartLegend": {
+      "revenue": "Revenu",
+      "expenses": "Dépenses"
+    },
+    "topProductsByRevenue": "Meilleurs produits par revenu",
+    "noSalesData": "Aucune donnée de vente",
+    "paymentMethods": "Modes de paiement",
+    "noPaymentData": "Aucune donnée de paiement",
+    "salesSuffix": "ventes"
+  },
+  "profit": {
+    "title": "Analyse du bénéfice",
+    "totalRevenue": "Revenu total",
+    "totalCost": "Coût total",
+    "totalProfit": "Bénéfice total",
+    "table": {
+      "product": "Produit",
+      "quantitySold": "Quantité vendue",
+      "revenue": "Revenu",
+      "cost": "Coût",
+      "profit": "Bénéfice",
+      "margin": "Marge",
+      "empty": "Aucune donnée de bénéfice disponible"
+    }
+  },
+  "receivables": {
+    "title": "Créances en cours",
+    "totalOutstanding": "Total en cours",
+    "numberOfCustomers": "Nombre de clients",
+    "avgBalance": "Solde moyen",
+    "table": {
+      "customer": "Client",
+      "phone": "Téléphone",
+      "totalPurchases": "Total des achats",
+      "totalPaid": "Total payé",
+      "outstandingBalance": "Solde impayé",
+      "empty": "Aucune créance en cours"
+    }
+  },
+  "payables": {
+    "title": "Dettes en cours",
+    "totalOutstanding": "Total en cours",
+    "numberOfSuppliers": "Nombre de fournisseurs",
+    "avgBalance": "Solde moyen",
+    "table": {
+      "supplier": "Fournisseur",
+      "contact": "Contact",
+      "totalPurchases": "Total des achats",
+      "totalPaid": "Total payé",
+      "outstandingBalance": "Solde impayé",
+      "empty": "Aucune dette en cours"
+    }
+  },
+  "loans": {
+    "title": "Rapport des prêts",
+    "totalLoaned": "Total prêté",
+    "totalPaid": "Total remboursé",
+    "outstanding": "Solde impayé",
+    "activeLoans": "Prêts actifs",
+    "table": {
+      "loanType": "Type de prêt",
+      "entity": "Entité",
+      "amount": "Montant",
+      "paid": "Remboursé",
+      "outstanding": "Solde impayé",
+      "status": "Statut",
+      "dueDate": "Date d'échéance",
+      "empty": "Aucune donnée de prêt disponible"
+    }
+  },
+  "purchases": {
+    "title": "Rapport des bons de commande",
+    "totalOrders": "Total des commandes",
+    "totalValue": "Valeur totale",
+    "totalPaid": "Total payé",
+    "amountDue": "Montant dû",
+    "table": {
+      "orderNumber": "N° de commande",
+      "supplier": "Fournisseur",
+      "totalAmount": "Montant total",
+      "paidAmount": "Montant payé",
+      "due": "Dû",
+      "status": "Statut",
+      "date": "Date",
+      "empty": "Aucune donnée d'achat disponible"
+    }
+  },
+  "cashflow": {
+    "cashInflow": "Entrées de trésorerie",
+    "cashInflowSub": "Revenu + Paiements",
+    "cashOutflow": "Sorties de trésorerie",
+    "cashOutflowSub": "Dépenses + Achats",
+    "netCashFlow": "Flux de trésorerie net",
+    "positive": "Positif",
+    "negative": "Négatif",
+    "inflowBreakdown": "Répartition des entrées",
+    "outflowBreakdown": "Répartition des sorties",
+    "salesRevenue": "Revenu des ventes",
+    "customerPayments": "Paiements des clients",
+    "loanRepayments": "Remboursements de prêts",
+    "purchaseOrders": "Bons de commande",
+    "expenses": "Dépenses",
+    "supplierPayments": "Paiements aux fournisseurs"
+  },
+  "export": {
+    "button": "Exporter",
+    "asCsv": "Exporter en CSV"
+  },
+  "cheques": {
+    "title": "Rapports des chèques",
+    "tabs": {
+      "overview": "Aperçu",
+      "statusDist": "Répartition par statut",
+      "monthly": "Activité mensuelle",
+      "upcoming": "À venir",
+      "overdue": "En retard",
+      "byBank": "Par banque",
+      "details": "Détails"
+    },
+    "summary": {
+      "incoming": "Chèques à recevoir",
+      "outgoing": "Chèques à payer",
+      "cleared": "Encaissés",
+      "pending": "En attente",
+      "overdue": "En retard",
+      "bouncedReturned": "Impayés / Retournés",
+      "total": "Total",
+      "count": "chèques"
+    },
+    "monthly": {
+      "title": "Activité mensuelle des chèques",
+      "incoming": "Entrants",
+      "outgoing": "Sortants"
+    },
+    "upcoming": {
+      "title": "Chèques à venir",
+      "thisWeek": "Cette semaine",
+      "next7Days": "7 prochains jours",
+      "next30Days": "30 prochains jours",
+      "expectedIncoming": "Entrées attendues",
+      "expectedOutgoing": "Sorties attendues"
+    },
+    "overdueReport": {
+      "title": "Chèques en retard",
+      "daysOverdue": "jours de retard",
+      "totalOverdue": "Total en retard",
+      "incomingOverdue": "Entrants en retard",
+      "outgoingOverdue": "Sortants en retard"
+    },
+    "bankAnalysis": {
+      "title": "Analyse par banque",
+      "bank": "Banque",
+      "incoming": "Entrants",
+      "outgoing": "Sortants",
+      "cleared": "Encaissés",
+      "pending": "En attente",
+      "bounced": "Impayés"
+    },
+    "detailsTable": {
+      "title": "Rapport détaillé",
+      "number": "N° Chèque",
+      "type": "Type",
+      "party": "Partie",
+      "bank": "Banque",
+      "amount": "Montant",
+      "issueDate": "Date d'émission",
+      "dueDate": "Date d'échéance",
+      "status": "Statut",
+      "clearedDate": "Date d'encaissement",
+      "createdDate": "Date de création"
+    },
+    "types": {
+      "INCOMING": "Entrant",
+      "OUTGOING": "Sortant"
+    },
+    "statuses": {
+      "PENDING": "En attente",
+      "DEPOSITED": "Déposé",
+      "PRESENTED": "Présenté",
+      "CLEARED": "Encaissé",
+      "BOUNCED": "Impayé",
+      "RETURNED": "Retourné",
+      "CANCELLED": "Annulé"
+    },
+    "filters": {
+      "type": "Type",
+      "status": "Statut",
+      "bank": "Banque",
+      "all": "Tous"
+    }
+  }
+}

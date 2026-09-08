@@ -1,0 +1,112 @@
+{
+  "title": "Cheques",
+  "searchPlaceholder": "Search cheque number, party, or bank...",
+  "records": "{count} records",
+  "tabs": {
+    "all": "All Cheques",
+    "incoming": "Incoming",
+    "outgoing": "Outgoing",
+    "dueSoon": "Due Soon",
+    "overdue": "Overdue",
+    "problems": "Problems"
+  },
+  "cards": {
+    "toReceive": "To Receive",
+    "toPay": "To Pay",
+    "dueSoon": "Due Soon",
+    "overdue": "Overdue",
+    "cheques": "cheques"
+  },
+  "table": {
+    "number": "Cheque #",
+    "type": "Type",
+    "party": "Party",
+    "bank": "Bank",
+    "amount": "Amount",
+    "issueDate": "Issue Date",
+    "dueDate": "Due Date",
+    "status": "Status",
+    "actions": "Actions"
+  },
+  "types": {
+    "INCOMING": "Incoming",
+    "OUTGOING": "Outgoing"
+  },
+  "statuses": {
+    "PENDING": "Pending",
+    "DEPOSITED": "Deposited",
+    "PRESENTED": "Presented",
+    "CLEARED": "Cleared",
+    "BOUNCED": "Bounced",
+    "RETURNED": "Returned",
+    "CANCELLED": "Cancelled"
+  },
+  "form": {
+    "addTitle": "Add Cheque",
+    "editTitle": "Edit Cheque",
+    "chequeNumber": "Cheque Number",
+    "type": "Type",
+    "amount": "Amount",
+    "issueDate": "Issue Date",
+    "dueDate": "Due Date",
+    "bankName": "Bank Name",
+    "accountReference": "Account Reference",
+    "partyName": "Party Name",
+    "receivedFrom": "Received From",
+    "payableTo": "Payable To",
+    "customerId": "Customer",
+    "supplierId": "Supplier",
+    "saleId": "Related Sale",
+    "purchaseOrderId": "Related Purchase Order",
+    "notes": "Notes",
+    "selectCustomer": "Select customer",
+    "selectSupplier": "Select supplier",
+    "selectSale": "Select sale",
+    "selectPurchaseOrder": "Select purchase order",
+    "otherParty": "Other (manual entry)",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "detail": {
+    "header": "Cheque Details",
+    "number": "Cheque Number",
+    "type": "Type",
+    "amount": "Amount",
+    "party": "Party",
+    "bank": "Bank",
+    "accountRef": "Account Reference",
+    "issueDate": "Issue Date",
+    "dueDate": "Due Date",
+    "status": "Status",
+    "createdBy": "Created By",
+    "createdDate": "Created Date",
+    "notes": "Notes",
+    "clearedAt": "Cleared At",
+    "linkedSale": "Linked Sale",
+    "linkedPurchase": "Linked Purchase Order",
+    "timeline": "Status History",
+    "noHistory": "No status changes recorded"
+  },
+  "statusChange": {
+    "title": "Change Status",
+    "newStatus": "New Status",
+    "reason": "Reason / Notes",
+    "reasonPlaceholder": "Optional reason for status change",
+    "confirm": "Confirm Change"
+  },
+  "validation": {
+    "chequeNumberRequired": "Cheque number is required",
+    "amountRequired": "Amount must be greater than zero",
+    "dueDateRequired": "Due date is required",
+    "typeRequired": "Type is required"
+  },
+  "toast": {
+    "created": "Cheque created successfully",
+    "updated": "Cheque updated successfully",
+    "statusChanged": "Cheque status updated",
+    "deleted": "Cheque deleted successfully",
+    "failed": "Operation failed",
+    "deleteFailed": "Failed to delete cheque"
+  }
+}

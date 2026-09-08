@@ -1,0 +1,112 @@
+{
+  "title": "الشيكات",
+  "searchPlaceholder": "بحث برقم الشيك أو الجهة أو البنك...",
+  "records": "{count} سجل",
+  "tabs": {
+    "all": "جميع الشيكات",
+    "incoming": "الشيكات المستحقة لنا",
+    "outgoing": "الشيكات المستحقة علينا",
+    "dueSoon": "قريب الاستحقاق",
+    "overdue": "متأخرة",
+    "problems": "المشكلات"
+  },
+  "cards": {
+    "toReceive": "المحصلات",
+    "toPay": "المدفوعات القادمة",
+    "dueSoon": "قريب الاستحقاق",
+    "overdue": "متأخرة",
+    "cheques": "شيك"
+  },
+  "table": {
+    "number": "رقم الشيك",
+    "type": "النوع",
+    "party": "الجهة",
+    "bank": "البنك",
+    "amount": "المبلغ",
+    "issueDate": "تاريخ الإصدار",
+    "dueDate": "تاريخ الاستحقاق",
+    "status": "الحالة",
+    "actions": "الإجراءات"
+  },
+  "types": {
+    "INCOMING": "وارد",
+    "OUTGOING": "صادر"
+  },
+  "statuses": {
+    "PENDING": "قيد الانتظار",
+    "DEPOSITED": "تم الإيداع",
+    "PRESENTED": "تم التقديم",
+    "CLEARED": "تم الصرف",
+    "BOUNCED": "مرتجع",
+    "RETURNED": "مردود",
+    "CANCELLED": "ملغي"
+  },
+  "form": {
+    "addTitle": "إضافة شيك",
+    "editTitle": "تعديل الشيك",
+    "chequeNumber": "رقم الشيك",
+    "type": "النوع",
+    "amount": "المبلغ",
+    "issueDate": "تاريخ الإصدار",
+    "dueDate": "تاريخ الاستحقاق",
+    "bankName": "اسم البنك",
+    "accountReference": "مرجع الحساب",
+    "partyName": "اسم الجهة",
+    "receivedFrom": "مستلم من",
+    "payableTo": "مدفوع لـ",
+    "customerId": "العميل",
+    "supplierId": "المورد",
+    "saleId": "المبيعات المرتبطة",
+    "purchaseOrderId": "أمر الشراء المرتبط",
+    "notes": "ملاحظات",
+    "selectCustomer": "اختر عميل",
+    "selectSupplier": "اختر مورد",
+    "selectSale": "اختر مبيعة",
+    "selectPurchaseOrder": "اختر أمر شراء",
+    "otherParty": "أخرى (إدخال يدوي)",
+    "saving": "جاري الحفظ...",
+    "cancel": "إلغاء",
+    "save": "حفظ"
+  },
+  "detail": {
+    "header": "تفاصيل الشيك",
+    "number": "رقم الشيك",
+    "type": "النوع",
+    "amount": "المبلغ",
+    "party": "الجهة",
+    "bank": "البنك",
+    "accountRef": "مرجع الحساب",
+    "issueDate": "تاريخ الإصدار",
+    "dueDate": "تاريخ الاستحقاق",
+    "status": "الحالة",
+    "createdBy": "أنشئ بواسطة",
+    "createdDate": "تاريخ الإنشاء",
+    "notes": "ملاحظات",
+    "clearedAt": "تاريخ الصرف",
+    "linkedSale": "المبيعات المرتبطة",
+    "linkedPurchase": "أمر الشراء المرتبط",
+    "timeline": "سجل الحالات",
+    "noHistory": "لم يتم تسجيل أي تغييرات في الحالة"
+  },
+  "statusChange": {
+    "title": "تغيير الحالة",
+    "newStatus": "الحالة الجديدة",
+    "reason": "السبب / الملاحظات",
+    "reasonPlaceholder": "سبب اختياري لتغيير الحالة",
+    "confirm": "تأكيد التغيير"
+  },
+  "validation": {
+    "chequeNumberRequired": "رقم الشيك مطلوب",
+    "amountRequired": "يجب أن يكون المبلغ أكبر من صفر",
+    "dueDateRequired": "تاريخ الاستحقاق مطلوب",
+    "typeRequired": "النوع مطلوب"
+  },
+  "toast": {
+    "created": "تم إنشاء الشيك بنجاح",
+    "updated": "تم تحديث الشيك بنجاح",
+    "statusChanged": "تم تحديث حالة الشيك",
+    "deleted": "تم حذف الشيك بنجاح",
+    "failed": "فشلت العملية",
+    "deleteFailed": "فشل حذف الشيك"
+  }
+}

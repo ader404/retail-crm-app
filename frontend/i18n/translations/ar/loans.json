@@ -1,0 +1,180 @@
+{
+  "status": {
+    "ACTIVE": "نشط",
+    "COMPLETED": "مكتمل",
+    "OVERDUE": "متأخر",
+    "CANCELLED": "ملغى"
+  },
+  "paymentMethods": {
+    "CASH": "نقدًا",
+    "CARD": "بطاقة",
+    "BANK_TRANSFER": "تحويل بنكي",
+    "QR": "رمز QR"
+  },
+  "list": {
+    "title": "إدارة القروض",
+    "allLoans": "جميع القروض",
+    "createLoan": "إنشاء قرض",
+    "summary": {
+      "totalLoaned": "إجمالي المبلغ المُقترَض",
+      "totalLoanedSub": "منذ البداية",
+      "totalPaid": "إجمالي المدفوع",
+      "totalPaidSub": "المبلغ المسترد",
+      "outstanding": "المتبقي",
+      "outstandingSub": "الرصيد المستحق",
+      "activeLoans": "القروض النشطة",
+      "activeLoansSub": "نشطة حاليًا",
+      "overdue": "متأخر",
+      "overdueSub": "تجاوز تاريخ الاستحقاق"
+    },
+    "tabs": {
+      "customerLoans": "قروض العملاء",
+      "supplierLoans": "قروض الموردين"
+    },
+    "searchPlaceholder": "البحث عن {type}...",
+    "searchCustomer": "عميل",
+    "searchSupplier": "مورّد",
+    "statusFilter": {
+      "all": "جميع الحالات"
+    },
+    "table": {
+      "customer": "العميل",
+      "supplier": "المورّد",
+      "loanAmount": "مبلغ القرض",
+      "paid": "المدفوع",
+      "balance": "الرصيد",
+      "dueDate": "تاريخ الاستحقاق",
+      "status": "الحالة",
+      "created": "تاريخ الإنشاء",
+      "overdueTag": "(متأخر)"
+    },
+    "loading": "جارٍ تحميل القروض...",
+    "emptyCustomer": "لا توجد قروض عملاء",
+    "emptySupplier": "لا توجد قروض موردين"
+  },
+  "detail": {
+    "pageTitle": "تفاصيل القرض",
+    "loading": "جارٍ تحميل تفاصيل القرض...",
+    "notFound": "القرض غير موجود",
+    "entity": {
+      "customer": "العميل",
+      "supplier": "المورّد"
+    },
+    "heading": "قرض {entity}",
+    "createdOn": "تم الإنشاء في {date}",
+    "updateStatus": "تحديث الحالة",
+    "recordPayment": "تسجيل دفعة",
+    "overdueAlert": {
+      "title": "القرض متأخر",
+      "message": "كان تاريخ استحقاق هذا القرض في {date}. يُرجى التواصل مع {entity} للمتابعة."
+    },
+    "entityInfo": {
+      "titleSuffix": "المعلومات"
+    },
+    "cards": {
+      "loanAmount": "مبلغ القرض",
+      "originalAmount": "المبلغ الأصلي",
+      "amountPaid": "المبلغ المدفوع",
+      "paidPercent": "{percent}% مدفوع",
+      "outstandingBalance": "الرصيد المستحق",
+      "remainingPercent": "{percent}% متبقٍ",
+      "dueDate": "تاريخ الاستحقاق",
+      "noDueDate": "لا يوجد تاريخ استحقاق",
+      "overdue": "متأخر",
+      "scheduled": "مجدول",
+      "openEnded": "غير محدد المدة"
+    },
+    "progress": {
+      "title": "تقدّم الدفع",
+      "paid": "المدفوع: {amount}",
+      "remaining": "المتبقي: {amount}",
+      "complete": "{percent}% مكتمل"
+    },
+    "reason": "السبب",
+    "paymentHistory": {
+      "title": "سجل الدفعات",
+      "empty": "لا توجد دفعات مسجلة حتى الآن"
+    },
+    "paymentDialog": {
+      "title": "تسجيل دفعة قرض",
+      "outstandingBalance": "الرصيد المستحق:",
+      "amountLabel": "مبلغ الدفعة",
+      "methodLabel": "طريقة الدفع",
+      "notesLabel": "ملاحظات (اختياري)",
+      "notesPlaceholder": "أضف ملاحظات حول هذه الدفعة...",
+      "recording": "جارٍ التسجيل...",
+      "submit": "تسجيل الدفعة"
+    },
+    "statusDialog": {
+      "title": "تحديث حالة القرض",
+      "currentStatus": "الحالة الحالية:",
+      "newStatusLabel": "الحالة الجديدة",
+      "newStatusPlaceholder": "اختر حالة جديدة",
+      "updating": "جارٍ التحديث...",
+      "submit": "تحديث الحالة"
+    },
+    "toasts": {
+      "paymentRecorded": "تم تسجيل الدفعة بنجاح",
+      "paymentFailed": "فشل تسجيل الدفعة",
+      "invalidAmount": "مبلغ الدفعة غير صالح",
+      "amountExceeds": "مبلغ الدفعة يتجاوز الرصيد المستحق",
+      "statusUpdated": "تم تحديث حالة القرض",
+      "statusFailed": "فشل تحديث الحالة",
+      "selectStatus": "يرجى اختيار حالة"
+    }
+  },
+  "form": {
+    "pageTitle": "إنشاء قرض",
+    "heading": "إنشاء قرض جديد",
+    "subheading": "تسجيل قرض لعميل أو من مورّد",
+    "loanTypeCard": {
+      "title": "نوع القرض",
+      "customer": {
+        "title": "قرض عميل",
+        "description": "مبلغ مُقترَض لعميل"
+      },
+      "supplier": {
+        "title": "قرض مورّد",
+        "description": "مبلغ مستحق لمورّد"
+      }
+    },
+    "detailsCard": {
+      "title": "تفاصيل القرض",
+      "selectCustomer": "اختر العميل",
+      "selectSupplier": "اختر المورّد",
+      "loadingCustomers": "جارٍ تحميل العملاء...",
+      "loadingSuppliers": "جارٍ تحميل الموردين...",
+      "chooseCustomer": "اختر عميلاً...",
+      "chooseSupplier": "اختر مورّدًا...",
+      "noCustomersFound": "لا يوجد عملاء",
+      "noSuppliersFound": "لا يوجد موردون",
+      "failedLoadCustomers": "فشل تحميل العملاء",
+      "failedLoadSuppliers": "فشل تحميل الموردين",
+      "loanAmount": "مبلغ القرض",
+      "amountHelperCustomer": "المبلغ الذي تقرضه للعميل",
+      "amountHelperSupplier": "المبلغ الذي تدين به للمورّد",
+      "dueDate": "تاريخ الاستحقاق (اختياري)",
+      "dueDateHelper": "اتركه فارغًا للقروض غير محددة المدة",
+      "notes": "ملاحظات (اختياري)",
+      "notesPlaceholder": "أضف ملاحظات حول هذا القرض..."
+    },
+    "summaryCard": {
+      "title": "ملخص القرض",
+      "type": "النوع:",
+      "customerLabel": "العميل:",
+      "supplierLabel": "المورّد:",
+      "notSelected": "لم يتم التحديد",
+      "amount": "المبلغ:",
+      "dueDate": "تاريخ الاستحقاق:"
+    },
+    "creating": "جارٍ الإنشاء...",
+    "submit": "إنشاء القرض",
+    "toasts": {
+      "created": "تم إنشاء القرض بنجاح",
+      "createFailed": "فشل إنشاء القرض",
+      "invalidAmount": "يرجى إدخال مبلغ قرض صالح",
+      "selectCustomer": "يرجى اختيار عميل",
+      "selectSupplier": "يرجى اختيار مورّد"
+    }
+  }
+}

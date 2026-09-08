@@ -1,0 +1,263 @@
+import { PrismaClient } from '@prisma/client';
+import * as bcrypt from 'bcryptjs';
+
+const prisma = new PrismaClient();
+
+async function main() {
+  console.log('🌱 Starting full seed...');
+
+  // Create branches
+  console.log('Creating branches...');
+  let branch1 = await prisma.branch.findFirst({ where: { name: 'Main Branch' } });
+  if (!branch1) {
+    branch1 = await prisma.branch.create({
+      data: { name: 'Main Branch', address: '123 Main St', phone: '555-0100', isActive: true }
+    });
+  }
+
+  let branch2 = await prisma.branch.findFirst({ where: { name: 'Downtown Branch' } });
+  if (!branch2) {
+    branch2 = await prisma.branch.create({
+      data: { name: 'Downtown Branch', address: '456 Downtown Ave', phone: '555-0200', isActive: true }
+    });
+  }
+
+  // Create admin user
+  console.log('Creating admin user...');
+  const hashedPassword = await bcrypt.hash('Admin@123456', 12);
+  let admin = await prisma.user.findFirst({ where: { email: 'admin@company.local' } });
+  if (!admin) {
+    admin = await prisma.user.create({
+      data: {
+        name: 'Super Administrator',
+        email: 'admin@company.local',
+        password: hashedPassword,
+        role: 'SUPER_ADMIN',
+        branchId: branch1.id,
+        isActive: true,
+        mustChangePassword: true,
+      }
+    });
+  }
+
+  // Create categories
+  console.log('Creating categories...');
+  let electronics = await prisma.category.findFirst({ where: { name: 'Electronics' } });
+  if (!electronics) {
+    electronics = await prisma.category.create({ data: { name: 'Electronics' } });
+  }
+
+  let clothing = await prisma.category.findFirst({ where: { name: 'Clothing' } });
+  if (!clothing) {
+    clothing = await prisma.category.create({ data: { name: 'Clothing' } });
+  }
+
+  let food = await prisma.category.findFirst({ where: { name: 'Food & Beverages' } });
+  if (!food) {
+    food = await prisma.category.create({ data: { name: 'Food & Beverages' } });
+  }
+
+  // Create brands
+  console.log('Creating brands...');
+  let samsung = await prisma.brand.findFirst({ where: { name: 'Samsung' } });
+  if (!samsung) {
+    samsung = await prisma.brand.create({ data: { name: 'Samsung' } });
+  }
+
+  let nike = await prisma.brand.findFirst({ where: { name: 'Nike' } });
+  if (!nike) {
+    nike = await prisma.brand.create({ data: { name: 'Nike' } });
+  }
+
+  let cocaCola = await prisma.brand.findFirst({ where: { name: 'Coca-Cola' } });
+  if (!cocaCola) {
+    cocaCola = await prisma.brand.create({ data: { name: 'Coca-Cola' } });
+  }
+
+  // Create suppliers
+  console.log('Creating suppliers...');
+  let supplier1 = await prisma.supplier.findFirst({ where: { email: 'supplier1@example.com' } });
+  if (!supplier1) {
+    supplier1 = await prisma.supplier.create({
+      data: {
+        companyName: 'Tech Supplies Co',
+        contactPerson: 'John Supplier',
+        phone: '555-1000',
+        email: 'supplier1@example.com',
+        address: '789 Supplier St'
+      }
+    });
+  }
+
+  let supplier2 = await prisma.supplier.findFirst({ where: { email: 'supplier2@example.com' } });
+  if (!supplier2) {
+    supplier2 = await prisma.supplier.create({
+      data: {
+        companyName: 'Fashion Wholesale',
+        contactPerson: 'Jane Supplier',
+        phone: '555-2000',
+        email: 'supplier2@example.com',
+        address: '321 Wholesale Ave'
+      }
+    });
+  }
+
+  // Create products
+  console.log('Creating products...');
+  let product1 = await prisma.product.findFirst({ where: { sku: 'SAM-TV-001' } });
+  if (!product1) {
+    product1 = await prisma.product.create({
+      data: {
+        name: 'Samsung 55" Smart TV',
+        sku: 'SAM-TV-001',
+        barcode: '8801234567890',
+        description: '55 inch 4K Smart TV',
+        categoryId: electronics.id,
+        brandId: samsung.id,
+        supplierId: supplier1.id,
+        costPrice: 400,
+        sellingPrice: 599,
+        isActive: true
+      }
+    });
+  }
+
+  let product2 = await prisma.product.findFirst({ where: { sku: 'NIK-SHO-001' } });
+  if (!product2) {
+    product2 = await prisma.product.create({
+      data: {
+        name: 'Nike Air Max Shoes',
+        sku: 'NIK-SHO-001',
+        barcode: '1234567890123',
+        description: 'Classic Nike Air Max sneakers',
+        categoryId: clothing.id,
+        brandId: nike.id,
+        supplierId: supplier2.id,
+        costPrice: 50,
+        sellingPrice: 89,
+        isActive: true
+      }
+    });
+  }
+
+  let product3 = await prisma.product.findFirst({ where: { sku: 'COC-SOD-001' } });
+  if (!product3) {
+    product3 = await prisma.product.create({
+      data: {
+        name: 'Coca-Cola 330ml Can',
+        sku: 'COC-SOD-001',
+        barcode: '5449000000996',
+        description: 'Refreshing Coca-Cola',
+        categoryId: food.id,
+        brandId: cocaCola.id,
+        supplierId: supplier1.id,
+        costPrice: 0.5,
+        sellingPrice: 1.5,
+        isActive: true
+      }
+    });
+  }
+
+  // Add inventory for products
+  console.log('Adding inventory...');
+  const inv1 = await prisma.inventory.findFirst({
+    where: { productId: product1.id, branchId: branch1.id }
+  });
+  if (!inv1) {
+    await prisma.inventory.create({
+      data: {
+        productId: product1.id,
+        branchId: branch1.id,
+        quantity: 15,
+        minStock: 5
+      }
+    });
+  }
+
+  const inv2 = await prisma.inventory.findFirst({
+    where: { productId: product2.id, branchId: branch1.id }
+  });
+  if (!inv2) {
+    await prisma.inventory.create({
+      data: {
+        productId: product2.id,
+        branchId: branch1.id,
+        quantity: 50,
+        minStock: 10
+      }
+    });
+  }
+
+  const inv3 = await prisma.inventory.findFirst({
+    where: { productId: product3.id, branchId: branch1.id }
+  });
+  if (!inv3) {
+    await prisma.inventory.create({
+      data: {
+        productId: product3.id,
+        branchId: branch1.id,
+        quantity: 200,
+        minStock: 50
+      }
+    });
+  }
+
+  const inv4 = await prisma.inventory.findFirst({
+    where: { productId: product1.id, branchId: branch2.id }
+  });
+  if (!inv4) {
+    await prisma.inventory.create({
+      data: {
+        productId: product1.id,
+        branchId: branch2.id,
+        quantity: 10,
+        minStock: 5
+      }
+    });
+  }
+
+  // Create customers
+  console.log('Creating customers...');
+  let customer1 = await prisma.customer.findFirst({ where: { email: 'customer1@example.com' } });
+  if (!customer1) {
+    await prisma.customer.create({
+      data: {
+        name: 'John Doe',
+        email: 'customer1@example.com',
+        phone: '555-3000',
+        address: '100 Customer Lane'
+      }
+    });
+  }
+
+  let customer2 = await prisma.customer.findFirst({ where: { email: 'customer2@example.com' } });
+  if (!customer2) {
+    await prisma.customer.create({
+      data: {
+        name: 'Jane Smith',
+        email: 'customer2@example.com',
+        phone: '555-4000',
+        address: '200 Buyer St'
+      }
+    });
+  }
+
+  console.log('✅ Seed completed!');
+  console.log('\n📊 Created:');
+  console.log('   - 2 Branches');
+  console.log('   - 1 Admin User (admin@company.local / Admin@123456)');
+  console.log('   - 3 Categories');
+  console.log('   - 3 Brands');
+  console.log('   - 2 Suppliers');
+  console.log('   - 3 Products with inventory');
+  console.log('   - 2 Customers');
+}
+
+main()
+  .catch((e) => {
+    console.error('❌ Seed failed:', e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

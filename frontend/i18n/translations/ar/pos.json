@@ -1,0 +1,133 @@
+{
+  "title": "نقطة البيع",
+  "filters": {
+    "selectCashier": "اختر الكاشير",
+    "walkInCustomer": "عميل عابر",
+    "walkIn": "عميل عابر"
+  },
+  "search": {
+    "placeholder": "البحث عن منتج أو مسح الرمز الشريطي...",
+    "scanWithCamera": "المسح بالكاميرا",
+    "loading": "جارٍ تحميل المنتجات...",
+    "noResults": "لا توجد منتجات",
+    "noProducts": "لا توجد منتجات متاحة"
+  },
+  "product": {
+    "out": "غير متوفر",
+    "left": "متبقي {count}"
+  },
+  "cart": {
+    "title": "السلة",
+    "items": "{count} عناصر",
+    "empty": "السلة فارغة"
+  },
+  "totals": {
+    "subtotal": "المجموع الفرعي",
+    "discountType": "نوع الخصم",
+    "percentage": "نسبة مئوية",
+    "fixedAmount": "مبلغ ثابت",
+    "discountPercent": "الخصم (%)",
+    "discountFixed": "الخصم ($)",
+    "discountAmount": "قيمة الخصم",
+    "total": "الإجمالي"
+  },
+  "checkout": {
+    "charge": "الدفع {amount}"
+  },
+  "payment": {
+    "completePayment": "إتمام الدفع",
+    "partialPayment": "دفعة جزئية",
+    "optional": "اختياري",
+    "fullAmount": "المبلغ الكامل: {amount}",
+    "amountPaid": "المبلغ المدفوع",
+    "amountDue": "المبلغ المتبقي",
+    "cashReceived": "المبلغ المستلم",
+    "change": "الباقي",
+    "processing": "قيد المعالجة...",
+    "confirmPartialPayment": "تأكيد الدفعة الجزئية",
+    "confirmSale": "تأكيد البيع",
+    "methods": {
+      "cash": "نقدي",
+      "card": "بطاقة",
+      "bankTransfer": "حوالة بنكية",
+      "qr": "QR"
+    }
+  },
+  "customerModal": {
+    "selectCustomer": "اختر العميل",
+    "addCustomer": "إضافة عميل",
+    "searchPlaceholder": "ابحث عن عميل بالاسم أو الهاتف...",
+    "noCustomers": "لا يوجد عملاء",
+    "outstanding": "المتبقي",
+    "clearSelection": "إلغاء التحديد",
+    "customerName": "اسم العميل",
+    "customerNamePlaceholder": "أدخل اسم العميل",
+    "phone": "رقم الهاتف",
+    "phonePlaceholder": "أدخل رقم الهاتف",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل البريد الإلكتروني",
+    "address": "العنوان",
+    "addressPlaceholder": "أدخل العنوان",
+    "customerCreated": "تم إنشاء العميل بنجاح",
+    "customerCreateFailed": "فشل في إنشاء العميل",
+    "nameRequired": "اسم العميل مطلوب"
+  },
+  "productFilters": {
+    "allCategories": "كل الفئات",
+    "allBrands": "كل العلامات التجارية",
+    "category": "الفئة",
+    "brand": "العلامة التجارية",
+    "resetFilters": "إعادة تعيين"
+  },
+  "editItem": {
+    "title": "تعديل العنصر",
+    "product": "المنتج",
+    "quantity": "الكمية",
+    "unitPrice": "سعر الوحدة",
+    "originalPrice": "السعر الأصلي",
+    "itemDiscount": "خصم العنصر",
+    "reset": "إعادة تعيين",
+    "subtotal": "المجموع الفرعي",
+    "discount": "الخصم",
+    "lineTotal": "إجمالي السطر"
+  },
+  "holdSales": {
+    "title": "المبيعات المعلقة",
+    "holdCurrentSale": "تعليق البيع الحالي",
+    "noHeldSales": "لا توجد مبيعات معلقة",
+    "customer": "العميل",
+    "items": "عناصر",
+    "more": "المزيد",
+    "resume": "استئناف",
+    "saleName": "اسم البيع",
+    "saleNamePlaceholder": "مثال: طاولة 5، العميل أحمد...",
+    "holdingSale": "تعليق البيع",
+    "hold": "تعليق"
+  },
+  "imeiDialog": {
+    "title": "اختر جهاز IMEI",
+    "selectDevice": "اختر IMEI",
+    "noDevices": "لا توجد أجهزة IMEI متاحة",
+    "noAvailable": "لا توجد أجهزة IMEI متاحة",
+    "addDevices": "أضف إلى السلة",
+    "confirm": "أضف إلى السلة ({count})",
+    "cancel": "إلغاء",
+    "scanImei": "مسح أو إدخال IMEI",
+    "deviceNotFound": "الجهاز غير موجود",
+    "alreadySold": "هذا الجهاز تم بيعه بالفعل",
+    "invalidImei": "يجب أن يكون رقم IMEI 15 رقمًا",
+    "productNotFound": "المنتج غير موجود"
+  },
+  "toast": {
+    "saleCompleted": "تم إتمام البيع {invoiceNumber} بنجاح!",
+    "saleFailed": "فشلت عملية البيع",
+    "barcodeNotFound": "لم يتم العثور على منتج للرمز الشريطي {code}",
+    "noMoreStock": "لا يوجد مخزون متاح",
+    "cartEmpty": "السلة فارغة",
+    "selectCashierFirst": "اختر الكاشير أولاً",
+    "saleHeld": "تم تعليق البيع بنجاح",
+    "saleResumed": "تم استئناف البيع",
+    "imeiAlreadySold": "هذا الجهاز تم بيعه بالفعل",
+    "imeiFetchFailed": "فشل البحث عن IMEI"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Accès aux pages",
+  "description": "Sélectionnez les pages que cet employé peut voir et utiliser",
+  "selectAll": "Tout sélectionner",
+  "clearAll": "Tout désélectionner",
+  "selectGroup": "Tout sélectionner",
+  "deselectGroup": "Tout désélectionner",
+  "selectedCount": "{count} page(s) sélectionnée(s)",
+  "ownerOnly": "Seul le propriétaire peut gérer l'accès aux pages",
+  "groups": {
+    "main": "Principal",
+    "sales": "Ventes",
+    "inventory": "Inventaire",
+    "finance": "Finance",
+    "admin": "Administration"
+  },
+  "modules": {
+    "dashboard": "Tableau de bord",
+    "pos": "Point de vente",
+    "products": "Produits",
+    "categories": "Catégories",
+    "customers": "Clients",
+    "suppliers": "Fournisseurs",
+    "sales": "Historique des ventes",
+    "cheques": "Chèques",
+    "expenses": "Dépenses",
+    "loans": "Prêts",
+    "purchase-orders": "Commandes d'achat",
+    "employees": "Employés",
+    "reports": "Rapports",
+    "settings": "Paramètres",
+    "notifications": "Notifications"
+  },
+  "presets": {
+    "cashier": "Caissier",
+    "sales": "Employé de vente",
+    "inventory": "Gestionnaire d'inventaire",
+    "accountant": "Comptable"
+  }
+}

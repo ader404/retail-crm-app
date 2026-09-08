@@ -1,0 +1,61 @@
+{
+  "title": "الإيرادات",
+  "summary": {
+    "totalRevenue": "إجمالي الإيرادات",
+    "salesCount": "{count} عملية بيع",
+    "amountPaid": "المبلغ المدفوع",
+    "collected": "محصّل",
+    "amountDue": "المبلغ المستحق",
+    "outstanding": "مستحق"
+  },
+  "filters": {
+    "title": "الفلاتر",
+    "period": "الفترة",
+    "fromDate": "من تاريخ",
+    "toDate": "إلى تاريخ",
+    "search": "البحث",
+    "searchPlaceholder": "الفاتورة أو العميل..."
+  },
+  "periods": {
+    "today": "اليوم",
+    "week": "هذا الأسبوع",
+    "month": "هذا الشهر",
+    "custom": "نطاق مخصص"
+  },
+  "table": {
+    "salesList": "قائمة المبيعات",
+    "export": "تصدير",
+    "exportCsv": "تصدير كملف CSV",
+    "exportPdf": "تصدير كملف PDF",
+    "invoice": "الفاتورة",
+    "date": "التاريخ",
+    "customer": "العميل",
+    "payment": "الدفع",
+    "total": "الإجمالي",
+    "paid": "المدفوع",
+    "due": "المستحق",
+    "status": "الحالة",
+    "loading": "جارٍ التحميل...",
+    "noSalesFound": "لا توجد مبيعات"
+  },
+  "walkIn": "عميل عابر",
+  "paymentStatus": {
+    "PAID": "مدفوعة",
+    "PARTIAL": "جزئية",
+    "UNPAID": "غير مدفوعة"
+  },
+  "export": {
+    "columns": {
+      "invoice": "الفاتورة",
+      "date": "التاريخ",
+      "customer": "العميل",
+      "paymentMethod": "طريقة الدفع",
+      "payment": "الدفع",
+      "total": "الإجمالي",
+      "paid": "المدفوع",
+      "due": "المستحق",
+      "status": "الحالة"
+    },
+    "reportTitle": "تقرير الإيرادات"
+  }
+}

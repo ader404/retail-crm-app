@@ -1,0 +1,227 @@
+{
+  "list": {
+    "title": "Customers",
+    "searchPlaceholder": "Search name, phone or email...",
+    "addCustomer": "Add Customer",
+    "table": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "sales": "Sales",
+      "credit": "Credit",
+      "debt": "Debt",
+      "since": "Since"
+    },
+    "empty": "No customers found",
+    "dialog": {
+      "editTitle": "Edit Customer",
+      "addTitle": "Add Customer",
+      "fields": {
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Address",
+        "notes": "Notes"
+      },
+      "saving": "Saving..."
+    },
+    "toasts": {
+      "created": "Customer created",
+      "updated": "Customer updated",
+      "deleted": "Customer deleted",
+      "saveFailed": "Failed",
+      "deleteFailed": "Cannot delete — customer has sales records"
+    }
+  },
+  "detail": {
+    "header": {
+      "title": "Customer Details",
+      "loading": "Loading...",
+      "notFound": "Customer not found",
+      "customerSince": "Customer since {date}"
+    },
+    "actions": {
+      "viewHistory": "View History",
+      "viewLedger": "View Ledger",
+      "recordPayment": "Record Payment",
+      "createLoan": "Create Loan"
+    },
+    "contact": {
+      "title": "Contact Information",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    },
+    "summary": {
+      "outstandingBalance": "Outstanding Balance",
+      "amountDue": "Amount due",
+      "totalPurchases": "Total Purchases",
+      "transactions": "{count} transactions",
+      "totalProfit": "Total Profit",
+      "margin": "{value}% margin",
+      "totalPaid": "Total Paid",
+      "allTime": "All time"
+    },
+    "purchases": {
+      "title": "Purchase History",
+      "empty": "No purchases yet",
+      "table": {
+        "invoice": "Invoice",
+        "date": "Date",
+        "total": "Total",
+        "paid": "Paid",
+        "due": "Due",
+        "status": "Status",
+        "profit": "Profit",
+        "actions": "Actions"
+      },
+      "status": {
+        "paid": "Paid",
+        "partial": "Partial",
+        "unpaid": "Unpaid"
+      },
+      "menu": {
+        "recordPayment": "Record Payment",
+        "markPaid": "Mark as Paid",
+        "markPartial": "Mark as Partial",
+        "markUnpaid": "Mark as Unpaid"
+      }
+    },
+    "loans": {
+      "title": "Loan History",
+      "table": {
+        "date": "Date",
+        "amount": "Amount",
+        "paid": "Paid",
+        "balance": "Balance",
+        "dueDate": "Due Date",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "menu": {
+        "markActive": "Mark as Active",
+        "markCompleted": "Mark as Completed",
+        "markOverdue": "Mark as Overdue",
+        "markCancelled": "Mark as Cancelled"
+      }
+    },
+    "dialogs": {
+      "payment": {
+        "title": "Record Payment",
+        "outstandingBalance": "Outstanding Balance:",
+        "amountLabel": "Payment Amount",
+        "methodLabel": "Payment Method",
+        "notesLabel": "Notes (Optional)",
+        "notesPlaceholder": "Add notes about this payment...",
+        "submit": "Record Payment",
+        "submitting": "Recording..."
+      },
+      "loan": {
+        "title": "Create Loan",
+        "amountLabel": "Loan Amount",
+        "dueDateLabel": "Due Date (Optional)",
+        "notesLabel": "Notes (Optional)",
+        "notesPlaceholder": "Add notes about this loan...",
+        "submit": "Create Loan",
+        "submitting": "Creating..."
+      },
+      "salePayment": {
+        "titlePrefix": "Record Payment for",
+        "amountDue": "Amount Due:",
+        "amountLabel": "Payment Amount",
+        "methodLabel": "Payment Method",
+        "submit": "Record Payment",
+        "submitting": "Recording..."
+      }
+    },
+    "toasts": {
+      "invalidAmount": "Invalid amount",
+      "amountExceedsBalance": "Payment amount exceeds outstanding balance",
+      "amountExceedsDue": "Payment amount exceeds remaining balance",
+      "invalidLoanAmount": "Invalid loan amount",
+      "paymentRecorded": "Payment recorded",
+      "paymentFailed": "Failed to record payment",
+      "loanCreated": "Loan created",
+      "loanFailed": "Failed to create loan",
+      "statusUpdated": "Status updated",
+      "statusFailed": "Failed to update status",
+      "loanStatusUpdated": "Loan status updated",
+      "loanStatusFailed": "Failed to update loan status"
+    }
+  },
+  "history": {
+    "header": {
+      "title": "Customer History",
+      "loading": "Loading history...",
+      "notFound": "History not found",
+      "subtitle": "Activity History"
+    },
+    "dateFilter": {
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "summary": {
+      "totalSales": "Total Sales",
+      "totalPayments": "Total Payments",
+      "totalRefunds": "Total Refunds",
+      "totalLoans": "Total Loans",
+      "currentDebt": "Current Debt"
+    },
+    "timeline": {
+      "title": "Activity Timeline",
+      "empty": "No activity in this period"
+    }
+  },
+  "ledger": {
+    "header": {
+      "title": "Customer Ledger",
+      "loading": "Loading ledger...",
+      "notFound": "Ledger not found",
+      "subtitle": "Account Statement",
+      "export": "Export",
+      "exportCsv": "Export as CSV",
+      "printPdf": "Print / PDF"
+    },
+    "dateFilter": {
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    },
+    "print": {
+      "title": "Customer Account Statement",
+      "phone": "Phone: {phone}",
+      "email": "Email: {email}",
+      "period": "Period: {start} to {end}",
+      "generated": "Generated: {date}"
+    },
+    "info": {
+      "title": "Customer Information",
+      "phone": "Phone",
+      "email": "Email",
+      "period": "Period"
+    },
+    "balances": {
+      "opening": "Opening Balance",
+      "closing": "Closing Balance",
+      "netChange": "Net Change",
+      "credit": "Credit",
+      "debit": "Debit",
+      "increase": "Increase",
+      "decrease": "Decrease"
+    },
+    "table": {
+      "title": "Transaction History",
+      "empty": "No transactions in this period",
+      "date": "Date",
+      "type": "Type",
+      "description": "Description",
+      "reference": "Reference",
+      "debit": "Debit",
+      "credit": "Credit",
+      "balance": "Balance"
+    },
+    "footer": {
+      "totalTransactions": "Total Transactions",
+      "outstandingBalance": "Outstanding Balance"
+    }
+  }
+}

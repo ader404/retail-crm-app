@@ -1,0 +1,112 @@
+{
+  "title": "Chèques",
+  "searchPlaceholder": "Rechercher numéro, partie ou banque...",
+  "records": "{count} enregistrements",
+  "tabs": {
+    "all": "Tous les chèques",
+    "incoming": "À recevoir",
+    "outgoing": "À payer",
+    "dueSoon": "Échéance prochaine",
+    "overdue": "En retard",
+    "problems": "Problèmes"
+  },
+  "cards": {
+    "toReceive": "À recevoir",
+    "toPay": "À payer",
+    "dueSoon": "Échéance prochaine",
+    "overdue": "En retard",
+    "cheques": "chèques"
+  },
+  "table": {
+    "number": "N° Chèque",
+    "type": "Type",
+    "party": "Partie",
+    "bank": "Banque",
+    "amount": "Montant",
+    "issueDate": "Date d'émission",
+    "dueDate": "Date d'échéance",
+    "status": "Statut",
+    "actions": "Actions"
+  },
+  "types": {
+    "INCOMING": "À recevoir",
+    "OUTGOING": "À payer"
+  },
+  "statuses": {
+    "PENDING": "En attente",
+    "DEPOSITED": "Déposé",
+    "PRESENTED": "Présenté",
+    "CLEARED": "Encaissé",
+    "BOUNCED": "Impayé",
+    "RETURNED": "Retourné",
+    "CANCELLED": "Annulé"
+  },
+  "form": {
+    "addTitle": "Ajouter un chèque",
+    "editTitle": "Modifier le chèque",
+    "chequeNumber": "Numéro du chèque",
+    "type": "Type",
+    "amount": "Montant",
+    "issueDate": "Date d'émission",
+    "dueDate": "Date d'échéance",
+    "bankName": "Nom de la banque",
+    "accountReference": "Référence du compte",
+    "partyName": "Nom de la partie",
+    "receivedFrom": "Reçu de",
+    "payableTo": "Payable à",
+    "customerId": "Client",
+    "supplierId": "Fournisseur",
+    "saleId": "Vente liée",
+    "purchaseOrderId": "Commande liée",
+    "notes": "Notes",
+    "selectCustomer": "Sélectionner un client",
+    "selectSupplier": "Sélectionner un fournisseur",
+    "selectSale": "Sélectionner une vente",
+    "selectPurchaseOrder": "Sélectionner une commande",
+    "otherParty": "Autre (saisie manuelle)",
+    "saving": "Enregistrement...",
+    "cancel": "Annuler",
+    "save": "Enregistrer"
+  },
+  "detail": {
+    "header": "Détails du chèque",
+    "number": "Numéro du chèque",
+    "type": "Type",
+    "amount": "Montant",
+    "party": "Partie",
+    "bank": "Banque",
+    "accountRef": "Référence du compte",
+    "issueDate": "Date d'émission",
+    "dueDate": "Date d'échéance",
+    "status": "Statut",
+    "createdBy": "Créé par",
+    "createdDate": "Date de création",
+    "notes": "Notes",
+    "clearedAt": "Encaissé le",
+    "linkedSale": "Vente liée",
+    "linkedPurchase": "Commande liée",
+    "timeline": "Historique des statuts",
+    "noHistory": "Aucun changement de statut enregistré"
+  },
+  "statusChange": {
+    "title": "Changer le statut",
+    "newStatus": "Nouveau statut",
+    "reason": "Raison / Notes",
+    "reasonPlaceholder": "Raison optionnelle du changement",
+    "confirm": "Confirmer le changement"
+  },
+  "validation": {
+    "chequeNumberRequired": "Le numéro du chèque est requis",
+    "amountRequired": "Le montant doit être supérieur à zéro",
+    "dueDateRequired": "La date d'échéance est requise",
+    "typeRequired": "Le type est requis"
+  },
+  "toast": {
+    "created": "Chèque créé avec succès",
+    "updated": "Chèque mis à jour avec succès",
+    "statusChanged": "Statut du chèque mis à jour",
+    "deleted": "Chèque supprimé avec succès",
+    "failed": "Opération échouée",
+    "deleteFailed": "Échec de la suppression du chèque"
+  }
+}

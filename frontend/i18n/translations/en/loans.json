@@ -1,0 +1,180 @@
+{
+  "status": {
+    "ACTIVE": "Active",
+    "COMPLETED": "Completed",
+    "OVERDUE": "Overdue",
+    "CANCELLED": "Cancelled"
+  },
+  "paymentMethods": {
+    "CASH": "Cash",
+    "CARD": "Card",
+    "BANK_TRANSFER": "Bank Transfer",
+    "QR": "QR Code"
+  },
+  "list": {
+    "title": "Loan Management",
+    "allLoans": "All Loans",
+    "createLoan": "Create Loan",
+    "summary": {
+      "totalLoaned": "Total Loaned",
+      "totalLoanedSub": "All time",
+      "totalPaid": "Total Paid",
+      "totalPaidSub": "Received back",
+      "outstanding": "Outstanding",
+      "outstandingSub": "Balance due",
+      "activeLoans": "Active Loans",
+      "activeLoansSub": "Currently active",
+      "overdue": "Overdue",
+      "overdueSub": "Past due date"
+    },
+    "tabs": {
+      "customerLoans": "Customer Loans",
+      "supplierLoans": "Supplier Loans"
+    },
+    "searchPlaceholder": "Search {type}...",
+    "searchCustomer": "customer",
+    "searchSupplier": "supplier",
+    "statusFilter": {
+      "all": "All Status"
+    },
+    "table": {
+      "customer": "Customer",
+      "supplier": "Supplier",
+      "loanAmount": "Loan Amount",
+      "paid": "Paid",
+      "balance": "Balance",
+      "dueDate": "Due Date",
+      "status": "Status",
+      "created": "Created",
+      "overdueTag": "(Overdue)"
+    },
+    "loading": "Loading loans...",
+    "emptyCustomer": "No customer loans found",
+    "emptySupplier": "No supplier loans found"
+  },
+  "detail": {
+    "pageTitle": "Loan Details",
+    "loading": "Loading loan details...",
+    "notFound": "Loan not found",
+    "entity": {
+      "customer": "Customer",
+      "supplier": "Supplier"
+    },
+    "heading": "{entity} Loan",
+    "createdOn": "Created on {date}",
+    "updateStatus": "Update Status",
+    "recordPayment": "Record Payment",
+    "overdueAlert": {
+      "title": "Loan Overdue",
+      "message": "This loan was due on {date}. Please follow up with the {entity}."
+    },
+    "entityInfo": {
+      "titleSuffix": "Information"
+    },
+    "cards": {
+      "loanAmount": "Loan Amount",
+      "originalAmount": "Original amount",
+      "amountPaid": "Amount Paid",
+      "paidPercent": "{percent}% paid",
+      "outstandingBalance": "Outstanding Balance",
+      "remainingPercent": "{percent}% remaining",
+      "dueDate": "Due Date",
+      "noDueDate": "No due date",
+      "overdue": "Overdue",
+      "scheduled": "Scheduled",
+      "openEnded": "Open ended"
+    },
+    "progress": {
+      "title": "Payment Progress",
+      "paid": "Paid: {amount}",
+      "remaining": "Remaining: {amount}",
+      "complete": "{percent}% Complete"
+    },
+    "reason": "Reason",
+    "paymentHistory": {
+      "title": "Payment History",
+      "empty": "No payments recorded yet"
+    },
+    "paymentDialog": {
+      "title": "Record Loan Payment",
+      "outstandingBalance": "Outstanding Balance:",
+      "amountLabel": "Payment Amount",
+      "methodLabel": "Payment Method",
+      "notesLabel": "Notes (Optional)",
+      "notesPlaceholder": "Add notes about this payment...",
+      "recording": "Recording...",
+      "submit": "Record Payment"
+    },
+    "statusDialog": {
+      "title": "Update Loan Status",
+      "currentStatus": "Current Status:",
+      "newStatusLabel": "New Status",
+      "newStatusPlaceholder": "Select new status",
+      "updating": "Updating...",
+      "submit": "Update Status"
+    },
+    "toasts": {
+      "paymentRecorded": "Payment recorded successfully",
+      "paymentFailed": "Failed to record payment",
+      "invalidAmount": "Invalid payment amount",
+      "amountExceeds": "Payment amount exceeds outstanding balance",
+      "statusUpdated": "Loan status updated",
+      "statusFailed": "Failed to update status",
+      "selectStatus": "Please select a status"
+    }
+  },
+  "form": {
+    "pageTitle": "Create Loan",
+    "heading": "Create New Loan",
+    "subheading": "Record a loan to a customer or from a supplier",
+    "loanTypeCard": {
+      "title": "Loan Type",
+      "customer": {
+        "title": "Customer Loan",
+        "description": "Money loaned to a customer"
+      },
+      "supplier": {
+        "title": "Supplier Loan",
+        "description": "Money owed to a supplier"
+      }
+    },
+    "detailsCard": {
+      "title": "Loan Details",
+      "selectCustomer": "Select Customer",
+      "selectSupplier": "Select Supplier",
+      "loadingCustomers": "Loading customers...",
+      "loadingSuppliers": "Loading suppliers...",
+      "chooseCustomer": "Choose a customer...",
+      "chooseSupplier": "Choose a supplier...",
+      "noCustomersFound": "No customers found",
+      "noSuppliersFound": "No suppliers found",
+      "failedLoadCustomers": "Failed to load customers",
+      "failedLoadSuppliers": "Failed to load suppliers",
+      "loanAmount": "Loan Amount",
+      "amountHelperCustomer": "Amount you are lending to the customer",
+      "amountHelperSupplier": "Amount you owe to the supplier",
+      "dueDate": "Due Date (Optional)",
+      "dueDateHelper": "Leave empty for open-ended loans",
+      "notes": "Notes (Optional)",
+      "notesPlaceholder": "Add any notes about this loan..."
+    },
+    "summaryCard": {
+      "title": "Loan Summary",
+      "type": "Type:",
+      "customerLabel": "Customer:",
+      "supplierLabel": "Supplier:",
+      "notSelected": "Not selected",
+      "amount": "Amount:",
+      "dueDate": "Due Date:"
+    },
+    "creating": "Creating...",
+    "submit": "Create Loan",
+    "toasts": {
+      "created": "Loan created successfully",
+      "createFailed": "Failed to create loan",
+      "invalidAmount": "Please enter a valid loan amount",
+      "selectCustomer": "Please select a customer",
+      "selectSupplier": "Please select a supplier"
+    }
+  }
+}

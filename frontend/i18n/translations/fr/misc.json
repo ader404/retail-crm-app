@@ -1,0 +1,41 @@
+{
+  "changePassword": {
+    "title": "Changer le mot de passe",
+    "subtitle": "Vous devez changer votre mot de passe avant de continuer",
+    "successTitle": "Mot de passe modifié avec succès",
+    "redirecting": "Redirection vers la connexion...",
+    "currentPasswordLabel": "Mot de passe actuel",
+    "newPasswordLabel": "Nouveau mot de passe",
+    "confirmPasswordLabel": "Confirmer le nouveau mot de passe",
+    "requirementsTitle": "Exigences du mot de passe :",
+    "requirements": {
+      "minLength": "Au moins 12 caractères",
+      "uppercase": "Une lettre majuscule",
+      "lowercase": "Une lettre minuscule",
+      "number": "Un chiffre",
+      "specialChar": "Un caractère spécial"
+    },
+    "submitting": "Modification du mot de passe...",
+    "submit": "Changer le mot de passe",
+    "errors": {
+      "passwordsDoNotMatch": "Les nouveaux mots de passe ne correspondent pas",
+      "requirementsNotMet": "Le mot de passe ne répond pas à toutes les exigences",
+      "changeFailed": "Échec de la modification du mot de passe",
+      "generic": "Une erreur est survenue lors de la modification du mot de passe"
+    }
+  },
+  "forbidden": {
+    "code": "403",
+    "title": "Accès interdit",
+    "description": "Vous n'avez pas la permission d'accéder à cette ressource. Si vous pensez qu'il s'agit d'une erreur, veuillez contacter votre administrateur.",
+    "goBack": "Retour",
+    "goToDashboard": "Aller au tableau de bord",
+    "needAccessTitle": "Besoin d'accès ?",
+    "needAccessDescription": "Contactez votre administrateur système pour demander les autorisations nécessaires pour cette ressource."
+  },
+  "noAccess": {
+    "title": "Accès refusé",
+    "description": "Aucune page n'a été attribuée à votre compte. Veuillez contacter votre administrateur pour demander l'accès.",
+    "logout": "Déconnexion"
+  }
+}
