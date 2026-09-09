@@ -1,4 +1,5 @@
 import { Injectable, ConflictException, NotFoundException } from '@nestjs/common';
+import { ImeiStatus } from '@prisma/client';
 import { PrismaService } from '../../prisma/prisma.service';
 import { CreateProductDto } from './dto/create-product.dto';
 import { CreateCategoryDto, CreateBrandDto } from './dto/create-category.dto';
@@ -14,11 +15,11 @@ const PRODUCT_INCLUDE = {
   _count: {
     select: {
       imeiDevices: {
-        where: { status: 'AVAILABLE' }
+        where: { status: ImeiStatus.AVAILABLE }
       }
     }
   }
-};
+} as const;
 
 // Attaches a lightweight imageUrl reference (never the binary data) to a product
 // returned from the API. Actual bytes are only served via GET /products/:id/image.
